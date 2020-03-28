@@ -1,6 +1,13 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import isMobile from "react-device-detect";
+
+if (isMobile) {
+  localStorage.setItem("device","mobile");
+} else {
+  localStorage.setItem("device","desktop");
+}
 
 function App() {
   return (
@@ -13,6 +20,10 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;
 

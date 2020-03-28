@@ -40,12 +40,11 @@
           var viz,
               vizLen = vizList.length,
               vizCount = 0;
-          
           function createViz(vizPlusMinus) {
               var vizDiv = document.getElementById("vizContainer"),
                   options = {
                       hideTabs: true,
-                      device: "desktop",
+                      device: localStorage.getItem("device"),
                       toolbarPosition: "ApiToolbarPosition.Top",
                   };
   
@@ -87,3 +86,4 @@
     -->
   </body>
 </html>
+
