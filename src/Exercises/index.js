@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Paper } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 import LeftPane from './LeftPane'
 import RightPane from './RightPane'
 
@@ -11,8 +11,12 @@ export default props =>
 <Grid container>
     <Grid item sm>
         <LeftPane styles={styles}/>
+        <LeftPane styles={styles}/>
+        <LeftPane styles={styles}/>
     </Grid>
     <Grid item sm>
+        <RightPane styles={styles}/>
+        <RightPane styles={styles}/>
         <RightPane styles={styles}/>
     </Grid>
 </Grid>

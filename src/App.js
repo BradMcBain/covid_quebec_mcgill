@@ -51,7 +51,7 @@ class App extends Component{
       </Button>
 
       </Drawer>
-      <Exercises />
+      
       
      
             <Footer

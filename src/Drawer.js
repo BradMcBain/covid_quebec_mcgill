@@ -133,8 +133,8 @@ function ResponsiveDrawer(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Exercises />
-        <Tableau />
+        <Exercises/>
+        
       </main>
     </div>
   );
