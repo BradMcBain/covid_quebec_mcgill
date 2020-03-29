@@ -34,7 +34,7 @@
       
       <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
       <script type="text/javascript">
-          var vizList = ["https://public.tableau.com/views/Book1_15853557061790/Dashboard1",
+          var vizList = [
                         "https://public.tableau.com/views/Book1_15853557061790/Version2"];
           
           var viz,
@@ -47,7 +47,7 @@
                       device: localStorage.getItem("device"),
                       toolbarPosition: "ApiToolbarPosition.Top",
                   };
-  
+            console.log(localStorage.getItem("device"));
               vizCount = vizCount + vizPlusMinus;
               
               if (vizCount >= vizLen) { 
