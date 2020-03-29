@@ -71,13 +71,28 @@ function ResponsiveDrawer(props) {
         setMobileOpen(!mobileOpen);
     };
 
+    const jumpTo = (id) => {
+        console.log(id);
+        switch (id) {
+            case 0:
+                window.location.href = "#first";
+                break;
+            case 1:
+                window.location.href = "#second";
+                break;
+            default:
+                break;
+        }
+        
+    }
+
     const drawer = (
         <div>
             <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'marginLeft': '30%', 'marginTop': '10%'}}/>
         <Divider />
         <List>
             {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
+            <ListItem button key={text} onClick={() => jumpTo(index)}>
                 <ListItemText primary={text} />
             </ListItem>
             ))}
