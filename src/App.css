@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  padding-bottom: 100px;
 }
-
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +17,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

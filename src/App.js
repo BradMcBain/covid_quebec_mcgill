@@ -6,6 +6,9 @@ import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import Button from '@material-ui/core/Button';
 import ReactDOM from 'react-dom'
+import Footer from 'rc-footer';
+import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
+import { render } from 'react-dom';
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -27,12 +30,27 @@ class App extends Component{
       <Button variant="contained" color="primary">
         Language
        </Button>
-          <div class="stickybottom">
-            <BottomNavigation style={{'width':'100%', 'position':'fixed', 'bottom':'0', 'background-color': '#ADD8E6', 'height':'15%'}}>
-              <span>This app is for education purposes only.</span>
-            </BottomNavigation>
+          <div className="App">
+          <footer>
+            <Footer
+              columns={[
+                {
+                  icon: (
+                    <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
+                  ),
+                  title: 'This website and its contents herein, including all data, mapping, and analysis is provided to the public strictly for educational  purposes.  These data relies upon publicly available from Quebec\'s government (and foreign governments), which has been authorized for common usage. Reliance on the Website for medical guidance or use of the Website for commercial purposes is strictly prohibited.  Managers of this website are not responsible for source data or for any use of these data that goes beyond purely educational purposes',
+                  url: 'https://yuque.com',
+                  description: '知识创作与分享工具',
+                  openExternal: true,
+                },
+              ]}
+              bottom="Made with ❤️ by McGill"
+              backgroundColor="#9FA7FF"
+              theme='light'
+            />
+            </footer>
           </div>
-          </div>
+    </div>
           
         );
         }
