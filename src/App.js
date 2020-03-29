@@ -10,6 +10,8 @@ import Footer from 'rc-footer';
 import Tableau from './Tableau'
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import { render } from 'react-dom';
+import Grid from "@material-ui/core/Grid";
+import Exercises from './Exercises'
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -47,9 +49,12 @@ class App extends Component{
               onClick={() => this.getLang(this)}>
               {this.state.lang}
       </Button>
-        <div id="vizContainer">
+      <Exercises/>
+
+
+      <div id="vizContainer">
           <Tableau/>
-        </div>
+      </div>
      
             <Footer
               columns={[
@@ -68,9 +73,7 @@ class App extends Component{
               theme='light'
             />
         </div>
-        <div className="content-wrap"></div>
-
-    </div>
+      </div>
           
         );
         }
