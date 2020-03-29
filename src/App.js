@@ -7,7 +7,6 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import Button from '@material-ui/core/Button';
 import ReactDOM from 'react-dom'
 import Footer from 'rc-footer';
-import Tableau from './Tableau'
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import { render } from 'react-dom';
 import Drawer from './Drawer'

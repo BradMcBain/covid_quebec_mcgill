@@ -2,23 +2,19 @@ import React, { Component } from 'react';
 import tableau from 'tableau-api';  
   
   
-class Tableau extends Component {  
+class Tableau3 extends Component {  
   componentDidMount() {  
     this.initViz()  
   }  
   
   
   initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/Book1_15853557061790/Version2';  
+    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD/GlobalTrends1';  
     const vizContainer = this.vizContainer;
     const options = {
         hideTabs: true,
         device: localStorage.getItem("device"),
         toolbarPosition: "ApiToolbarPosition.Top",
-        onFirstInteractive: () => {
-          const sheet = viz.getWorkbook().getActiveSheet().getWorksheets().get("Panel 1.1");
-          console.log(sheet);
-      }
     };
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)  
   }  
@@ -32,6 +28,4 @@ class Tableau extends Component {
   
 }  
 
-  
-  
-export default Tableau; 
+export default Tableau3; 
