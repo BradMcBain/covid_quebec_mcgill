@@ -45,15 +45,7 @@ class App extends Component{
           </Route>
         </Router>
       <Drawer>
-      <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'marginBottom':'5px'}}
-              onClick={() => this.getLang(this)}>
-              {this.state.lang}
-      </Button>
-
       </Drawer>
-      
-      
-     
             <Footer
               columns={[
                 {
@@ -77,9 +69,6 @@ class App extends Component{
         );
         }
       }
-
-
-
 
 export default App;
 

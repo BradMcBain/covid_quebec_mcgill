@@ -14,6 +14,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Tableau from './Tableau'
 import Exercises from './Exercises'
+import Button from '@material-ui/core/Button';
+
 
 const drawerWidth = '10%';
 
@@ -51,93 +53,106 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
-  const { container } = props;
-  const classes = useStyles();
-  const theme = useTheme();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { container } = props;
+    const classes = useStyles();
+    const theme = useTheme();
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [lang, setLang] = React.useState("en");
+    const getLang = () => {
+        if (lang === "en"){
+          // t.state.lang = "fr";
+          setLang("fr");
+        } else {
+          // t.state.lang = "en";
+          setLang("en");
+        }
+    }  
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const drawer = (
-    <div>
-      <div className={classes.toolbar} />
-      <Divider />
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
-
-  return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            className={classes.menuButton}
-          >
-          </IconButton>
-          <Typography variant="h6" noWrap>
-            COVID QC
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <nav className={classes.drawer} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-      </nav>
-      <main className={classes.content}>
+    const drawer = (
+        <div>
         <div className={classes.toolbar} />
-        <Exercises/>
-        
-      </main>
-    </div>
-  );
+        <Divider />
+        <List>
+            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            <ListItem button key={text}>
+                <ListItemText primary={text} />
+            </ListItem>
+            ))}
+        </List>
+        <Divider />
+        <List>
+            {['All mail', 'Trash', 'Spam'].map((text, index) => (
+            <ListItem button key={text}>
+                <ListItemText primary={text} />
+            </ListItem>
+            ))}
+        </List>
+        </div>
+    );
+
+    return (
+        <div className={classes.root}>
+        <CssBaseline />
+        <AppBar position="fixed" className={classes.appBar}>
+            <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'backgroundColor': '#9FA7FF', 'color': 'black'}}
+                onClick={() => getLang()}>
+                {lang}
+            </Button>
+            <Toolbar>
+            <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                className={classes.menuButton}
+            >
+            </IconButton>
+            <Typography variant="h6" noWrap>
+                COVID QC
+            </Typography>
+            </Toolbar>
+        </AppBar>
+        <nav className={classes.drawer} aria-label="mailbox folders">
+            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+            <Hidden smUp implementation="css">
+            <Drawer
+                container={container}
+                variant="temporary"
+                anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+                open={mobileOpen}
+                onClose={handleDrawerToggle}
+                classes={{
+                paper: classes.drawerPaper,
+                }}
+                ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+                }}
+            >
+                {drawer}
+            </Drawer>
+            </Hidden>
+            <Hidden xsDown implementation="css">
+            <Drawer
+                classes={{
+                paper: classes.drawerPaper,
+                }}
+                variant="permanent"
+                open
+            >
+                {drawer}
+            </Drawer>
+            </Hidden>
+        </nav>
+        <main className={classes.content}>
+            <div className={classes.toolbar} />
+            <Exercises/>
+            
+        </main>
+        </div>
+    );
 }
 
 ResponsiveDrawer.propTypes = {
