@@ -14,6 +14,11 @@ class Tableau extends Component {
     const options = {
         hideTabs: true,
         device: localStorage.getItem("device"),
+        toolbarPosition: "ApiToolbarPosition.Top",
+        onFirstInteractive: () => {
+          const sheet = viz.getWorkbook().getActiveSheet().getWorksheets().get("Panel 1.1");
+          console.log(sheet);
+      }
     };
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)  
   }  
