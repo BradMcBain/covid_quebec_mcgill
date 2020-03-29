@@ -48,19 +48,17 @@ class App extends Component{
             <Footer
               columns={[
                 {
-                  icon: (
-                    <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
-                  ),
+   
                   title: 'This website and its contents herein, including all data, mapping, and analysis is provided to the public strictly for educational  purposes.  These data relies upon publicly available from Quebec\'s government (and foreign governments), which has been authorized for common usage. Reliance on the Website for medical guidance or use of the Website for commercial purposes is strictly prohibited.  Managers of this website are not responsible for source data or for any use of these data that goes beyond purely educational purposes.',
                   url: 'https://yuque.com',
                   description: '知识创作与分享工具',
                   openExternal: true,
                 },
               ]}
-              style={{'marginLeft':'5%', 'color':'black', 'fontSize':'10px'}}
+              style={{'marginLeft':'5%', 'color':'white', 'fontSize':'10px'}}
               bottom="Made with ❤️ by McGill"
-              theme="light"
-              backgroundColor="#A8CBE5"
+              theme="dark"
+              backgroundColor="#334B63"
             />
         </div>
       </div>
