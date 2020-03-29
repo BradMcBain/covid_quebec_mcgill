@@ -10,6 +10,7 @@ import Footer from 'rc-footer';
 import Tableau from './Tableau'
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import { render } from 'react-dom';
+import Drawer from './Drawer'
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -42,14 +43,16 @@ class App extends Component{
             <Redirect from="*" to="/" />
           </Route>
         </Router>
-      
+      <Drawer>
       <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'marginBottom':'5px'}}
               onClick={() => this.getLang(this)}>
               {this.state.lang}
       </Button>
-        <div id="vizContainer">
+        {/* <div id="vizContainer">
           <Tableau/>
-        </div>
+        </div> */}
+      </Drawer>
+      
      
             <Footer
               columns={[
