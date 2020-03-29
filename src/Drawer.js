@@ -73,7 +73,7 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div>
-        <div className={classes.toolbar} />
+            <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'marginLeft': '30%', 'marginTop': '10%'}}/>
         <Divider />
         <List>
             {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
