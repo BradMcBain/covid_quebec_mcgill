@@ -7,6 +7,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import Button from '@material-ui/core/Button';
 import ReactDOM from 'react-dom'
 import Footer from 'rc-footer';
+import Tableau from './Tableau'
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import { render } from 'react-dom';
 
@@ -34,18 +35,22 @@ class App extends Component{
   }
   render(){
   return (
-    <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
-        <Route component={App} path="/">
-          <Redirect from="*" to="/" />
-        </Route>
-      </Router>
+    <div className="page-container">
+      <div className="content-wrap">
+        <Router basename={process.env.PUBLIC_URL}>
+          <Route component={App} path="/">
+            <Redirect from="*" to="/" />
+          </Route>
+        </Router>
+      
       <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'marginBottom':'5px'}}
               onClick={() => this.getLang(this)}>
               {this.state.lang}
-       </Button>
-          <div className="App">
-          <footer>
+      </Button>
+        <div id="vizContainer">
+          <Tableau/>
+        </div>
+     
             <Footer
               columns={[
                 {
@@ -62,8 +67,9 @@ class App extends Component{
               backgroundColor="#9FA7FF"
               theme='light'
             />
-            </footer>
-          </div>
+        </div>
+        <div className="content-wrap"></div>
+
     </div>
           
         );

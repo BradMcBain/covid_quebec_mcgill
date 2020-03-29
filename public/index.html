@@ -29,51 +29,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <head>
-      <title>Dynamic Load</title>
-      
-      <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-      <script type="text/javascript">
-          var vizList = [
-                        "https://public.tableau.com/views/Book1_15853557061790/Version2"];
-          
-          var viz,
-              vizLen = vizList.length,
-              vizCount = 0;
-          function createViz(vizPlusMinus) {
-              var vizDiv = document.getElementById("vizContainer"),
-                  options = {
-                      hideTabs: true,
-                      device: localStorage.getItem("device"),
-                      toolbarPosition: "ApiToolbarPosition.Top",
-                  };
-            console.log(localStorage.getItem("device"));
-              vizCount = vizCount + vizPlusMinus;
-              
-              if (vizCount >= vizLen) { 
-              // Keep the vizCount in the bounds of the array index.
-                  vizCount = 0;
-              } else if (vizCount < 0) {
-                  vizCount = vizLen - 1;
-              }
-              
-              if (viz) { // If a viz object exists, delete it.
-                  viz.dispose();
-              }
-  
-              var vizURL = vizList[vizCount];
-              viz = new tableau.Viz(vizDiv, vizURL, options); 
-          }
-      </script>
-  </head>
-  
-  <body onload="createViz(0);">
-      <div id="vizContainer" style="width:100%; height:80%; margin: auto;"></div>
-      <div id="controls" style="padding:20px;">
-          <button style="width:100px;" onclick="javascript:createViz(-1);">Previous</button>
-          <button style="width:100px;" onclick="javascript:createViz(1);">Next</button>
-      </div>
-  </body>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
