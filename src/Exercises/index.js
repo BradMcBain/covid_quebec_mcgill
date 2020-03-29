@@ -6,17 +6,24 @@ import RightPane from './RightPane'
 const styles = {
         Paper: { padding: 20, marginTop: 10, marginBott:10 }
 }
-
+function FormRow() {
+    return (
+      <React.Fragment>
+        <Grid item xs={6}>
+             <LeftPane styles={styles}/>
+        </Grid>
+        <Grid item xs={6}>
+            <RightPane styles={styles}/>
+        </Grid>
+      </React.Fragment>
+    );
+  }
 export default props =>
 <Grid container>
-    <Grid item sm>
-        <LeftPane styles={styles}/>
-        <LeftPane styles={styles}/>
-        <LeftPane styles={styles}/>
+    <Grid container item xs={12} spacing={12}>
+        <FormRow />
     </Grid>
-    <Grid item sm>
-        <RightPane styles={styles}/>
-        <RightPane styles={styles}/>
-        <RightPane styles={styles}/>
+    <Grid container item xs={12} spacing={12}>
+        <FormRow />
     </Grid>
 </Grid>
