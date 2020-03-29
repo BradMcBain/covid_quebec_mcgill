@@ -80,6 +80,24 @@ function ResponsiveDrawer(props) {
             case 1:
                 window.location.href = "#second";
                 break;
+            case 2:
+                window.location.href = "#third";
+                break;
+            case 3:
+                window.location.href = "#fourth";
+                break;
+            case 4:
+                window.location.href = "#fifth";
+                break;
+            case 5:
+                window.location.href = "#sixth";
+                break;
+            case 6:
+                window.location.href = "#seventh";
+                break;
+            case 7:
+                window.location.href = "#eighth";
+                break;
             default:
                 break;
         }
@@ -91,20 +109,13 @@ function ResponsiveDrawer(props) {
             <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'marginLeft': '30%', 'marginTop': '10%'}}/>
         <Divider />
         <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
             <ListItem button key={text} onClick={() => jumpTo(index)}>
                 <ListItemText primary={text} />
             </ListItem>
             ))}
         </List>
         <Divider />
-        <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-                <ListItemText primary={text} />
-            </ListItem>
-            ))}
-        </List>
         </div>
     );
 
