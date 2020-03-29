@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
-import isMobile from "react-device-detect";
+import {isMobile} from "react-device-detect";
+import StickyFooter from './StickyFooter'
+import Button from '@material-ui/core/Button';
+import ReactDOM from 'react-dom'
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -9,7 +12,8 @@ if (isMobile) {
   localStorage.setItem("device","desktop");
 }
 
-function App() {
+class App extends Component{
+  render(){
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
@@ -17,10 +21,17 @@ function App() {
           <Redirect from="*" to="/" />
         </Route>
       </Router>
+      <StickyFooter/>
+      <Button variant="contained" color="primary">
+        Language
+       </Button>
+       <StickyFooter></StickyFooter>
+       
+       
     </div>
   );
+  }
 }
-
 
 
 
