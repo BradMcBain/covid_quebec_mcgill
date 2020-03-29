@@ -71,7 +71,6 @@ function ResponsiveDrawer(props) {
     };
 
     const jumpTo = (id) => {
-        console.log(id);
         switch (id) {
             case 0:
                 window.location.href = "#first";
@@ -121,8 +120,8 @@ function ResponsiveDrawer(props) {
     return (
         <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar}>
-            <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'backgroundColor': '#9FA7FF', 'color': 'black'}}
+        <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#A8CBE5'}}>
+            <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#334B63', 'color': 'white'}}
                 onClick={() => getLang()}>
                 {lang}
             </Button>
@@ -136,7 +135,7 @@ function ResponsiveDrawer(props) {
             >
             </IconButton>
             <Typography variant="h6" noWrap>
-                COVID QC
+                COVID-19 Quebec Dashboard
             </Typography>
             </Toolbar>
         </AppBar>

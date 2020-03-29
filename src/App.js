@@ -57,10 +57,10 @@ class App extends Component{
                   openExternal: true,
                 },
               ]}
-              style={{'marginLeft':'5%'}}
+              style={{'marginLeft':'5%', 'color':'black', 'fontSize':'10px'}}
               bottom="Made with ❤️ by McGill"
-              backgroundColor="#ecf8fb"
-              theme='light'
+              theme="light"
+              backgroundColor="#A8CBE5"
             />
         </div>
       </div>
