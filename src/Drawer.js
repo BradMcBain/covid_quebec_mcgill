@@ -120,8 +120,8 @@ function ResponsiveDrawer(props) {
     return (
         <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#A8CBE5'}}>
-            <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#334B63', 'color': 'white'}}
+        <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
+            <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
                 onClick={() => getLang()}>
                 {lang}
             </Button>
