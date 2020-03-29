@@ -16,9 +16,22 @@ if (isMobile) {
   localStorage.setItem("device","desktop");
 }
 
-
-
 class App extends Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      lang: "en"
+    }
+  }
+  getLang(t){
+    if (t.state.lang === "en"){
+      // t.state.lang = "fr";
+      this.setState({lang: "fr"})
+    } else {
+      // t.state.lang = "en";
+      this.setState({lang: "en"})
+    }
+  }
   render(){
   return (
     <div className="App">
@@ -27,8 +40,9 @@ class App extends Component{
           <Redirect from="*" to="/" />
         </Route>
       </Router>
-      <Button variant="contained" color="primary">
-        Language
+      <Button variant="contained" color="primary" style={{'marginLeft':'90%', 'marginBottom':'5px'}}
+              onClick={() => this.getLang(this)}>
+              {this.state.lang}
        </Button>
           <div className="App">
           <footer>
