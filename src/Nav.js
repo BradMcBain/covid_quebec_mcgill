@@ -85,6 +85,9 @@ class Nav extends Component {
             case 8:
                 scrollToTargetAdjusted("9");
                 break;
+            case 9:
+                scrollToTargetAdjusted("10");
+                break;
             default:
                 break;
         }
@@ -100,7 +103,7 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['Geographical Dashboard', 'Cases by Region', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Daily Changes', 'Death Rates'].map((text, index) => (
+                             {['Geographical Dashboard', 'Montreal', 'Cases by Region', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Daily Changes', 'Death Rates'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
@@ -148,7 +151,7 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['Carte de Québec', 'Cas par région', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès', 'Taux de tests comparative', 'Changements quotidiens', 'Taux de mortalité'].map((text, index) => (
+                             {['Carte de Québec', 'Montreal','Cas par région', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès', 'Taux de tests comparative', 'Changements quotidiens', 'Taux de mortalité'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>

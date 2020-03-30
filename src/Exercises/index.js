@@ -15,6 +15,7 @@ import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import { textAlign } from '@material-ui/system';
+import DWChart from "react-datawrapper-chart";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -106,6 +107,44 @@ function FormRow1(props) {
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
                 <Tableau1/>
+            </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  }
+  
+}
+function FormRowTemp(props) {
+  const classes = useStyles();
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h3}></h1>
+                <font size="3" color="#334B63" margin-bottom="100">
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={7}>
+             <Paper style={styles.Paper} elevation={5}>
+              <DWChart title="Chart" src="//datawrapper.dwcdn.net/9m653/1/" />
+            </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h3}></h1>
+              <font size="3" color="#334B63" margin-bottom="100">
+              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={7}>
+             <Paper style={styles.Paper} elevation={5}>
+              <DWChart title="Chart" src="//datawrapper.dwcdn.net/9m653/1/" />
             </Paper>
         </Grid>
       </React.Fragment>
@@ -422,27 +461,30 @@ class Exercises extends Component {
             <FormRow1 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="2">
-            <FormRow2 lang={this.props.lang}/>
+            <FormRowTemp lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="3">
-            <FormRow3 lang={this.props.lang}/>
+            <FormRow2 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="4">
-            <FormRow4 lang={this.props.lang}/>
+            <FormRow3 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="5">
-            <FormRow5 lang={this.props.lang}/>
+            <FormRow4 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="6">
-            <FormRow6 lang={this.props.lang}/>
+            <FormRow5 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="7">
-            <FormRow7 lang={this.props.lang}/>
+            <FormRow6 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="8">
-            <FormRow8 lang={this.props.lang}/>
+            <FormRow7 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="9">
+            <FormRow8 lang={this.props.lang}/>
+        </Grid>
+        <Grid container item xs={12} spacing={3} id="10">
             <FormRow9 lang={this.props.lang}/>
         </Grid>
       </Grid>
