@@ -73,28 +73,28 @@ function ResponsiveDrawer(props) {
     const jumpTo = (id) => {
         switch (id) {
             case 0:
-                window.location.href = "#first";
+                window.location.href = "#1";
                 break;
             case 1:
-                window.location.href = "#second";
+                window.location.href = "#2";
                 break;
             case 2:
-                window.location.href = "#third";
+                window.location.href = "#3";
                 break;
             case 3:
-                window.location.href = "#fourth";
+                window.location.href = "#4";
                 break;
             case 4:
-                window.location.href = "#fifth";
+                window.location.href = "#5";
                 break;
             case 5:
-                window.location.href = "#sixth";
+                window.location.href = "#6";
                 break;
             case 6:
-                window.location.href = "#seventh";
+                window.location.href = "#7";
                 break;
             case 7:
-                window.location.href = "#eighth";
+                window.location.href = "#8";
                 break;
             default:
                 break;
