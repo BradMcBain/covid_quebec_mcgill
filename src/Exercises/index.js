@@ -9,7 +9,7 @@ import Tableau6 from '../Tableau/Tableau6'
 import Tableau7 from '../Tableau/Tableau7'
 import Tableau8 from '../Tableau/Tableau8'
 import Tableau9 from '../Tableau/Tableau9'
-import { Paper } from "@material-ui/core"
+import { Paper, Card } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';

@@ -118,7 +118,8 @@ class ResponsiveDrawer extends Component {
 
     drawer = (
         <div>
-            <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'marginLeft': '30%', 'marginTop': '10%'}}/>
+            <img src="./mcgilluni.ico" alt="" align="center" height="75px" width="100px" style={{'marginLeft': '18%', 'marginTop': '10%', 
+            'display': 'block', 'margin-left': 'auto', 'margin-right': 'auto', 'width': '50%'}}/>
         <Divider />
         <List>
             {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
@@ -151,8 +152,6 @@ class ResponsiveDrawer extends Component {
                 >
                 </IconButton>
                 <div style={{'display': 'inherit'}}>
-                    <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'display': 'inline-block'}}/>
-
                     <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                         COVID-19 Quebec Dashboard
                     </Typography>
