@@ -73,28 +73,38 @@ function ResponsiveDrawer(props) {
     const jumpTo = (id) => {
         switch (id) {
             case 0:
-                window.location.href = "#first";
+                document.getElementById("first").scrollTop += 10;
+                document.getElementById("first").scrollIntoView({behavior: 'smooth' });
+                
+                //window.location.href = "#first";
                 break;
             case 1:
-                window.location.href = "#second";
+                document.getElementById("second").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#second";
                 break;
             case 2:
-                window.location.href = "#third";
+                document.getElementById("third").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#third";
                 break;
             case 3:
-                window.location.href = "#fourth";
+                document.getElementById("fourth").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#fourth";
                 break;
             case 4:
-                window.location.href = "#fifth";
+                document.getElementById("fifth").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#fifth";
                 break;
             case 5:
-                window.location.href = "#sixth";
+                document.getElementById("sixth").scrollIntoView({ behavior: 'smooth' });
+               // window.location.href = "#sixth";
                 break;
             case 6:
-                window.location.href = "#seventh";
+                document.getElementById("seventh").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#seventh";
                 break;
             case 7:
-                window.location.href = "#eighth";
+                document.getElementById("eighth").scrollIntoView({ behavior: 'smooth' });
+                //window.location.href = "#eighth";
                 break;
             default:
                 break;

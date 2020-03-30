@@ -56,7 +56,7 @@ class App extends Component{
                 },
               ]}
               style={{'marginLeft':'5%', 'color':'white', 'fontSize':'10px'}}
-              bottom="Made with ❤️ by McGill"
+              bottom="Copyright"
               theme="dark"
               backgroundColor="#334B63"
             />
