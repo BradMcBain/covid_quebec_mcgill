@@ -107,6 +107,9 @@ class ResponsiveDrawer extends Component {
             case 7:
                 scrollToTargetAdjusted("8");
                 break;
+            case 8:
+                scrollToTargetAdjusted("9");
+                break;
             default:
                 break;
         }

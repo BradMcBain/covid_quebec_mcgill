@@ -8,6 +8,7 @@ import Tableau5 from '../Tableau/Tableau5'
 import Tableau6 from '../Tableau/Tableau6'
 import Tableau7 from '../Tableau/Tableau7'
 import Tableau8 from '../Tableau/Tableau8'
+import Tableau9 from '../Tableau/Tableau9'
 import { Paper } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider'
@@ -353,6 +354,40 @@ function FormRow8(props) {
     );
   }
 }
+function FormRow9(props) {
+  if (props.lang === "en"){
+
+  return (
+    <React.Fragment>
+      <Grid item xs={5}>
+           <Paper style={styles.Paper} elevation={5}>
+              Left pane
+          </Paper>
+      </Grid>
+      <Grid item xs={7}>
+           <Paper style={styles.Paper} elevation={5}>
+              <Tableau9/>
+          </Paper>
+      </Grid>
+    </React.Fragment>
+  );
+  } else {
+    return (
+    <React.Fragment>
+      <Grid item xs={5}>
+           <Paper style={styles.Paper} elevation={5}>
+              Left pane
+          </Paper>
+      </Grid>
+      <Grid item xs={7}>
+           <Paper style={styles.Paper} elevation={5}>
+              <Tableau9/>
+          </Paper>
+      </Grid>
+    </React.Fragment>
+    );
+  }
+}
 
 class Exercises extends Component {
    
@@ -385,6 +420,9 @@ class Exercises extends Component {
         </Grid>
         <Grid container item xs={12} spacing={3} id="8">
             <FormRow8 lang={this.props.lang}/>
+        </Grid>
+        <Grid container item xs={12} spacing={3} id="9">
+            <FormRow9 lang={this.props.lang}/>
         </Grid>
       </Grid>
   )
