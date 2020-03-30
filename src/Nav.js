@@ -93,8 +93,8 @@ class Nav extends Component {
         var drawer;
         if (this.props.lang === "en") {
             drawer = (<div>
-                <img src="./mcgilluni.ico" alt="" align="center" style={{ 'marginTop': '10%', 
-                 'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50%'}}/>
+                <img src="./mcgilluni.ico" alt="" align="center" style={{ 'marginTop':'9%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
                              {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
@@ -141,8 +141,8 @@ class Nav extends Component {
             );
         } else {
             drawer = (<div>
-                <img src="./mcgilluni.ico" alt="" align="center" style={{ 'marginTop': '10%', 
-                 'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50%'}}/>
+                <img src="./mcgilluni.ico" alt="" align="center" style={{ 'marginTop':'9%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
                              {['C Dashboard', 'C Cases', 'C Types', 'C', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
