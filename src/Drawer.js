@@ -74,7 +74,7 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black', 'width':'10%' }}
+                    <Button variant="contained" style={{'marginLeft':'85%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
@@ -91,7 +91,7 @@ class ResponsiveDrawer extends Component {
                     <img src="./qc.ico" alt="" align="center" style={{ 
                             'display': 'block', 'width': '10%', 'height':'10%'}}/>
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                             COVID-19 Quebec Dashboard
                         </Typography>
                     </div>
@@ -110,7 +110,7 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
+                    <Button variant="contained" style={{'marginLeft':'85%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
@@ -127,7 +127,7 @@ class ResponsiveDrawer extends Component {
                     <img src="./qc.ico" alt="" align="center" style={{ 
                             'display': 'block', 'width': '10%', 'height':'10%'}}/>
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                             Tableau de bord COVID-19 Québec
                         </Typography>
                     </div>

@@ -55,7 +55,7 @@ class App extends Component{
                   openExternal: true,
                 },
               ]}
-              style={{'marginLeft':'5%', 'color':'white', 'fontSize':'10px'}}
+              style={{'paddingLeft':'10%','color':'white', 'fontSize':'10px'}}
               bottom="Copyright"
               theme="dark"
               backgroundColor="#334B63"
