@@ -118,7 +118,7 @@ class ResponsiveDrawer extends Component {
 
     drawer = (
         <div>
-            <img src="./mcgilluni.ico" alt="" align="center" height="75px" width="100px" style={{'marginLeft': '18%', 'marginTop': '10%', 
+            <img src="./mcgilluni.ico" alt="" align="center" height="75px" width="140px" style={{ 'marginTop': '10%', 
             'display': 'block', 'margin-left': 'auto', 'margin-right': 'auto', 'width': '50%'}}/>
         <Divider />
         <List>
