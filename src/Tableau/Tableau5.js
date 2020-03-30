@@ -9,7 +9,7 @@ class Tableau5 extends Component {
   
   
   initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/GlobalTrends1';  
+    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Trends2';  
     const vizContainer = this.vizContainer;
     const options = {
         hideTabs: true,
