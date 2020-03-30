@@ -15,6 +15,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
 
+
 function scrollToTargetAdjusted(el){
     var element = document.getElementById(el);
     var headerOffset = 70;
@@ -136,7 +137,8 @@ class ResponsiveDrawer extends Component {
                     onClick={() => this.getLang()}>
                     {this.state.lang}
                 </Button>
-                <Toolbar>
+
+                <Toolbar style={{'alignSelf':'center'}}>
                 <IconButton
                     color="inherit"
                     aria-label="open drawer"
@@ -145,9 +147,13 @@ class ResponsiveDrawer extends Component {
                     className={classes.menuButton}
                 >
                 </IconButton>
-                <Typography variant="h6" noWrap style={{'marginLeft':'10%'}}>
-                    COVID-19 Quebec Dashboard
-                </Typography>
+                <div style={{'display': 'inherit'}}>
+                    <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'display': 'inline-block'}}/>
+
+                    <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                        COVID-19 Quebec Dashboard
+                    </Typography>
+                </div>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="mailbox folders">

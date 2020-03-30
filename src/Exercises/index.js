@@ -39,6 +39,33 @@ const styles = {
         h3:{ color:"#334B63", align:"center"    }
 }
 
+function FormRow0(props){
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12}>
+             <Paper style={styles.Paper}>
+             Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill university members decided to work together to design an infographic data dashboard that relies solely on official government figures. 
+
+                We are a group of professors, data science students, and software engineers striving to raise awareness about the spread of the pandemic in our province. This Information will be updated daily.  If you wish to help, please contact us at info@covidqc.com. 
+            </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12}>
+              <Paper style={styles.Paper}>
+              Les Québecois ne subissent pas seulement la pandémie du Covid-19, mais ils font également face à une avalanche d’informations souvent erronées. Pour contrer cette désinformation; les membres de l’université de McGill ont unis leurs forces et présentés une solution aux québécois afin qu’ils gèrent intelligemment cette crise.  
+
+Nous sommes un groupe de professeurs, étudiants en science des données et en génie logiciel qui avons élaboré un tableau de bord interactif qui fournit les éléments clés concernant le COVID-19. Cette page web a pour but de sensibiliser les québécois et ultimement contribuer à l’aplanissement de cette si fameuse courbe de contagion du virus en offrant des informations fiable, complète et à jour aux québécois.  
+               </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  }
+}
 
 function FormRow1(props) {
   const classes = useStyles();
@@ -331,6 +358,9 @@ class Exercises extends Component {
   render() {
   return (
       <Grid container>
+        <Grid container item xs={12} spacing={3} id="1">
+            <FormRow0 lang={this.props.lang}/>
+        </Grid>
         <Grid container item xs={12} spacing={3} id="1">
             <FormRow1 lang={this.props.lang}/>
         </Grid>
