@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
+import Nav from './Nav'
 
 
 function scrollToTargetAdjusted(el){
@@ -116,21 +110,6 @@ class ResponsiveDrawer extends Component {
         
     }
 
-    drawer = (
-        <div>
-            <img src="./mcgilluni.ico" alt="" align="center" height="75px" width="140px" style={{ 'marginTop': '10%', 
-            'display': 'block', 'margin-left': 'auto', 'margin-right': 'auto', 'width': '50%'}}/>
-        <Divider />
-        <List>
-            {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
-            <ListItem button key={text} onClick={() => this.jumpTo(index)}>
-                <ListItemText primary={text} />
-            </ListItem>
-            ))}
-        </List>
-        <Divider />
-        </div>
-    );
     render(){
         const {classes} = this.props;
         return (
@@ -158,37 +137,7 @@ class ResponsiveDrawer extends Component {
                 </div>
                 </Toolbar>
             </AppBar>
-            <nav className={classes.drawer} aria-label="mailbox folders">
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                <Hidden smUp implementation="css">
-                <Drawer
-                    container={this}
-                    variant="temporary"
-                    anchor='left'
-                    open={this.mobileOpen}
-                    onClose={this.handleDrawerToggle}
-                    classes={{
-                    paper: classes.drawerPaper,
-                    }}
-                    ModalProps={{
-                    keepMounted: true, // Better open performance on mobile.
-                    }}
-                >
-                    {this.drawer}
-                </Drawer>
-                </Hidden>
-                <Hidden xsDown implementation="css">
-                <Drawer
-                    classes={{
-                    paper: classes.drawerPaper,
-                    }}
-                    variant="permanent"
-                    open
-                >
-                    {this.drawer}
-                </Drawer>
-                </Hidden>
-            </nav>
+            <Nav lang={this.state.lang}/>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Exercises lang={this.state.lang}/>
