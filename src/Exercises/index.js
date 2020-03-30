@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const styles = {
         Paper: { padding: 30, marginTop: 20, marginBottom:30},
+        Welcome: {padding: 30, marginTop: 20, marginBottom:30, background:"#e3f3ff"},
         h3:{ color:"#334B63", align:"center"    }
 }
 
@@ -44,7 +45,7 @@ function FormRow0(props){
     return (
       <React.Fragment>
         <Grid item xs={12}>
-             <Paper style={styles.Paper}>
+             <Paper style={styles.Welcome}  elevation={10} >
              Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill university members decided to work together to design an infographic data dashboard that relies solely on official government figures. 
 
                 We are a group of professors, data science students, and software engineers striving to raise awareness about the spread of the pandemic in our province. This Information will be updated daily.  If you wish to help, please contact us at info@covidqc.com. 
@@ -56,7 +57,7 @@ function FormRow0(props){
     return (
       <React.Fragment>
         <Grid item xs={12}>
-              <Paper style={styles.Paper}>
+              <Paper style={styles.Welcome} elevation={10}>
               Les Québecois ne subissent pas seulement la pandémie du Covid-19, mais ils font également face à une avalanche d’informations souvent erronées. Pour contrer cette désinformation; les membres de l’université de McGill ont unis leurs forces et présentés une solution aux québécois afin qu’ils gèrent intelligemment cette crise.  
 
 Nous sommes un groupe de professeurs, étudiants en science des données et en génie logiciel qui avons élaboré un tableau de bord interactif qui fournit les éléments clés concernant le COVID-19. Cette page web a pour but de sensibiliser les québécois et ultimement contribuer à l’aplanissement de cette si fameuse courbe de contagion du virus en offrant des informations fiable, complète et à jour aux québécois.  
@@ -85,7 +86,7 @@ function FormRow1(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau1/>
             </Paper>
         </Grid>
@@ -100,7 +101,7 @@ function FormRow1(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau1/>
             </Paper>
         </Grid>
@@ -120,7 +121,7 @@ function FormRow2(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-            <Paper style={styles.Paper} elevation={10}>
+            <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
         </Grid>
@@ -135,7 +136,7 @@ function FormRow2(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-            <Paper style={styles.Paper} elevation={10}>
+            <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
         </Grid>
@@ -156,7 +157,7 @@ function FormRow3(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau3/>
           </Paper>
       </Grid>
@@ -171,7 +172,7 @@ function FormRow3(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau3/>
             </Paper>
         </Grid>
@@ -191,7 +192,7 @@ function FormRow4(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau4/>
           </Paper>
       </Grid>
@@ -206,7 +207,7 @@ function FormRow4(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau4/>
             </Paper>
         </Grid>
@@ -226,7 +227,7 @@ function FormRow5(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau5/>
           </Paper>
       </Grid>
@@ -241,7 +242,7 @@ function FormRow5(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau5/>
             </Paper>
         </Grid>
@@ -260,7 +261,7 @@ function FormRow6(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau6/>
           </Paper>
       </Grid>
@@ -275,7 +276,7 @@ function FormRow6(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau6/>
             </Paper>
         </Grid>
@@ -294,7 +295,7 @@ function FormRow7(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau7/>
           </Paper>
       </Grid>
@@ -309,7 +310,7 @@ function FormRow7(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={10}>
+             <Paper style={styles.Paper} elevation={5}>
                 <Tableau7/>
             </Paper>
         </Grid>
@@ -329,7 +330,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau8/>
           </Paper>
       </Grid>
@@ -344,7 +345,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
-           <Paper style={styles.Paper} elevation={10}>
+           <Paper style={styles.Paper} elevation={5}>
               <Tableau8/>
           </Paper>
       </Grid>
