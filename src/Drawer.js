@@ -74,36 +74,36 @@ function ResponsiveDrawer(props) {
         switch (id) {
             case 0:
                 
-                document.getElementById("first").scrollIntoView({behavior: 'smooth' });
+                document.getElementById("1").scrollIntoView({behavior: 'smooth' });
                 
                 //window.location.href = "#first";
                 break;
             case 1:
-                document.getElementById("second").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("2").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#second";
                 break;
             case 2:
-                document.getElementById("third").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("3").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#third";
                 break;
             case 3:
-                document.getElementById("fourth").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("4").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#fourth";
                 break;
             case 4:
-                document.getElementById("fifth").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("5").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#fifth";
                 break;
             case 5:
-                document.getElementById("sixth").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("6").scrollIntoView({ behavior: 'smooth' });
                // window.location.href = "#sixth";
                 break;
             case 6:
-                document.getElementById("seventh").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("7").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#seventh";
                 break;
             case 7:
-                document.getElementById("eighth").scrollIntoView({ behavior: 'smooth' });
+                document.getElementById("8").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#eighth";
                 break;
             default:
