@@ -77,12 +77,12 @@ function FormRow1(props) {
         <Grid item xs={5}>
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h3}>French: Map of Quebec’s administrative region </h1>
-                <font size="3" color="#334B63" marginBottom="100">These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of the entire region of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases in each region by clicking on the maps.
+                <font size="3" color="#334B63" margin-bottom="100">These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of the entire region of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases in each region by clicking on the maps.
                 <br></br><br></br><br></br> </font>
 
                 <Divider variant="middle"/>
                 <h1 style={styles.h3}>Map of Quebec’s administrative region </h1>
-                <font size="3" color="#334B63" marginBottom="100"><br></br>These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of the entire region of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases in each region by clicking on the maps. 
+                <font size="3" color="#334B63" margin-bottom="100"><br></br>These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of the entire region of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases in each region by clicking on the maps. 
                 <br></br><br></br> </font>
             </Paper>
         </Grid>
@@ -394,7 +394,7 @@ class Exercises extends Component {
   render() {
   return (
       <Grid container>
-        <Grid container item xs={12} spacing={3} id="1">
+        <Grid container item xs={12} spacing={3} id="0">
             <FormRow0 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="1">

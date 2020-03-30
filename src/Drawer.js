@@ -10,18 +10,6 @@ import Button from '@material-ui/core/Button';
 import Nav from './Nav'
 
 
-function scrollToTargetAdjusted(el){
-    var element = document.getElementById(el);
-    var headerOffset = 70;
-    var elementPosition = element.offsetTop;
-    var offsetPosition = elementPosition - headerOffset;
-
-    window.scrollTo({
-         top: offsetPosition,
-         behavior: "smooth"
-    });
-}
-
 const useStyles = theme => ({
         root: {
           display: 'flex',
@@ -75,40 +63,6 @@ class ResponsiveDrawer extends Component {
         this.setState({mobileOpen: !this.state.mobileOpen});
     };
 
-    jumpTo = (id) => {
-        switch (id) {
-            case 0:
-                scrollToTargetAdjusted("1");
-                break;
-            case 1:
-                scrollToTargetAdjusted("2");
-                break;
-            case 2:
-                scrollToTargetAdjusted("3");
-                break;
-            case 3:
-                scrollToTargetAdjusted("4");
-                break;
-            case 4:
-                scrollToTargetAdjusted("5");
-                break;
-            case 5:
-                scrollToTargetAdjusted("6");
-                break;
-            case 6:
-                scrollToTargetAdjusted("7");
-                break;
-            case 7:
-                scrollToTargetAdjusted("8");
-                break;
-            case 8:
-                scrollToTargetAdjusted("9");
-                break;
-            default:
-                break;
-        }
-        
-    }
 
     render(){
         const {classes} = this.props;
