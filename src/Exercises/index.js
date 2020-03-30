@@ -128,7 +128,7 @@ function FormRowTemp(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
-              <DWChart title="Chart" src="//datawrapper.dwcdn.net/9m653/1/" />
+              <DWChart title="Chart" src="//datawrapper.dwcdn.net/TIjYX/1/" />
             </Paper>
         </Grid>
       </React.Fragment>
@@ -144,7 +144,7 @@ function FormRowTemp(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
-              <DWChart title="Chart" src="//datawrapper.dwcdn.net/9m653/1/" />
+              <DWChart title="Chart" src="//datawrapper.dwcdn.net/TIjYX/1/" />
             </Paper>
         </Grid>
       </React.Fragment>

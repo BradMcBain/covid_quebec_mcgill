@@ -123,13 +123,8 @@ class ResponsiveDrawer extends Component {
                     >
                     </IconButton>
                     <div style={{'display': 'inherit'}}>
-<<<<<<< HEAD
-                        <Typography variant="h4" style={{'marginLeft':'20%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
-                            COVID-19 Quebec Dashboard
-=======
                         <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                             Tableau de bord COVID-19 Québec
->>>>>>> 3946299172530706fafdab8ba4184559789c0c5d
                         </Typography>
                     </div>
                     </Toolbar>
