@@ -47,7 +47,8 @@ class ResponsiveDrawer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lang: "en",
+            lang: "fr",
+            displayTranslate: "English",
             mobileOpen: false,
         }
     }
@@ -55,8 +56,10 @@ class ResponsiveDrawer extends Component {
     getLang = () => {
         if (this.state.lang === "en"){
             this.setState({lang: "fr"});
+            this.setState({displayTranslate: "English"});
         } else {
             this.setState({lang: "en"});
+            this.setState({displayTranslate: "Français"});
         }
     }  
     handleDrawerToggle = () => {
@@ -66,39 +69,76 @@ class ResponsiveDrawer extends Component {
 
     render(){
         const {classes} = this.props;
-        return (
-            <div className={classes.root}>
-            <CssBaseline />
-            <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
-                    onClick={() => this.getLang()}>
-                    {this.state.lang}
-                </Button>
-
-                <Toolbar style={{'alignSelf':'center'}}>
-                <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
-                    onClick={this.handleDrawerToggle}
-                    className={classes.menuButton}
-                >
-                </IconButton>
-                <div style={{'display': 'inherit'}}>
-                    <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
-                        COVID-19 Quebec Dashboard
-                    </Typography>
+        if (this.state.lang === "en") {
+            return (
+                <div className={classes.root}>
+                <CssBaseline />
+                <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
+                    <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
+                        onClick={() => this.getLang()}>
+                        {this.state.displayTranslate}
+                    </Button>
+    
+                    <Toolbar style={{'alignSelf':'center'}}>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={this.handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                    </IconButton>
+                    <div style={{'display': 'inherit'}}>
+                        <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                            COVID-19 Quebec Dashboard
+                        </Typography>
+                    </div>
+                    </Toolbar>
+                </AppBar>
+                <Nav lang={this.state.lang}/>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Exercises lang={this.state.lang}/>
+                    
+                </main>
                 </div>
-                </Toolbar>
-            </AppBar>
-            <Nav lang={this.state.lang}/>
-            <main className={classes.content}>
-                <div className={classes.toolbar} />
-                <Exercises lang={this.state.lang}/>
-                
-            </main>
-            </div>
-        );
+            );
+        } else {
+            return (
+                <div className={classes.root}>
+                <CssBaseline />
+                <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
+                    <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
+                        onClick={() => this.getLang()}>
+                        {this.state.displayTranslate}
+                    </Button>
+    
+                    <Toolbar style={{'alignSelf':'center'}}>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={this.handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                    </IconButton>
+                    <div style={{'display': 'inherit'}}>
+                        <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                            COVID-19 Quebec Dashboard
+                        </Typography>
+                    </div>
+                    </Toolbar>
+                </AppBar>
+                <Nav lang={this.state.lang}/>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Exercises lang={this.state.lang}/>
+                    
+                </main>
+                </div>
+            );
+        }
+        
     }
 }
 
