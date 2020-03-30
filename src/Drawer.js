@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -11,7 +11,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
 
@@ -27,61 +27,60 @@ function scrollToTargetAdjusted(el){
     });
 }
 
-const drawerWidth = '10%';
+const useStyles = theme => ({
+        root: {
+          display: 'flex',
+        },
+        drawer: {
+          [theme.breakpoints.up('sm')]: {
+            width: '10%',
+            flexShrink: 0,
+          },
+        },
+        appBar: {
+          [theme.breakpoints.up('sm')]: {
+            width: `calc(100% - '10%')`,
+            marginLeft: '10%',
+          },
+        },
+        menuButton: {
+          marginRight: theme.spacing(2),
+          [theme.breakpoints.up('sm')]: {
+            display: 'none',
+          },
+        },
+        // necessary for content to be below app bar
+        toolbar: theme.mixins.toolbar,
+        drawerPaper: {
+          width: '10%',
+        },
+        content: {
+          flexGrow: 1,
+          padding: theme.spacing(3),
+        },
+});
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  appBar: {
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth})`,
-      marginLeft: drawerWidth,
-    },
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-  },
-  // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
-  },
-}));
-
-function ResponsiveDrawer(props) {
-    const { container } = props;
-    const classes = useStyles();
-    const theme = useTheme();
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [lang, setLang] = React.useState("en");
-    const getLang = () => {
-        if (lang === "en"){
-          // t.state.lang = "fr";
-          setLang("fr");
+class ResponsiveDrawer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            lang: "en",
+            mobileOpen: false,
+        }
+    }
+    
+    getLang = () => {
+        if (this.state.lang === "en"){
+            this.setState({lang: "fr"});
         } else {
-          // t.state.lang = "en";
-          setLang("en");
+            this.setState({lang: "en"});
         }
     }  
-    const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
+    handleDrawerToggle = () => {
+        this.setState({mobileOpen: !this.state.mobileOpen});
     };
 
-    const jumpTo = (id) => {
+    jumpTo = (id) => {
         switch (id) {
             case 0:
                 scrollToTargetAdjusted("1");
@@ -113,13 +112,13 @@ function ResponsiveDrawer(props) {
         
     }
 
-    const drawer = (
+    drawer = (
         <div>
             <img src="./mcgilllogo.ico" alt="" height="50px" width="50px" style={{'marginLeft': '30%', 'marginTop': '10%'}}/>
         <Divider />
         <List>
             {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
-            <ListItem button key={text} onClick={() => jumpTo(index)}>
+            <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                 <ListItemText primary={text} />
             </ListItem>
             ))}
@@ -127,75 +126,70 @@ function ResponsiveDrawer(props) {
         <Divider />
         </div>
     );
-
-    return (
-        <div className={classes.root}>
-        <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-            <Button variant="contained" style={{'marginLeft':'90%', 'marginRight': '1%', 'marginTop': '1%','backgroundColor': '#A8CBE5', 'color': 'black'}}
-                onClick={() => getLang()}>
-                {lang}
-            </Button>
-            <Toolbar>
-            <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-                className={classes.menuButton}
-            >
-            </IconButton>
-            <Typography variant="h6" noWrap>
-                COVID-19 Quebec Dashboard
-            </Typography>
-            </Toolbar>
-        </AppBar>
-        <nav className={classes.drawer} aria-label="mailbox folders">
-            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-            <Hidden smUp implementation="css">
-            <Drawer
-                container={container}
-                variant="temporary"
-                anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-                open={mobileOpen}
-                onClose={handleDrawerToggle}
-                classes={{
-                paper: classes.drawerPaper,
-                }}
-                ModalProps={{
-                keepMounted: true, // Better open performance on mobile.
-                }}
-            >
-                {drawer}
-            </Drawer>
-            </Hidden>
-            <Hidden xsDown implementation="css">
-            <Drawer
-                classes={{
-                paper: classes.drawerPaper,
-                }}
-                variant="permanent"
-                open
-            >
-                {drawer}
-            </Drawer>
-            </Hidden>
-        </nav>
-        <main className={classes.content}>
-            <div className={classes.toolbar} />
-            <Exercises/>
-            
-        </main>
-        </div>
-    );
+    render(){
+        const {classes} = this.props;
+        return (
+            <div className={classes.root}>
+            <CssBaseline />
+            <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
+                <Button variant="contained" style={{'marginLeft':'90%', 'backgroundColor': '#A8CBE5', 'color': 'black'}}
+                    onClick={() => this.getLang()}>
+                    {this.state.lang}
+                </Button>
+                <Toolbar>
+                <IconButton
+                    color="inherit"
+                    aria-label="open drawer"
+                    edge="start"
+                    onClick={this.handleDrawerToggle}
+                    className={classes.menuButton}
+                >
+                </IconButton>
+                <Typography variant="h6" noWrap style={{'marginLeft':'10%'}}>
+                    COVID-19 Quebec Dashboard
+                </Typography>
+                </Toolbar>
+            </AppBar>
+            <nav className={classes.drawer} aria-label="mailbox folders">
+                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+                <Hidden smUp implementation="css">
+                <Drawer
+                    container={this}
+                    variant="temporary"
+                    anchor='left'
+                    open={this.mobileOpen}
+                    onClose={this.handleDrawerToggle}
+                    classes={{
+                    paper: classes.drawerPaper,
+                    }}
+                    ModalProps={{
+                    keepMounted: true, // Better open performance on mobile.
+                    }}
+                >
+                    {this.drawer}
+                </Drawer>
+                </Hidden>
+                <Hidden xsDown implementation="css">
+                <Drawer
+                    classes={{
+                    paper: classes.drawerPaper,
+                    }}
+                    variant="permanent"
+                    open
+                >
+                    {this.drawer}
+                </Drawer>
+                </Hidden>
+            </nav>
+            <main className={classes.content}>
+                <div className={classes.toolbar} />
+                <Exercises lang={this.state.lang}/>
+                
+            </main>
+            </div>
+        );
+    }
 }
 
-ResponsiveDrawer.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  container: PropTypes.any,
-};
 
-export default ResponsiveDrawer;
+export default withStyles(useStyles)(ResponsiveDrawer);
