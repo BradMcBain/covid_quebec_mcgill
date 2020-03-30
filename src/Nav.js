@@ -50,6 +50,9 @@ const useStyles = theme => ({
       flexGrow: 1,
       padding: theme.spacing(3),
     },
+    li: {
+        fontSize: '0.9rem',
+      },
 });
 
 class Nav extends Component {
@@ -97,9 +100,9 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
+                             {['Geographical Dashboard', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Daily Changes', 'Death Rates'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
-                                 <ListItemText primary={text} />
+                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
                          </List>
@@ -145,9 +148,9 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['C Dashboard', 'C Cases', 'C Types', 'C', 'Global Death Trends', 'Global Testing and Cases', 'Quebec Statistics 1', 'Quebec Statistics 2'].map((text, index) => (
+                             {['Carte de Québec', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès', 'Taux de tests comparative', 'Changements quotidiens', 'Taux de mortalité'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
-                                 <ListItemText primary={text} />
+                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
                          </List>
