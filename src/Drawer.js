@@ -88,6 +88,8 @@ class ResponsiveDrawer extends Component {
                         className={classes.menuButton}
                     >
                     </IconButton>
+                    <img src="./qc.ico" alt="" align="center" style={{ 
+                            'display': 'block', 'width': '10%', 'height':'10%'}}/>
                     <div style={{'display': 'inherit'}}>
                         <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                             COVID-19 Quebec Dashboard
@@ -122,6 +124,8 @@ class ResponsiveDrawer extends Component {
                         className={classes.menuButton}
                     >
                     </IconButton>
+                    <img src="./qc.ico" alt="" align="center" style={{ 
+                            'display': 'block', 'width': '10%', 'height':'10%'}}/>
                     <div style={{'display': 'inherit'}}>
                         <Typography variant="h4" style={{'marginLeft':'10%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
                             Tableau de bord COVID-19 Québec
