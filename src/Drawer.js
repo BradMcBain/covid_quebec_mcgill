@@ -73,8 +73,7 @@ function ResponsiveDrawer(props) {
     const jumpTo = (id) => {
         switch (id) {
             case 0:
-<<<<<<< HEAD
-                document.getElementById("first").scrollTop += 10;
+                
                 document.getElementById("first").scrollIntoView({behavior: 'smooth' });
                 
                 //window.location.href = "#first";
@@ -106,30 +105,6 @@ function ResponsiveDrawer(props) {
             case 7:
                 document.getElementById("eighth").scrollIntoView({ behavior: 'smooth' });
                 //window.location.href = "#eighth";
-=======
-                window.location.href = "#1";
-                break;
-            case 1:
-                window.location.href = "#2";
-                break;
-            case 2:
-                window.location.href = "#3";
-                break;
-            case 3:
-                window.location.href = "#4";
-                break;
-            case 4:
-                window.location.href = "#5";
-                break;
-            case 5:
-                window.location.href = "#6";
-                break;
-            case 6:
-                window.location.href = "#7";
-                break;
-            case 7:
-                window.location.href = "#8";
->>>>>>> 379edf2324a487ca6923bb29bf959b56e6a1272a
                 break;
             default:
                 break;
