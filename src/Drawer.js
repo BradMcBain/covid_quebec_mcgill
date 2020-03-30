@@ -15,6 +15,17 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
 
+function scrollToTargetAdjusted(el){
+    var element = document.getElementById(el);
+    var headerOffset = 70;
+    var elementPosition = element.offsetTop;
+    var offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
+}
 
 const drawerWidth = '10%';
 
@@ -73,38 +84,28 @@ function ResponsiveDrawer(props) {
     const jumpTo = (id) => {
         switch (id) {
             case 0:
-                
-                document.getElementById("1").scrollIntoView({behavior: 'smooth' });
-                
-                //window.location.href = "#first";
+                scrollToTargetAdjusted("1");
                 break;
             case 1:
-                document.getElementById("2").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#second";
+                scrollToTargetAdjusted("2");
                 break;
             case 2:
-                document.getElementById("3").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#third";
+                scrollToTargetAdjusted("3");
                 break;
             case 3:
-                document.getElementById("4").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#fourth";
+                scrollToTargetAdjusted("4");
                 break;
             case 4:
-                document.getElementById("5").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#fifth";
+                scrollToTargetAdjusted("5");
                 break;
             case 5:
-                document.getElementById("6").scrollIntoView({ behavior: 'smooth' });
-               // window.location.href = "#sixth";
+                scrollToTargetAdjusted("6");
                 break;
             case 6:
-                document.getElementById("7").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#seventh";
+                scrollToTargetAdjusted("7");
                 break;
             case 7:
-                document.getElementById("8").scrollIntoView({ behavior: 'smooth' });
-                //window.location.href = "#eighth";
+                scrollToTargetAdjusted("8");
                 break;
             default:
                 break;
