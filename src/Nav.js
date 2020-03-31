@@ -101,8 +101,8 @@ class Nav extends Component {
         var drawer;
         if (this.props.lang === "en") {
             drawer = (<div>
-                <img src="./mcgilluni.ico" alt="" align="center" style={{ 'marginTop':'9%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
+                <img src="./mcgilllogo.ico" alt="" align="center" style={{ 'marginTop':'2%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45%'}}/>
                      <Divider />
                          <List>
                              {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases per day', 'Cases by type', 'Testing rates', 'Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
