@@ -101,7 +101,7 @@ class Nav extends Component {
         var drawer;
         if (this.props.lang === "en") {
             drawer = (<div>
-                <img src="./mcgilllogo.ico" alt="" align="center" style={{ 'marginTop':'2%', 
+                <img src="./white.png" alt="" align="center" style={{ 'marginTop':'2%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45%'}}/>
                      <Divider />
                          <List>
@@ -149,7 +149,7 @@ class Nav extends Component {
             );
         } else {
             drawer = (<div>
-                <img src="./mcgilllogo.ico" alt="" align="center" style={{ 'marginTop':'2%', 
+                <img src="./white.png" alt="" align="center" style={{ 'marginTop':'10%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45%'}}/>
                      <Divider />
                          <List>
