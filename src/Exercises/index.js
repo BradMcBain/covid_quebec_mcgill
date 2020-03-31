@@ -161,13 +161,7 @@ function FormRow2(props) {
   if (props.lang === "en"){
     return (
       <React.Fragment>
-        <Grid item xs={4} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
-            <h1 style={styles.h3}>Total cases per region</h1>
-              <font size="4" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day.
-              </font>
-            </Paper>
-        </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
             <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
@@ -177,13 +171,7 @@ function FormRow2(props) {
   } else {
     return (
       <React.Fragment>
-        <Grid item xs={4} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
-            <h1 style={styles.h3}>Nombre total de cas par région</h1>
-              <font size="4" color="#334B63" margin-bottom="100">Cette matrice de données illustre le nombre de cas quotidien dans chaque région
-              </font>
-            </Paper>
-        </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
             <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
