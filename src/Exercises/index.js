@@ -55,7 +55,7 @@ function FormRow0(props){
              <h1 style={styles.h3}>Welcome</h1>
              <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill university members decided to work together to design am infographic data dashboard, that relies solely on official government figures.<br></br><br></br> 
 
-              We are a group of professors, data scientists’ students, and software engineering, who strive to raise awareness about the spread of the pandemic in our province. This Information will be updated daily.  If you wish to help, please contact us at info@covidqc.com. 
+              We are a group of professors, data scientists’ students, and software engineering, who strive to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at info@covidqc.com. 
            </font>
             </Paper>
         </Grid>
@@ -162,7 +162,7 @@ function FormRow2(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
             <h1 style={styles.h3}>Total cases per region</h1>
-              <font size="4" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day
+              <font size="4" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day.
               </font>
             </Paper>
         </Grid>
@@ -423,7 +423,7 @@ function FormRow9(props) {
            <h1 style={styles.h3}>Death rate and  days to double</h1>
               <font size="4" color="#334B63" margin-bottom="100">
               This exhibit shows three statistics. In the left-most column depicts the death rate (deaths/ confirmed cases) in Quebec. The middle and right-most columns depict how long it has taken for the number of case to double, as a function of time. The higher these figures are, the slower the disease is spreading.
-              <br></br><br></br>Note: To calculate “days to double.” we use the following formula: ln(2)/ln(1+r), where r is the 3-day increase rate  smoothed average</font>
+              <br></br><br></br>Note: To calculate “days to double.” we use the following formula: ln(2)/ln(1+r), where r is the 3-day increase rate  smoothed average.</font>
           </Paper>
       </Grid>
       <Grid item xs={7}>
