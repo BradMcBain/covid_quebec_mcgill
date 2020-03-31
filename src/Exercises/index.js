@@ -458,7 +458,7 @@ class Exercises extends Component {
         <Grid container item xs={12} spacing={3} id="2">
             <FormRowTemp lang={this.props.lang}/>
         </Grid>
-        {/* <Grid container item xs={12} spacing={3} id="3">
+        <Grid container item xs={12} spacing={3} id="3">
             <FormRow2 lang={this.props.lang}/>
         </Grid>
         <Grid container item xs={12} spacing={3} id="4">
@@ -481,7 +481,7 @@ class Exercises extends Component {
         </Grid>
         <Grid container item xs={12} spacing={3} id="10">
             <FormRow9 lang={this.props.lang}/>
-        </Grid> */}
+        </Grid>
     </Grid>
   )
   }
