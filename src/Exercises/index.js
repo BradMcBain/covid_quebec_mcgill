@@ -11,10 +11,7 @@ import Tableau8 from '../Tableau/Tableau8'
 import Tableau9 from '../Tableau/Tableau9'
 import { Paper, Card } from "@material-ui/core"
 import PropTypes from 'prop-types';
-import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';
-import Chip from '@material-ui/core/Chip';
-import { textAlign } from '@material-ui/system';
 import DWChart from "react-datawrapper-chart";
 
 const useStyles = makeStyles((theme) => ({

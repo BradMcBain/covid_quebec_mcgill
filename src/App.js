@@ -2,15 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";
-import BottomNavigation from '@material-ui/core/BottomNavigation'
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
-import Button from '@material-ui/core/Button';
-import ReactDOM from 'react-dom'
 import Footer from 'rc-footer';
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
-import { render } from 'react-dom';
 import Drawer from './Drawer'
-import Exercises from './Exercises';
 
 if (isMobile) {
   localStorage.setItem("device","mobile");

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';  
-import tableau from 'tableau-api';  
   
   
 class Tableau9 extends Component {  
