@@ -53,9 +53,9 @@ function FormRow0(props){
         <Grid item xs={12}>
              <Paper style={styles.Welcome}  elevation={10} >
              <h1 style={styles.h3}>Welcome</h1>
-             <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill university members decided to work together to design am infographic data dashboard, that relies solely on official government figures.<br></br><br></br> 
+             <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill University members decided to work together to design an infographic data dashboard that relies solely on official government figures.<br></br><br></br> 
 
-              We are a group of professors, data scientists’ students, and software engineering, who strive to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at <b>info@covidqc.com</b>. 
+              We are a group of professors and data science & software engineering students striving to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at <b>info@covidqc.com</b>. 
            </font>
             </Paper>
         </Grid>
