@@ -50,13 +50,13 @@ class App extends Component{
                 {
    
                   title: 'This website and its contents herein, including all data, mapping, and analysis is provided to the public strictly for educational  purposes.  This data relies upon publicly available from Quebec\'s government (and foreign governments), which has been authorized for common usage. Reliance on the Website for medical guidance or use of the Website for commercial purposes is strictly prohibited.  Managers of this website are not responsible for source data or for any use of these data that goes beyond purely educational purposes.',
-                  url: 'https://yuque.com',
-                  description: '知识创作与分享工具',
+                  url: '',
+                  description: '',
                   openExternal: true,
                 },
               ]}
               style={{'paddingLeft':'10%','color':'white', 'fontSize':'10px'}}
-              bottom="Copyright"
+              bottom="Website developed by Bradley McBain & Brendan Marks"
               theme="dark"
               backgroundColor="#334B63"
             />

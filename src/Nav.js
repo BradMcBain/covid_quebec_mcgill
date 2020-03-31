@@ -51,7 +51,7 @@ const useStyles = theme => ({
       padding: theme.spacing(3),
     },
     li: {
-        fontSize: '0.9rem',
+        fontSize: '1.0rem',
       },
 });
 
@@ -103,7 +103,7 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['Geographical Dashboard', 'Montreal', 'Cases by Region', 'New Cases', 'Case Types', 'Testing', 'Global Death Trends', 'Global Testing and Cases', 'Daily Changes', 'Death Rates'].map((text, index) => (
+                             {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases per day', 'Cases by type', 'Testing rates', 'Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
@@ -151,7 +151,7 @@ class Nav extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '65%'}}/>
                      <Divider />
                          <List>
-                             {['Carte de Québec', 'Montreal','Cas par région', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès', 'Taux de tests comparative', 'Changements quotidiens', 'Taux de mortalité'].map((text, index) => (
+                             {['Carte de la région administrative du Québec', 'Arrondissements de Montréal','Cas par région', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès: Québec vs. Monde', 'Taux de tests: Québec vs. Monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>

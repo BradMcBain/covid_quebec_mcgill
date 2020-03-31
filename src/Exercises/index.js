@@ -9,13 +9,12 @@ import Tableau6 from '../Tableau/Tableau6'
 import Tableau7 from '../Tableau/Tableau7'
 import Tableau8 from '../Tableau/Tableau8'
 import Tableau9 from '../Tableau/Tableau9'
+import TableauMontreal from '../Tableau/TableauMontreal'
+
 import { Paper, Card } from "@material-ui/core"
 import PropTypes from 'prop-types';
-import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';
-import Chip from '@material-ui/core/Chip';
-import { textAlign } from '@material-ui/system';
-import DWChart from "react-datawrapper-chart";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
   section3: {
     margin: theme.spacing(3, 1, 1),
+  media: {
+      height: 140,
+    },
   },
 }));
 
@@ -44,6 +46,7 @@ const styles = {
 }
 
 function FormRow0(props){
+  const classes = useStyles();
   if (props.lang === "en"){
     return (
       <React.Fragment>
@@ -76,14 +79,14 @@ function FormRow0(props){
 }
 
 function FormRow1(props) {
-  const classes = useStyles();
+  
   if (props.lang === "en"){
     return (
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
-                 <h1 style={styles.h3}>Map of Quebec’s administrative region</h1>
-                <font size="3" color="#334B63" margin-bottom="100">These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases, in each region, by clicking on the maps. 
+                 <h1 style={styles.h3}>Map of Quebec’s administrative regions</h1>
+                <font size="4" color="#334B63" margin-bottom="100">These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases, in each region, by clicking on the maps. 
                 </font>
             </Paper>
         </Grid>
@@ -99,7 +102,7 @@ function FormRow1(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h3}>Carte de la région administrative du Québec</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
                 Ces deux cartes à code couleur illustrent le nombre de cas confirmés dans chacune des régions administratives du Québec. Une teinte de bleu foncée représente un nombre plus élevé de cas. Les graphiques de gauche représentent une carte du Québec. Le graphique à l'extrème droite fait un zoom sur les régions du sud du Québec. Vous pouvez voir le nombre exact de cas, par région, en cliquant sur les cartes. 
               </font>
             </Paper>
@@ -121,14 +124,14 @@ function FormRowTemp(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
-                 <h1 style={styles.h3}></h1>
-                <font size="3" color="#334B63" margin-bottom="100">
+                 <h1 style={styles.h3}>Montreal Neighbourhoods</h1>
+                <font size="4" color="#334B63" margin-bottom="100">This map shows the number of confirmed cases in each montreal borough. You can click on the map to see the exact number of cases in each neighbourhood.
                 </font>
             </Paper>
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
-              <DWChart title="Chart" src="//datawrapper.dwcdn.net/TIjYX/1/" />
+                <TableauMontreal/>
             </Paper>
         </Grid>
       </React.Fragment>
@@ -137,14 +140,14 @@ function FormRowTemp(props) {
     return (
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
-              <h1 style={styles.h3}></h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <h1 style={styles.h3}>Arrondissements de Montréal</h1>
+              <font size="4" color="#334B63" margin-bottom="100">Cette carte montre le nombre de cas confirmés dans chacun des arrondissements de Montréal. Vous pouvez cliquer sur la carte pour voir le nombre exact de cas dans chaque quartier.
               </font>
             </Paper>
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
-              <DWChart title="Chart" src="//datawrapper.dwcdn.net/TIjYX/1/" />
+              <TableauMontreal/>
             </Paper>
         </Grid>
       </React.Fragment>
@@ -159,7 +162,7 @@ function FormRow2(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
             <h1 style={styles.h3}>Total cases per region</h1>
-              <font size="3" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day
+              <font size="4" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day
               </font>
             </Paper>
         </Grid>
@@ -175,7 +178,7 @@ function FormRow2(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
             <h1 style={styles.h3}>Nombre total de cas par région</h1>
-              <font size="3" color="#334B63" margin-bottom="100">Cette matrice de données illustre le nombre de cas quotidien dans chaque région
+              <font size="4" color="#334B63" margin-bottom="100">Cette matrice de données illustre le nombre de cas quotidien dans chaque région
               </font>
             </Paper>
         </Grid>
@@ -197,7 +200,7 @@ function FormRow3(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Cases per day</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This stacked bar chart depicts the number of daily new cases in each region. To highlight a specific region, you can click on the graph.</font>
           </Paper>
       </Grid>
@@ -213,7 +216,7 @@ function FormRow3(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h3}>Cas par jour</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Ce graphique à barres empilées illustre le nombre de nouveaux cas quotidiens dans chaque région. Pour choisir une région spécifique, vous pouvez cliquer sur le graphique.</font>
             </Paper>
         </Grid>
@@ -234,7 +237,7 @@ function FormRow4(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Cases by Type</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This exhibit plots four trends: total cases, hospitalized cases, cases under intensive care, and deaths.</font>
           </Paper>
       </Grid>
@@ -250,7 +253,7 @@ function FormRow4(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h3}>Cas par type</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Cette exposition trace quatres tendances: nombre total de cas, cas hospitalisés, cas sous soins intensifs et décès.</font>
             </Paper>
         </Grid>
@@ -271,7 +274,7 @@ function FormRow5(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Testing rates</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This graph depicts the daily number of positive tests (confirmed cases), negative tests, and tests under investigation. Tests under investigation will eventually become positive or negative.</font>
            </Paper>
       </Grid>
@@ -287,7 +290,7 @@ function FormRow5(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h3}>Taux de tests</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Ce graphique illustre le nombre quotidien de tests positifs (cas confirmés), de tests négatifs et de tests sous enquête. Les tests sous enquête deviendront éventuellement positifs ou négatifs.</font>
             </Paper>
         </Grid>
@@ -307,7 +310,7 @@ function FormRow6(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Number of deaths: Quebec vs. The world</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This shows the trajectory in the number of cases in Quebec, relative to other countries. In the x-axis, we plot the number of days since the total number of deaths, in each region, reached five. In the y-axis, we plot the total number of deaths. The straight grey lines show trajectories for a doubling time of 2 days, 3 days, 5 days and 10 days. If a country’s line on the chart is higher than those lines, then its number of deaths is doubling faster than that.</font>
           </Paper>
       </Grid>
@@ -323,7 +326,7 @@ function FormRow6(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h3}>Nombre de décès: Québec vs. Monde</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Cela montre la trajectoire du nombre de cas au Québec, par rapport aux autres pays. Dans l'axe des abscisses (x), nous indiquons le nombre de jours depuis que le nombre total de décès a atteint cinq décès par région. Sur l'axe des ordonnées (y), nous indiquons le nombre total de décès. Les lignes droites grises indiquent les trajectoires pour un temps de doublement de 2 jours, 3 jours, 5 jours et 10 jours. Si la ligne d'un pays sur le graphique est plus haute que ces lignes, alors son nombre de décès double plus vite que cela.</font>
             </Paper>
         </Grid>
@@ -343,7 +346,7 @@ function FormRow7(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Testing rates: Quebec vs. The world</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This scatterplot illustrates how Quebec compares to the rest of Canada (and other countries), in terms of testing rates and number of cases. In the y axis, we test rate (number of tests per 100k inhabitants). In the x axis, we plot the number of cases. 
               <br></br><br></br>Ideally, we want regions to perform highly in terms of test rates, while having a low number of cases. That is, in an ideal scenario, regions should be in the upper-left region of the plot. You can click on the map to highlight a specific region.</font>
           </Paper>
@@ -360,7 +363,7 @@ function FormRow7(props) {
       <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h3}>Taux de tests: Québec vs. Monde</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Ce nuage de points illustre comment le Québec se compare au reste du Canada (et d’autres pays), en termes de taux de dépistage et de nombre de cas. Sur l’axe des ordonnées (y), nous testons le taux (nombre de tests pour 100 000 habitants). Sur l’axe des abscisses, nous traçons le nombre de cas. 
               <br></br><br></br>Idéalement, nous souhaitons que les régions soient très performantes en termes de taux de test, tout en ayant un faible nombre de cas. Autrement dit, dans un scénario idéal, les régions devraient se trouver dans la région supérieure gauche du graphique. Vous pouvez cliquer sur la carte pour choisir une région spécifique.</font>
             </Paper>
@@ -382,7 +385,7 @@ function FormRow8(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h3}>Daily rate changes</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This exhibit illustrates the daily percentage increase in cases, deaths, and hospitalizations.</font>
           </Paper>
       </Grid>
@@ -398,7 +401,7 @@ function FormRow8(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Changements quotidiens des taux</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Cette pièce illustre l'augmentation quotidienne en pourcentage des cas, des décès et des hospitalisations.</font>
           </Paper>
       </Grid>
@@ -418,7 +421,7 @@ function FormRow9(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Death rate and  days to double</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               This exhibit shows three statistics. In the left-most column depicts the death rate (deaths/ confirmed cases) in Quebec. The middle and right-most columns depict how long it has taken for the number of case to double, as a function of time. The higher these figures are, the slower the disease is spreading.
               <br></br><br></br>Note: To calculate “days to double.” we use the following formula: ln(2)/ln(1+r), where r is the 3-day increase rate  smoothed average</font>
           </Paper>
@@ -435,7 +438,7 @@ function FormRow9(props) {
     <React.Fragment>
         <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">           <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Taux de mortalité et jours pour doubler</h1>
-              <font size="3" color="#334B63" margin-bottom="100">
+              <font size="4" color="#334B63" margin-bottom="100">
               Cette exposition présente trois statistiques. La colonne de gauche représente le taux de mortalité (décès / cas confirmés) au Québec. Les colonnes du milieu et de la droite indiquent le temps qu'il a fallu pour que le nombre de cas double, en fonction du temps. Plus ces chiffres sont élevés, plus la maladie se propage lentement.</font>
           </Paper>
       </Grid>
@@ -450,9 +453,10 @@ function FormRow9(props) {
 }
 
 class Exercises extends Component {
-   
+  
   render() {
   return (
+    
       <Grid container>
         <Grid container item xs={12} spacing={3} id="0">
             <FormRow0 lang={this.props.lang}/>
@@ -487,7 +491,7 @@ class Exercises extends Component {
         <Grid container item xs={12} spacing={3} id="10">
             <FormRow9 lang={this.props.lang}/>
         </Grid>
-      </Grid>
+    </Grid>
   )
   }
 }
