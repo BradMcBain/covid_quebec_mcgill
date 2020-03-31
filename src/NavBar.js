@@ -104,8 +104,8 @@ class NavBar extends Component {
         var drawer;
         if (this.props.lang === "en") {
             drawer = (<div>
-                <img src="./white.png" alt="" align="center" style={{ 'marginTop':'2%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45%'}}/>
+                <img src="./qc.ico" alt="" align="center" style={{ 'marginTop':'5%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '60%'}}/>
                      <Divider />
                          <List>
                              {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases per day', 'Cases by type', 'Testing rates', 'Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
@@ -152,8 +152,8 @@ class NavBar extends Component {
             );
         } else {
             drawer = (<div>
-                <img src="./white.png" alt="" align="center" style={{ 'marginTop':'10%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45%'}}/>
+                <img src="./qc.ico" alt="" align="center" style={{ 'marginTop':'5%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '60%'}}/>
                      <Divider />
                          <List>
                              {['Carte de la région administrative du Québec', 'Arrondissements de Montréal','Cas par région', 'Cas par jour', 'Cas par type', 'Taux de tests', 'Nombre de décès: Québec vs. Monde', 'Taux de tests: Québec vs. Monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler'].map((text, index) => (
