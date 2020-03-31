@@ -1,20 +1,20 @@
 import React, { Component }  from 'react'
 import { Grid } from "@material-ui/core"
-import Tableau1 from '../Tableau/Tableau1'
-import Tableau2 from '../Tableau/Tableau2'
-import Tableau3 from '../Tableau/Tableau3'
-import Tableau4 from '../Tableau/Tableau4'
-import Tableau5 from '../Tableau/Tableau5'
-import Tableau6 from '../Tableau/Tableau6'
-import Tableau7 from '../Tableau/Tableau7'
-import Tableau8 from '../Tableau/Tableau8'
-import Tableau9 from '../Tableau/Tableau9'
-import TableauMontreal from '../Tableau/TableauMontreal'
 
 import { Paper, Card } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 
+const Tableau1 = React.lazy(()=> import('../Tableau/Tableau1'))
+const Tableau2 = React.lazy(()=> import('../Tableau/Tableau2'))
+const Tableau3 = React.lazy(()=> import('../Tableau/Tableau3'))
+const Tableau4 = React.lazy(()=> import('../Tableau/Tableau4'))
+const Tableau5 = React.lazy(()=> import('../Tableau/Tableau5'))
+const Tableau6 = React.lazy(()=> import('../Tableau/Tableau6'))
+const Tableau7 = React.lazy(()=> import('../Tableau/Tableau7'))
+const Tableau8 = React.lazy(()=> import('../Tableau/Tableau8'))
+const Tableau9 = React.lazy(()=> import('../Tableau/Tableau9'))
+const TableauMontreal = React.lazy(()=> import('../Tableau/TableauMontreal'))
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -92,9 +92,14 @@ function FormRow1(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
-             <Paper style={styles.Paper} elevation={5}>
-                <Tableau1/>
-            </Paper>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <Tableau1/>
+                  </React.Suspense>
+
+              </Paper>
         </Grid>
       </React.Fragment>
     );
@@ -109,9 +114,15 @@ function FormRow1(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
+
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau1/>
+                </React.Suspense>
+
             </Paper>
+
         </Grid>
       </React.Fragment>
     );
@@ -131,9 +142,16 @@ function FormRowTemp(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
+
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+
                 <TableauMontreal/>
+                </React.Suspense>
+
             </Paper>
+
         </Grid>
       </React.Fragment>
     );
@@ -147,9 +165,15 @@ function FormRowTemp(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
+
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
               <TableauMontreal/>
+              </React.Suspense>
+
             </Paper>
+
         </Grid>
       </React.Fragment>
     );
@@ -162,8 +186,13 @@ function FormRow2(props) {
     return (
       <React.Fragment>
         <Grid item xs={12}>
+
             <Paper style={styles.Paper} elevation={5}>
+            <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau2/>
+                </React.Suspense>
+
             </Paper>
         </Grid>
       </React.Fragment>
@@ -172,9 +201,15 @@ function FormRow2(props) {
     return (
       <React.Fragment>
         <Grid item xs={12}>
+
             <Paper style={styles.Paper} elevation={5}>
+            <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau2/>
+                </React.Suspense>
+
             </Paper>
+
         </Grid>
       </React.Fragment>
       );
@@ -194,9 +229,15 @@ function FormRow3(props) {
           </Paper>
       </Grid>
       <Grid item xs={7}>
+
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau3/>
+              </React.Suspense>
+
           </Paper>
+
       </Grid>
     </React.Fragment>
   );
@@ -210,9 +251,15 @@ function FormRow3(props) {
             </Paper>
         </Grid>
         <Grid item xs={7}>
+
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau3/>
+                </React.Suspense>
+
             </Paper>
+
         </Grid>
       </React.Fragment>
     );
@@ -232,7 +279,11 @@ function FormRow4(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau4/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -248,7 +299,11 @@ function FormRow4(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau4/>
+                </React.Suspense>
+
             </Paper>
         </Grid>
       </React.Fragment>
@@ -269,7 +324,11 @@ function FormRow5(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau5/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -285,7 +344,11 @@ function FormRow5(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau5/>
+                </React.Suspense>
+
             </Paper>
         </Grid>
       </React.Fragment>
@@ -305,7 +368,11 @@ function FormRow6(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau6/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -321,7 +388,11 @@ function FormRow6(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau6/>
+                </React.Suspense>
+
             </Paper>
         </Grid>
       </React.Fragment>
@@ -342,7 +413,11 @@ function FormRow7(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau7/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -359,7 +434,11 @@ function FormRow7(props) {
         </Grid>
         <Grid item xs={7}>
              <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
                 <Tableau7/>
+                </React.Suspense>
+
             </Paper>
         </Grid>
       </React.Fragment>
@@ -380,7 +459,11 @@ function FormRow8(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau8/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -396,7 +479,11 @@ function FormRow8(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau8/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -417,7 +504,11 @@ function FormRow9(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau9/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
@@ -433,7 +524,11 @@ function FormRow9(props) {
       </Grid>
       <Grid item xs={7}>
            <Paper style={styles.Paper} elevation={5}>
+           <React.Suspense fallback={<div>loading ..</div>}>
+
               <Tableau9/>
+              </React.Suspense>
+
           </Paper>
       </Grid>
     </React.Fragment>
