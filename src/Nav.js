@@ -25,14 +25,14 @@ const useStyles = theme => ({
     },
     drawer: {
       [theme.breakpoints.up('sm')]: {
-        width: '10%',
+        width: '12%',
         flexShrink: 0,
       },
     },
     appBar: {
       [theme.breakpoints.up('sm')]: {
-        width: `calc(100% - '10%')`,
-        marginLeft: '10%',
+        width: `calc(100% - '12%')`,
+        marginLeft: '12%',
       },
     },
     menuButton: {
@@ -44,15 +44,16 @@ const useStyles = theme => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
-      width: '10%',
+      width: '12%',
     },
     content: {
       flexGrow: 1,
       padding: theme.spacing(3),
     },
     li: {
-        fontSize: '1.0rem',
-        color: '#334B63'
+        fontSize: '0.9rem',
+        color: '#334B63',
+        fontWeight: 'bold'
       },
 });
 

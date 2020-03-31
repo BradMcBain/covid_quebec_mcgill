@@ -49,7 +49,7 @@ class App extends Component{
                   openExternal: true,
                 },
               ]}
-              style={{'paddingLeft':'10%','color':'white', 'fontSize':'10px'}}
+              style={{'paddingLeft':'12%','color':'white', 'fontSize':'10px'}}
               bottom="Website developed by Bradley McBain & Brendan Marks"
               theme="dark"
               backgroundColor="#334B63"
