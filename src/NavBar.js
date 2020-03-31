@@ -57,7 +57,10 @@ const useStyles = theme => ({
       },
 });
 
-class Nav extends Component {
+class NavBar extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextProps.lang !== this.props.lang;
+    }
     jumpTo = (id) => {
         switch (id) {
             case 0:
@@ -200,4 +203,4 @@ class Nav extends Component {
     }
 }
 
-export default withStyles(useStyles)(Nav);
+export default withStyles(useStyles)(NavBar);
