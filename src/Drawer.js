@@ -153,7 +153,7 @@ class ResponsiveDrawer extends Component {
                     <br></br>
                     <br></br>
                     <div class="my_container">
-                            <h1 align="center">Our Sponsors</h1>
+                            <h1 align="center">Nos commanditaires</h1>
                     </div>
                     <Sponsors/>
                     <br></br>

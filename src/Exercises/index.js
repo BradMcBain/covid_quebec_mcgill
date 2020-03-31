@@ -55,7 +55,7 @@ function FormRow0(props){
              <h1 style={styles.h3}>Welcome</h1>
              <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill university members decided to work together to design am infographic data dashboard, that relies solely on official government figures.<br></br><br></br> 
 
-              We are a group of professors, data scientists’ students, and software engineering, who strive to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at info@covidqc.com. 
+              We are a group of professors, data scientists’ students, and software engineering, who strive to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at <b>info@covidqc.com</b>. 
            </font>
             </Paper>
         </Grid>
@@ -69,7 +69,7 @@ function FormRow0(props){
               <h1 style={styles.h3}>Message d’accueil</h1>
               <font size="3" color="#334B63" margin-bottom="100">Les Québecois subissent non seulement la pandémie du Covid-19, mais font également face à une avalanche de désinformation. Pour diffuser des données précises; les membres de l’université de McGill ont décider de travailler ensemble pour convevoir un tableau de bord de données infographiques, qui repose uniquement sur les chiffres officiels du gouvernement.  
 
-              <br></br><br></br>Nous sommes un groupe de professeurs, étudiants en science des données et en génie logiciel qui s’efforcent de sensibiliser à la propagation de la pandémie dans notre province. Ces informations seront mises à jour quotidiennement. Si vous souhaitez aider, veuillez nous contacter à info@covidqc.com. 
+              <br></br><br></br>Nous sommes un groupe de professeurs, étudiants en science des données et en génie logiciel qui s’efforcent de sensibiliser à la propagation de la pandémie dans notre province. Ces informations seront mises à jour quotidiennement. Si vous souhaitez aider, veuillez nous contacter à <b>info@covidqc.com</b>. 
               </font>
               </Paper>
         </Grid>
