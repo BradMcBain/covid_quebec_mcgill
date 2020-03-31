@@ -50,7 +50,7 @@ class App extends Component{
                 },
               ]}
               style={{'paddingLeft':'12%','color':'white', 'fontSize':'10px'}}
-              bottom="Website developed by Bradley McBain & Brendan Marks (McGill Engineering students)"
+              bottom="Website Developed by Bradley McBain & Brendan Marks (McGill Engineering Students)"
               theme="dark"
               backgroundColor="#334B63"
             />
