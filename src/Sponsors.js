@@ -4,7 +4,6 @@ import { Paper, Card, CardActionArea, CardMedia, CardContent, Typography, CardAc
 import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';
-import MMA from './MMA.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,7 +39,7 @@ function FormRowSponsor(){
                     component="img"
                     alt=""
                     height="130"
-                    image={MMA}
+                    image="./MMA.jpeg"
                     title="Sponsor"
                     />
                 </CardActionArea>
