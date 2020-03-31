@@ -55,7 +55,8 @@ function FormRow0(props){
              <h1 style={styles.h3}>Welcome</h1>
              <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill University members decided to work together to design an infographic data dashboard that relies solely on official government figures.<br></br><br></br> 
 
-              We are a group of professors and data science & software engineering students striving to raise awareness about the spread of the pandemic in our province. This information will be updated daily.  If you wish to help, please contact us at <b>info@covidqc.com</b>. 
+              
+              We are a group of professors, data science & software engineering students striving to raise awareness about the spread of the pandemic in our province. This information will be updated daily. If you wish to help, please contact us at <b>info@covidqc.com</b>. 
            </font>
             </Paper>
         </Grid>
@@ -160,13 +161,7 @@ function FormRow2(props) {
   if (props.lang === "en"){
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
-            <h1 style={styles.h3}>Total cases per region</h1>
-              <font size="4" color="#334B63" margin-bottom="100">This data matrix illustrates the number of cases in each region, each day.
-              </font>
-            </Paper>
-        </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
             <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
@@ -176,13 +171,7 @@ function FormRow2(props) {
   } else {
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">            <Paper style={styles.Paper} elevation={5}>
-            <h1 style={styles.h3}>Nombre total de cas par région</h1>
-              <font size="4" color="#334B63" margin-bottom="100">Cette matrice de données illustre le nombre de cas quotidien dans chaque région
-              </font>
-            </Paper>
-        </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
             <Paper style={styles.Paper} elevation={5}>
                 <Tableau2/>
             </Paper>
