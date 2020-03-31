@@ -29,15 +29,7 @@ class App extends Component{
     }
   }
   render(){
-    if (isMobile) {
-      return (
-        <div className="page-container">
-          <div className="content-wrap">
-              Mobile Site Unavailable. Please Visit Us at www.covidqc.com on Desktop.
-            </div>
-          </div>
-      );
-    } else {
+   
       return (
         <div className="page-container">
           <div className="content-wrap">
@@ -66,7 +58,6 @@ class App extends Component{
             </div>
           </div>
             );
-            }
     }
   
       }
