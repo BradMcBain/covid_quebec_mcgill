@@ -54,6 +54,11 @@ class ResponsiveDrawer extends Component {
             mobileOpen: false,
         }
     }
+
+    shouldComponentUpdate(newProps, newState) {
+        // only render if the state has changed
+        return this.state.lang !== newState.lang;
+    }
     
     getLang = () => {
         if (this.state.lang === "en"){
