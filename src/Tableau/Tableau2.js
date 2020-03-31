@@ -1,8 +1,11 @@
 import React, { Component } from 'react';  
 import tableau from 'tableau-api';  
   
-  
-class Tableau2 extends Component {  
+var viz = null;  
+class Tableau2 extends Component { 
+  shouldComponentUpdate(){
+    return viz === null;
+  } 
   componentDidMount() {  
     this.initViz()  
   }  
@@ -16,7 +19,7 @@ class Tableau2 extends Component {
         device: localStorage.getItem("device"),
         toolbarPosition: "ApiToolbarPosition.Top",
     };
-    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)  
+    viz = new window.tableau.Viz(vizContainer, vizUrl, options)  
   }  
   
   render() {  

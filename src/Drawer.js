@@ -9,7 +9,6 @@ import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
 import NavBar from './NavBar'
 import Sponsors from './Sponsors'
-import { Divider } from '@material-ui/core';
 
 
 const useStyles = theme => ({
