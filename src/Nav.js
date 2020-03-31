@@ -52,6 +52,7 @@ const useStyles = theme => ({
     },
     li: {
         fontSize: '1.0rem',
+        color: '#334B63'
       },
 });
 
