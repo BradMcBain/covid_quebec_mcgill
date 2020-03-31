@@ -9,6 +9,7 @@ import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
 import NavBar from './NavBar'
 import Sponsors from './Sponsors'
+import TabsWrappedLabel from './TabsWrappedLabel';
 
 
 const useStyles = theme => ({
@@ -122,6 +123,7 @@ class ResponsiveDrawer extends Component {
             );
         } else {
             return (
+                <div>
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
@@ -145,11 +147,15 @@ class ResponsiveDrawer extends Component {
                             Tableau de bord COVID-19 Québec
                         </Typography>
                     </div>
-                    
                     </Toolbar>
-                </AppBar>
-                <NavBar lang={this.state.lang}/>
-                <main className={classes.content}>
+            </AppBar>
+            <TabsWrappedLabel></TabsWrappedLabel>
+            </div>
+            <div>
+            
+                {/*<NavBar lang={this.state.lang}/>*/}
+               
+                {/*<main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Exercises lang={this.state.lang}/>
                     <br></br>
@@ -163,7 +169,8 @@ class ResponsiveDrawer extends Component {
                     <br></br>
                     <br></br>
                     
-                </main>
+            </main>*/}
+                </div>
                 </div>
             );
         }
