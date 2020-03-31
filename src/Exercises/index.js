@@ -589,4 +589,4 @@ Exercises.propTypes = {
    */
   container: PropTypes.any,
 };
-export default Exercises;
+export default React.memo(Exercises);
