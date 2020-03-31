@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3, 1, 1),
   media: {
       height: 140,
-    },
+    }
   },
 }));
 
@@ -51,7 +51,7 @@ function FormRow0(props){
     return (
       <React.Fragment>
         <Grid item xs={12}>
-             <Paper style={styles.Welcome}  elevation={10} >
+             <Paper style={styles.Welcome}  elevation={10}>
              <h1 style={styles.h3}>Welcome</h1>
              <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill University members decided to work together to design an infographic data dashboard that relies solely on official government figures.<br></br><br></br> 
 
