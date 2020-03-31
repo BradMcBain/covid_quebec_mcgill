@@ -50,7 +50,7 @@ class App extends Component{
                 },
               ]}
               style={{'paddingLeft':'12%','color':'white', 'fontSize':'10px'}}
-              bottom="Website Developed by Bradley McBain & Brendan Marks (McGill Engineering Students)"
+              bottom="• Website Developed by: Bradley McBain & Brendan Marks (McGill Engineering Students) • Content designed by:  Ruben Alba, Venkatesh Chandra Jonathan Guzzo, Ramy Hammam, Jessica Zhang, Jasmine Jiang, Zachary Amar, Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, Demi Wei, Katianicia  Nafissatou"
               theme="dark"
               backgroundColor="#334B63"
             />
