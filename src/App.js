@@ -13,21 +13,6 @@ if (isMobile) {
 }
 
 class App extends Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      lang: "en"
-    }
-  }
-  getLang(t){
-    if (t.state.lang === "en"){
-      // t.state.lang = "fr";
-      this.setState({lang: "fr"})
-    } else {
-      // t.state.lang = "en";
-      this.setState({lang: "en"})
-    }
-  }
   render(){
    
       return (

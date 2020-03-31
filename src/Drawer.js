@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Exercises from './Exercises'
 import Button from '@material-ui/core/Button';
-import Nav from './Nav'
+import NavBar from './NavBar'
 import Sponsors from './Sponsors'
 import { Divider } from '@material-ui/core';
 
@@ -99,7 +99,7 @@ class ResponsiveDrawer extends Component {
                     </div>
                     </Toolbar>
                 </AppBar>
-                <Nav lang={this.state.lang}/>
+                <NavBar lang={this.state.lang}/>
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Exercises lang={this.state.lang}/>
@@ -146,14 +146,14 @@ class ResponsiveDrawer extends Component {
                     
                     </Toolbar>
                 </AppBar>
-                <Nav lang={this.state.lang}/>
+                <NavBar lang={this.state.lang}/>
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
                     <Exercises lang={this.state.lang}/>
                     <br></br>
                     <br></br>
                     <br></br>
-                    <div class="my_container">
+                    <div className="my_container">
                             <h1 align="center">Nos commanditaires</h1>
                     </div>
                     <Sponsors/>
