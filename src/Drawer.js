@@ -103,21 +103,7 @@ class ResponsiveDrawer extends Component {
                     </Toolbar>
                 </AppBar>
                 <NavBar lang={this.state.lang}/>
-                <main className={classes.content}>
-                    <div className={classes.toolbar} />
-                    <Exercises lang={this.state.lang}/>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <div class="my_container">
-                            <h1 align="center">Our Sponsors</h1>
-                    </div>
-                    <Sponsors/>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    
-                </main>
+                
                 </div>
             );
         } else {
@@ -149,21 +135,7 @@ class ResponsiveDrawer extends Component {
                     </Toolbar>
                 </AppBar>
                 <NavBar lang={this.state.lang}/>
-                <main className={classes.content}>
-                    <div className={classes.toolbar} />
-                    <Exercises lang={this.state.lang}/>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <div className="my_container">
-                            <h1 align="center">Nos commanditaires</h1>
-                    </div>
-                    <Sponsors/>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    
-                </main>
+                
                 </div>
             );
         }
