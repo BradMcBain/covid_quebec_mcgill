@@ -6,6 +6,10 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Exercises from './Exercises';
+import Sponsors from './Sponsors';
+
+
 
 function scrollToTargetAdjusted(el){
     var element = document.getElementById(el);
@@ -58,48 +62,22 @@ const useStyles = theme => ({
 });
 
 class NavBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            rowToShow: 1
+        }
+    }
     shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.lang !== this.props.lang;
+        return nextProps.lang !== this.props.lang || nextState !== this.state.rowToShow;
     }
     jumpTo = (id) => {
-        switch (id) {
-            case 0:
-                scrollToTargetAdjusted("1");
-                break;
-            case 1:
-                scrollToTargetAdjusted("2");
-                break;
-            case 2:
-                scrollToTargetAdjusted("3");
-                break;
-            case 3:
-                scrollToTargetAdjusted("4");
-                break;
-            case 4:
-                scrollToTargetAdjusted("5");
-                break;
-            case 5:
-                scrollToTargetAdjusted("6");
-                break;
-            case 6:
-                scrollToTargetAdjusted("7");
-                break;
-            case 7:
-                scrollToTargetAdjusted("8");
-                break;
-            case 8:
-                scrollToTargetAdjusted("9");
-                break;
-            case 9:
-                scrollToTargetAdjusted("10");
-                break;
-            default:
-                break;
-        }
-        
+            this.setState({rowToShow: id});
+            console.log(this.state.rowToShow);        
     }
 
     render() {
+        console.log("here");
         const {classes} = this.props;
         var drawer;
         if (this.props.lang === "en") {
@@ -117,11 +95,11 @@ class NavBar extends Component {
                      <Divider />
              </div>);
             return (
+                <div>
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                     <Hidden smUp implementation="css">
                     <Drawer
-                        lang={this.props.lang}
                         container={this}
                         variant="temporary"
                         anchor='left'
@@ -149,6 +127,22 @@ class NavBar extends Component {
                     </Drawer>
                     </Hidden>
                 </nav>
+                <main className={classes.content}>
+                <div className={classes.appBar} />
+                <Exercises lang={this.state.lang} row={this.state.rowToShow}/>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className="my_container">
+                        <h1 align="center">Our Sponsors</h1>
+                </div>
+                <Sponsors/>
+                <br></br>
+                <br></br>
+                <br></br>
+                
+            </main>
+            </div>
             );
         } else {
             drawer = (<div>
@@ -165,11 +159,11 @@ class NavBar extends Component {
                      <Divider />
              </div>);
             return (
+                <div>
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                     <Hidden smUp implementation="css">
                     <Drawer
-                        lang={this.props.lang}
                         container={this}
                         variant="temporary"
                         anchor='left'
@@ -197,6 +191,25 @@ class NavBar extends Component {
                     </Drawer>
                     </Hidden>
                 </nav>
+                
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Exercises lang={this.state.lang} row={this.state.rowToShow}/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="my_container">
+                            <h1 align="center">Nos commanditaires</h1>
+                    </div>
+                    <Sponsors/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
+                </main>
+                </div>
+
+
             );
         }
         

@@ -537,48 +537,76 @@ function FormRow9(props) {
 }
 
 class Exercises extends Component {
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.lang !== this.props.lang;
-  }
+  
   render() {
-  return (
-    
-      <Grid container>
-        <Grid container item xs={12} spacing={3} id="0">
-            <FormRow0 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="1">
-            <FormRow1 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="2">
-            <FormRowTemp lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="3">
-            <FormRow2 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="4">
-            <FormRow3 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="5">
-            <FormRow4 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="6">
-            <FormRow5 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="7">
-            <FormRow6 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="8">
-            <FormRow7 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="9">
-            <FormRow8 lang={this.props.lang}/>
-        </Grid>
-        <Grid container item xs={12} spacing={3} id="10">
-            <FormRow9 lang={this.props.lang}/>
-        </Grid>
-    </Grid>
-  )
+    console.log("in here!", this.props.row);
+    switch (this.props.row) {
+      case 0:
+        return (
+          <Grid container>
+            <Grid container item xs={12} spacing={3} id="0">
+                <FormRow0 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="1">
+                <FormRow1 lang={this.props.lang}/>
+            </Grid>
+           
+          </Grid>
+          );
+      case 1:
+        return (
+          <Grid container>
+            <Grid container item xs={12} spacing={3} id="2">
+                <FormRowTemp lang={this.props.lang}/>
+            </Grid>
+          </Grid>
+          );
+      case 2:
+        return (
+          <Grid container>
+            <Grid container item xs={12} spacing={3} id="2">
+                <FormRowTemp lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="3">
+                <FormRow2 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="4">
+                <FormRow3 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="5">
+                <FormRow4 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="6">
+                <FormRow5 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="7">
+                <FormRow6 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="8">
+                <FormRow7 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="9">
+                <FormRow8 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="10">
+                <FormRow9 lang={this.props.lang}/>
+            </Grid>
+          </Grid>
+          );
+        default:
+          return (
+            <Grid container>
+            <Grid container item xs={12} spacing={3} id="0">
+                <FormRow0 lang={this.props.lang}/>
+            </Grid>
+            <Grid container item xs={12} spacing={3} id="1">
+              <FormRow1 lang={this.props.lang}/>
+            </Grid>
+          </Grid>
+          );
+
+    }
+  
   }
 }
 
@@ -589,4 +617,4 @@ Exercises.propTypes = {
    */
   container: PropTypes.any,
 };
-export default React.memo(Exercises);
+export default Exercises;
