@@ -16,6 +16,8 @@ const Tableau8 = React.lazy(()=> import('../Tableau/Tableau8'))
 const Tableau9 = React.lazy(()=> import('../Tableau/Tableau9'))
 const Tableau10 = React.lazy(()=> import('../Tableau/Tableau10'))
 const Tableau11 = React.lazy(()=> import('../Tableau/Tableau11'))
+const TableauAgePie = React.lazy(()=> import('../Tableau/TableauAgePie'))
+const TableauCIUSSSTrend = React.lazy(()=> import('../Tableau/TableauCIUSSSTrend'))
 const TableauMontreal = React.lazy(()=> import('../Tableau/TableauMontreal'))
 
 const useStyles = makeStyles((theme) => ({
@@ -142,7 +144,7 @@ function FormRowCIUSSS(props) {
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
-                 <h1 style={styles.h3}>Cases by CIUSS</h1>
+                 <h1 style={styles.h3}>Cases by CIUSSS</h1>
                 <font size="4" color="#334B63" margin-bottom="100">This exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSS).
 
                 </font>
@@ -164,7 +166,7 @@ function FormRowCIUSSS(props) {
     return (
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
-              <h1 style={styles.h3}>Cas par CIUSS</h1>
+              <h1 style={styles.h3}>Cas par CIUSSS</h1>
               <font size="4" color="#334B63" margin-bottom="100">
               Cette exposition montre le nombre total de cas, dans chaque Centre intégré universitaire de santé et de services sociaux (CIUSSS)
               </font>
@@ -186,6 +188,115 @@ function FormRowCIUSSS(props) {
   }
   
 }
+
+function FormRowCIUSSSTrend(props) {
+  
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h3}>Trend in cases by CIUSSS</h1>
+                <font size="4" color="#334B63" margin-bottom="100">This graph depicts the trend in the daily number of confirmed cases by Integrated University Health and Social Services Centre (CIUSSS). 
+
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <TableauCIUSSSTrend/>
+                  </React.Suspense>
+
+              </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h3}>Tendance des cas par CIUSSS</h1>
+              <font size="4" color="#334B63" margin-bottom="100">
+              Ce graphique illustre la tendance du nombre quotidien de cas confirmés par Centre intégré universitaire de santé et de services sociaux (CIUSSS).              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+             <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+                <TableauCIUSSSTrend/>
+                </React.Suspense>
+
+            </Paper>
+
+        </Grid>
+      </React.Fragment>
+    );
+  }
+  
+}
+
+function FormRowAgePie(props) {
+  
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h3}>Cases by age group</h1>
+                <font size="4" color="#334B63" margin-bottom="100">This pie chart shows the distribution of confirmed cases by age group.
+
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <TableauAgePie/>
+                  </React.Suspense>
+
+              </Paper>
+        </Grid>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h3}>Cas par groupe d’âge</h1>
+              <font size="4" color="#334B63" margin-bottom="100">
+              Ce diagramme circulaire illustre la répartition des cas confirmés par groupe d’âge.              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+             <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+                <TableauAgePie/>
+                </React.Suspense>
+
+            </Paper>
+
+        </Grid>
+      </React.Fragment>
+    );
+  }
+  
+}
+
+
+
+
+
+
+
 
 function FormRowMontrealCases(props) {
   
@@ -716,6 +827,16 @@ class Exercises extends Component {
             );
 
       case 4:
+        return (
+          <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3}>
+                <FormRowAgePie lang={this.props.lang}/>
+            </Grid>
+        </Grid>
+          );   
+         
+
+      case 5:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -723,7 +844,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 5:
+      case 6:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -731,7 +852,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 6:
+      case 7:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -740,7 +861,7 @@ class Exercises extends Component {
           </Grid>
             );
 
-      case 7:
+      case 8:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -748,8 +869,16 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
+      case 9:
+          return (
+              <Grid container style={styles.frags}>
+                <Grid container item xs={12} spacing={3}>
+                    <FormRowCIUSSSTrend lang={this.props.lang}/>
+                </Grid>
+            </Grid>
+              );           
 
-      case 8:
+      case 10:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -758,7 +887,7 @@ class Exercises extends Component {
             </Grid>
               );
     
-      case 9:
+      case 11:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -767,7 +896,7 @@ class Exercises extends Component {
             </Grid>
               );
 
-      case 10:
+      case 12:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -775,7 +904,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 11:
+      case 13:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>

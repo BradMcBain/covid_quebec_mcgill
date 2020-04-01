@@ -1,9 +1,8 @@
 import React, { Component } from 'react';  
 import tableau from 'tableau-api';  
   
-var viz = null;  
-  
-class Tableau10 extends Component { 
+var viz;  
+class TableauAgePie extends Component { 
   shouldComponentUpdate(){
     return viz === null;
   } 
@@ -13,7 +12,7 @@ class Tableau10 extends Component {
   
   
   initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/CIUSSS-Cumulativecasesperday';  
+    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/AgeGroup';  
     const vizContainer = this.vizContainer;
     const options = {
         hideTabs: true,
@@ -32,4 +31,4 @@ class Tableau10 extends Component {
   
 }  
 
-export default Tableau10; 
+export default TableauAgePie; 
