@@ -53,8 +53,6 @@ const useStyles = theme => ({
     content: {
       flexGrow: 1,
       padding: theme.spacing(3),
-      marginLeft: '13%',
-      marginTop: '2%'
     },
     li: {
         fontSize: '0.9rem',
@@ -67,7 +65,7 @@ class NavBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            rowToShow: 1
+            rowToShow: 0
         }
     }
     shouldComponentUpdate(nextProps, nextState) {

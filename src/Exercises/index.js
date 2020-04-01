@@ -42,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
 const styles = {
         Paper: { padding: 30, marginTop: 20, marginBottom:30},
         Welcome: {padding: 20, paddingTop: 4, marginTop: 20, marginBottom:0, background:"#e3f3ff"},
-        h3:{ color:"#334B63", display:"block", textAlign:"center"}
+        h3:{ color:"#334B63", display:"block", textAlign:"center"},
+        frags: {
+          marginLeft: '12%',
+        }
 }
 
 function FormRow0(props){
@@ -542,7 +545,7 @@ class Exercises extends Component {
     switch (this.props.row) {
       case 0:
         return (
-          <Grid container>
+          <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={10} id="0">
                 <FormRow0 lang={this.props.lang}/>
             </Grid>
@@ -554,15 +557,15 @@ class Exercises extends Component {
           );
       case 1:
         return (
-          <Grid container>
-            <Grid container item xs={12} spacing={3} id="2">
+          <Grid container style={styles.frags}>
+            <Grid item xs={12} spacing={3} id="2">
                 <FormRowTemp lang={this.props.lang}/>
             </Grid>
           </Grid>
           );
       case 2:
         return (
-          <Grid container>
+          <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="3">
                 <FormRow2 lang={this.props.lang}/>
             </Grid>
@@ -570,7 +573,7 @@ class Exercises extends Component {
           );
       case 3:
           return (
-            <Grid container>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRow3 lang={this.props.lang}/>
               </Grid>
@@ -579,7 +582,7 @@ class Exercises extends Component {
 
       case 4:
           return (
-            <Grid container>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRow4 lang={this.props.lang}/>
               </Grid>
@@ -587,7 +590,7 @@ class Exercises extends Component {
             );
       case 5:
           return (
-            <Grid container>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRow5 lang={this.props.lang}/>
               </Grid>
@@ -596,7 +599,7 @@ class Exercises extends Component {
 
       case 6:
           return (
-            <Grid container>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRow6 lang={this.props.lang}/>
               </Grid>
@@ -604,7 +607,7 @@ class Exercises extends Component {
             );
       case 7:
           return (
-              <Grid container>
+              <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3} id="3">
                     <FormRow7 lang={this.props.lang}/>
                 </Grid>
@@ -612,7 +615,7 @@ class Exercises extends Component {
               );
       case 8:
           return (
-              <Grid container>
+              <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3} id="3">
                     <FormRow8 lang={this.props.lang}/>
                 </Grid>
@@ -621,7 +624,7 @@ class Exercises extends Component {
 
       case 9:
         return (
-            <Grid container>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRow9 lang={this.props.lang}/>
               </Grid>
@@ -629,7 +632,7 @@ class Exercises extends Component {
             );
       default:
           return (
-            <Grid container>
+            <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0">
                 <FormRow0 lang={this.props.lang}/>
             </Grid>
