@@ -84,14 +84,14 @@ function FormRow1(props) {
   if (props.lang === "en"){
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h3}>Map of Quebec’s administrative regions</h1>
                 <font size="4" color="#334B63" margin-bottom="100">These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases, in each region, by clicking on the maps. 
                 </font>
             </Paper>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
 
               <Paper style={styles.Paper} elevation={5}>
               <React.Suspense fallback={<div>loading ..</div>}>
@@ -106,14 +106,14 @@ function FormRow1(props) {
   } else {
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h3}>Carte de la région administrative du Québec</h1>
               <font size="4" color="#334B63" margin-bottom="100">
                 Ces deux cartes à code couleur illustrent le nombre de cas confirmés dans chacune des régions administratives du Québec. Une teinte de bleu foncée représente un nombre plus élevé de cas. Les graphiques de gauche représentent une carte du Québec. Le graphique à l'extrème droite fait un zoom sur les régions du sud du Québec. Vous pouvez voir le nombre exact de cas, par région, en cliquant sur les cartes. 
               </font>
             </Paper>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
 
              <Paper style={styles.Paper} elevation={5}>
              <React.Suspense fallback={<div>loading ..</div>}>
@@ -134,14 +134,14 @@ function FormRowTemp(props) {
   if (props.lang === "en"){
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h3}>Montreal Neighbourhoods</h1>
                 <font size="4" color="#334B63" margin-bottom="100">This map shows the number of confirmed cases in each montreal borough. You can click on the map to see the exact number of cases in each neighbourhood.
                 </font>
             </Paper>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
 
              <Paper style={styles.Paper} elevation={5}>
              <React.Suspense fallback={<div>loading ..</div>}>
@@ -158,13 +158,13 @@ function FormRowTemp(props) {
   } else {
     return (
       <React.Fragment>
-        <Grid item xs={5} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h3}>Arrondissements de Montréal</h1>
               <font size="4" color="#334B63" margin-bottom="100">Cette carte montre le nombre de cas confirmés dans chacun des arrondissements de Montréal. Vous pouvez cliquer sur la carte pour voir le nombre exact de cas dans chaque quartier.
               </font>
             </Paper>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12}>
 
              <Paper style={styles.Paper} elevation={5}>
              <React.Suspense fallback={<div>loading ..</div>}>
@@ -543,10 +543,10 @@ class Exercises extends Component {
       case 0:
         return (
           <Grid container>
-            <Grid container item xs={12} spacing={3} id="0">
+            <Grid container item xs={12} spacing={10} id="0">
                 <FormRow0 lang={this.props.lang}/>
             </Grid>
-            <Grid container item xs={12} spacing={3} id="1">
+            <Grid container item xs={12} spacing={0} id="1">
                 <FormRow1 lang={this.props.lang}/>
             </Grid>
            
@@ -563,36 +563,71 @@ class Exercises extends Component {
       case 2:
         return (
           <Grid container>
-            <Grid container item xs={12} spacing={3} id="2">
-                <FormRowTemp lang={this.props.lang}/>
-            </Grid>
             <Grid container item xs={12} spacing={3} id="3">
                 <FormRow2 lang={this.props.lang}/>
             </Grid>
-            <Grid container item xs={12} spacing={3} id="4">
-                <FormRow3 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="5">
-                <FormRow4 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="6">
-                <FormRow5 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="7">
-                <FormRow6 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="8">
-                <FormRow7 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="9">
-                <FormRow8 lang={this.props.lang}/>
-            </Grid>
-            <Grid container item xs={12} spacing={3} id="10">
-                <FormRow9 lang={this.props.lang}/>
-            </Grid>
-          </Grid>
+        </Grid>
           );
-        default:
+      case 3:
+          return (
+            <Grid container>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRow3 lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+
+      case 4:
+          return (
+            <Grid container>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRow4 lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+      case 5:
+          return (
+            <Grid container>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRow5 lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+
+      case 6:
+          return (
+            <Grid container>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRow6 lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+      case 7:
+          return (
+              <Grid container>
+                <Grid container item xs={12} spacing={3} id="3">
+                    <FormRow7 lang={this.props.lang}/>
+                </Grid>
+            </Grid>
+              );
+      case 8:
+          return (
+              <Grid container>
+                <Grid container item xs={12} spacing={3} id="3">
+                    <FormRow8 lang={this.props.lang}/>
+                </Grid>
+            </Grid>
+              );
+
+      case 9:
+        return (
+            <Grid container>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRow9 lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+      default:
           return (
             <Grid container>
             <Grid container item xs={12} spacing={3} id="0">

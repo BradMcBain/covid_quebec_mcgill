@@ -53,6 +53,8 @@ const useStyles = theme => ({
     content: {
       flexGrow: 1,
       padding: theme.spacing(3),
+      marginLeft: '13%',
+      marginTop: '2%'
     },
     li: {
         fontSize: '0.9rem',
