@@ -65,7 +65,7 @@ class NavBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            rowToShow: 1
+            rowToShow: 0
         }
     }
     shouldComponentUpdate(nextProps, nextState) {
