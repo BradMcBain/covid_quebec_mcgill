@@ -73,11 +73,9 @@ class NavBar extends Component {
     }
     jumpTo = (id) => {
             this.setState({rowToShow: id});
-            console.log(this.state.rowToShow);        
     }
 
     render() {
-        console.log("here");
         const {classes} = this.props;
         var drawer;
         if (this.props.lang === "en") {
@@ -129,7 +127,7 @@ class NavBar extends Component {
                 </nav>
                 <main className={classes.content}>
                 <div className={classes.appBar} />
-                <Exercises lang={this.state.lang} row={this.state.rowToShow}/>
+                <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -194,7 +192,7 @@ class NavBar extends Component {
                 
                 <main className={classes.content}>
                     <div className={classes.toolbar} />
-                    <Exercises lang={this.state.lang} row={this.state.rowToShow}/>
+                    <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
                     <br></br>
                     <br></br>
                     <br></br>

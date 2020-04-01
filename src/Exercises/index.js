@@ -539,7 +539,6 @@ function FormRow9(props) {
 class Exercises extends Component {
   
   render() {
-    console.log("in here!", this.props.row);
     switch (this.props.row) {
       case 0:
         return (
