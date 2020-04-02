@@ -86,7 +86,7 @@ class NavBar extends Component {
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '60%'}}/>
                      <Divider />
                          <List>
-                             {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases by CIUSSS','Cases by age group', 'Cases per day — Regions of Quebec', 'Cases per day — Montreal','Cases by type', 'Testing rates', 'Trend in cases by CIUSS','Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
+                             {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases by CIUSSS','Cases by age group', 'Cases per day — Regions of Quebec', 'Cases per day — Montreal','Cases by type', 'Testing rates', 'Trend in cases by CIUSSS','Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
