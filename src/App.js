@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";
-import Footer from 'rc-footer';
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import Drawer from './Drawer'
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Fab from '@material-ui/core/Fab';
-import AppBar from '@material-ui/core/AppBar';
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -25,10 +20,9 @@ const styles = {
   footer: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: '#45a1ff',
+    backgroundColor: '#334B63',
     color: '#fff',
     position: 'relative',
-    marginLeft: '6%'
 }
 };
 
@@ -47,8 +41,56 @@ class App extends Component{
           <Drawer>
           </Drawer>
           <footer style={styles.footer}>
-          <img src="./qc.ico" alt="" align="center" style={{ 'marginTop':'5%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '5%'}}/>
+                <div className="footer_">
+                   <span style={{ display: "inline-block", textAlign: "Center" }}>
+                   <br></br>
+                <br></br>
+                   <img src="./mcgillfooter.jpeg" alt="" align="center" style={{
+                  'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '20%'}}/>
+                    <b><font textAlign="center" face="avenir" color="white" size="2">
+                      <br></br>
+                         Developed by McGill University, Desautels Faculty of Management
+                          students</font>
+                        <br /> <br />
+                   </b>
+                
+
+                <br></br>
+                <font textAlign="center" face="avenir" color="white" size="2">
+                  This website and its contents herein, including all data, mapping,
+                  and analysis is provided to the public strictly for educational
+                  purposes. This data relies upon publicly available from Quebec's
+                  government (and foreign governments), which has been authorized for
+                  common usage. Reliance on the Website for medical guidance or use of
+                  the Website for commercial purposes is strictly prohibited. Managers
+                  of this website are not responsible for source data or for any use
+                  of these data that goes beyond purely educational purposes.
+                  <br></br>
+                  <br></br>
+
+                </font>
+                <hr class="rounded"></hr>
+                <br />
+                <font face="avenir" color="white" size="2">
+                  <b>Faculty advisor: &nbsp;</b>
+                </font>
+                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa" className="link" style={{"color": "white"}}>
+                  Juan Camilo Serpa
+                </a>{" "}
+                <font face="avenir" color="white" size="2">
+                  • <b>Website developed by:</b> Bradley McBain & Brendan Marks
+                  (McGill Engineering Students) • <b>Content designed by:</b> Ruben
+                  Alba, Venkatesh Chandra, Jonathan Guzzo, Ramy Hammam, Jessica Zhang,
+                  Jasmine Jiang, Omar Lafif, Hana Galal, Guillaume Lapierre-Berger,
+                  Janna Augustin, Bogdan Tanasie, Demi Wei & Katianicia Nafissatou
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+        
+                </font>
+              </span>
+            </div>
           </footer>
             </div>
           </div>

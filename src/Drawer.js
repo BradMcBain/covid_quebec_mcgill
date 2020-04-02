@@ -8,7 +8,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import NavBar from './NavBar'
 
-
 const useStyles = theme => ({
         root: {
           display: 'flex',
@@ -70,18 +69,20 @@ class ResponsiveDrawer extends Component {
         this.setState({mobileOpen: !this.state.mobileOpen});
     };
 
-
+    
     render(){
+        
         const {classes} = this.props;
         if (this.state.lang === "en") {
             return (
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'85%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
+                    <Button variant="contained" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
+                    
     
                     <Toolbar style={{'alignSelf':'center'}}>
                     <IconButton
@@ -109,10 +110,11 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'85%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
-                        onClick={() => this.getLang()}>
-                        {this.state.displayTranslate}
-                    </Button>
+                        <Button variant="contained" color="primary" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
+                            onClick={() => this.getLang()}>
+                            {this.state.displayTranslate}
+                        </Button>
+                    
     
                     <Toolbar style={{'alignSelf':'center'}}>
                     <IconButton

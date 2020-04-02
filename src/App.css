@@ -37,6 +37,10 @@ footer {
 .App-link {
   color: #61dafb;
 }
+.footer_{
+  margin-left: 18%;
+  margin-right:5%;
+}
 
 @keyframes App-logo-spin {
   from {
