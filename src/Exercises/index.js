@@ -307,8 +307,8 @@ function FormRowMontrealCases(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h3}>Cases per day—Montreal</h1>
-                <font size="4" color="#334B63" margin-bottom="100">
-                This stacked bar chart depicts the number of daily new cases in each Montreal borough. To highlight a specific borough, you can click on the graph.
+                <font size="4" color="#334B63" margin-bottom="100" textAlign="center">
+                This stacked bar chart depicts the number of daily new cases in each Montreal borough. To highlight a specific borough, you can click on the graph.<br></br><br></br> The pie chart shows the distribution of confirmed cases by age group.
                 </font>
             </Paper>
         </Grid>
@@ -330,7 +330,7 @@ function FormRowMontrealCases(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h3}>Cas par jour—Montréal</h1>
               <font size="4" color="#334B63" margin-bottom="100">
-              Ce graphique à barres empilées illustre le nombre de nouveaux cas journaliers dans chaque arrondissement de Montréal. Pour sélectionner un arrondissement en particulier, vous pouvez cliquer sur le graphique.
+              Ce graphique à barres empilées illustre le nombre de nouveaux cas journaliers dans chaque arrondissement de Montréal. Pour sélectionner un arrondissement en particulier, vous pouvez cliquer sur le graphique.<br></br><br></br>Ce diagramme circulaire illustre la répartition des cas confirmés par groupe d’âge. 
               </font>
               </Paper>
         </Grid>
