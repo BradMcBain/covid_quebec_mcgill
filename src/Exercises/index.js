@@ -145,7 +145,7 @@ function FormRowCIUSSS(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h3}>Cases by CIUSSS</h1>
-                <font size="4" color="#334B63" margin-bottom="100">This exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSS).
+                <font size="4" color="#334B63" margin-bottom="100">The exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSS).
 
                 </font>
             </Paper>
@@ -196,8 +196,8 @@ function FormRowCIUSSSTrend(props) {
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
-                 <h1 style={styles.h3}>Trend in cases by CIUSSS</h1>
-                <font size="4" color="#334B63" margin-bottom="100">This graph depicts the trend in the daily number of confirmed cases by Integrated University Health and Social Services Centre (CIUSSS). 
+                 <h1 style={styles.h3}>Cases by CIUSSS</h1>
+                <font size="4" color="#334B63" margin-bottom="100">This graph depicts the trend in the daily number of confirmed cases by Integrated University Health and Social Services Centre (CIUSSS).  <br></br><br></br>The second exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSS).
 
                 </font>
             </Paper>
@@ -218,9 +218,10 @@ function FormRowCIUSSSTrend(props) {
     return (
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
-              <h1 style={styles.h3}>Tendance des cas par CIUSSS</h1>
+              <h1 style={styles.h3}>Cas par CIUSSS</h1>
               <font size="4" color="#334B63" margin-bottom="100">
-              Ce graphique illustre la tendance du nombre quotidien de cas confirmés par Centre intégré universitaire de santé et de services sociaux (CIUSSS).              </font>
+              Ce graphique illustre la tendance du nombre quotidien de cas confirmés par Centre intégré universitaire de santé et de services sociaux (CIUSSS).<br></br><br></br>              La deuxième exposition montre le nombre total de cas, dans chaque Centre intégré universitaire de santé et de services sociaux (CIUSSS).
+              </font>
             </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -817,26 +818,9 @@ class Exercises extends Component {
             </Grid>
           </Grid>
           );
-      case 3:
-          return (
-            <Grid container style={styles.frags}>
-              <Grid container item xs={12} spacing={3}>
-                  <FormRowCIUSSS lang={this.props.lang}/>
-              </Grid>
-          </Grid>
-            );
-
-      case 4:
-        return (
-          <Grid container style={styles.frags}>
-            <Grid container item xs={12} spacing={3}>
-                <FormRowAgePie lang={this.props.lang}/>
-            </Grid>
-        </Grid>
-          );   
          
 
-      case 5:
+      case 3:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -844,7 +828,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 6:
+      case 4:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -852,7 +836,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 7:
+      case 5:
           return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -861,7 +845,7 @@ class Exercises extends Component {
           </Grid>
             );
 
-      case 8:
+      case 6:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -869,7 +853,7 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
-      case 9:
+      case 7:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -878,7 +862,7 @@ class Exercises extends Component {
             </Grid>
               );           
 
-      case 10:
+      case 8:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -887,7 +871,7 @@ class Exercises extends Component {
             </Grid>
               );
     
-      case 11:
+      case 9:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -896,7 +880,7 @@ class Exercises extends Component {
             </Grid>
               );
 
-      case 12:
+      case 10:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -904,7 +888,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 13:
+      case 11:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
