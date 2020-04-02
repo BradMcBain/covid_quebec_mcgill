@@ -82,7 +82,7 @@ class App extends Component{
                   (McGill Engineering Students) • <b>Content designed by:</b> Ruben
                   Alba, Venkatesh Chandra, Jonathan Guzzo, Ramy Hammam, Jessica Zhang,
                   Jasmine Jiang, Omar Lafif, Hana Galal, Guillaume Lapierre-Berger,
-                  Janna Augustin, Bogdan Tanasie, Demi Wei & Katianicia Nafissatou
+                  Janna Agustin, Bogdan Tanasie, Demi Wei & Katianicia Nafissatou
                   <br></br>
                   <br></br>
                   <br></br>
