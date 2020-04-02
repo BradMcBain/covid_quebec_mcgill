@@ -46,7 +46,7 @@ class App extends Component{
                    <br></br>
                 <br></br>
                    <img src="./mcgillfooter.jpeg" alt="" align="center" style={{
-                  'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '20%'}}/>
+                  'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '30%'}}/>
                     <b><font textAlign="center" face="avenir" color="white" size="2">
                       <br></br>
                          Developed by McGill University, Desautels Faculty of Management

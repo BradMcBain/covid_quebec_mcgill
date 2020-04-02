@@ -82,7 +82,6 @@ class ResponsiveDrawer extends Component {
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
-                    
     
                     <Toolbar style={{'alignSelf':'center'}}>
                     <IconButton
