@@ -82,8 +82,8 @@ class NavBar extends Component {
         var drawer;
         if (this.props.lang === "en") {
             drawer = (<div>
-                <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%'}}/>
+             <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
                          <List>
                              {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases per day — Regions of Quebec', 'Cases per day — Montreal','Cases by type', 'Testing rates', 'Cases by CIUSSS','Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
