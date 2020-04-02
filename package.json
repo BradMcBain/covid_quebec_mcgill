@@ -4,10 +4,15 @@
   "homepage": "https://covidqc.com",
   "private": true,
   "dependencies": {
+    "@govuk-react/footer": "^0.7.2",
+    "@govuk-react/lib": "^0.7.1",
+    "@govuk-react/page": "^0.7.1",
+    "@govuk-react/section-break": "^0.7.1",
     "@material-ui/core": "^4.9.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "govuk-react": "^0.7.2",
     "rc-footer": "^0.6.2",
     "react": "^16.13.1",
     "react-datawrapper-chart": "^1.0.3",
@@ -16,6 +21,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-sticky-footer": "0.1.0-rc3",
+    "styled-components": "^5.0.1",
     "tableau-api": "^2.2.3"
   },
   "scripts": {

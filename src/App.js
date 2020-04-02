@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";
-import Footer from 'rc-footer';
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import Drawer from './Drawer'
+import Footer from './Footer'
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -25,7 +25,11 @@ class App extends Component{
             </Router>
           <Drawer>
           </Drawer>
-                <Footer
+          </div>
+          <footer id="footer">
+            <Footer/>
+          
+               {/*} <Footer
                   columns={[
                     {
        
@@ -39,8 +43,8 @@ class App extends Component{
                   bottom="Website developed by: Bradley McBain & Brendan Marks (McGill Engineering Students) • Content designed by: Ruben Alba, Venkatesh Chandra, Jonathan Guzzo, Ramy Hammam, Jessica Zhang, Jasmine Jiang, Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, Janna Augustin, Bogdan Tanasie, Demi Wei & Katianicia Nafissatou"
                   theme="dark"
                   backgroundColor="#334B63"
-                />
-            </div>
+                />*/}
+             </footer>
           </div>
             );
     }
