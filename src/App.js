@@ -5,6 +5,10 @@ import {isMobile} from "react-device-detect";
 import Footer from 'rc-footer';
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import Drawer from './Drawer'
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import Fab from '@material-ui/core/Fab';
+import AppBar from '@material-ui/core/AppBar';
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -12,12 +16,29 @@ if (isMobile) {
   localStorage.setItem("device","desktop");
 }
 
+const styles = {
+  appBar: {
+    top: 'auto',
+    bottom: 0,
+    position: 'absolute'
+  },
+  footer: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#45a1ff',
+    color: '#fff',
+    position: 'relative',
+    marginLeft: '6%'
+}
+};
+
 class App extends Component{
   render(){
-   
+      const {classes} = this.props;
       return (
         <div className="page-container">
           <div className="content-wrap">
+            
             <Router basename={process.env.PUBLIC_URL}>
               <Route component={App} path="/">
                 <Redirect from="*" to="/" />
@@ -25,21 +46,10 @@ class App extends Component{
             </Router>
           <Drawer>
           </Drawer>
-                <Footer
-                  columns={[
-                    {
-       
-                      title: 'This website and its contents herein, including all data, mapping, and analysis is provided to the public strictly for educational  purposes.  This data relies upon publicly available from Quebec\'s government (and foreign governments), which has been authorized for common usage. Reliance on the Website for medical guidance or use of the Website for commercial purposes is strictly prohibited.  Managers of this website are not responsible for source data or for any use of these data that goes beyond purely educational purposes.',
-                      url: 'https://yuque.com',
-                      description: '',
-                      openExternal: true,
-                    },
-                  ]}
-                  style={{'paddingLeft':'12%','color':'white', 'fontSize':'10px'}}
-                  bottom="Website developed by: Bradley McBain & Brendan Marks (McGill Engineering Students) • Content designed by: Ruben Alba, Venkatesh Chandra, Jonathan Guzzo, Ramy Hammam, Jessica Zhang, Jasmine Jiang, Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, Janna Augustin, Bogdan Tanasie, Demi Wei & Katianicia Nafissatou"
-                  theme="dark"
-                  backgroundColor="#334B63"
-                />
+          <footer style={styles.footer}>
+          <img src="./qc.ico" alt="" align="center" style={{ 'marginTop':'5%', 
+            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '5%'}}/>
+          </footer>
             </div>
           </div>
             );
