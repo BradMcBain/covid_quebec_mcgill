@@ -564,7 +564,7 @@ function FormRow4(props) {
                 Sources: <br></br>
                 <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
                 <br></br>
-                <a href="https://twitter.com/francoislegault" target="_blank">François Legault - Twitter</a>
+                <a href="https://twitter.com/francoislegault" target="_blank">Govt of Quebec’s daily press briefing</a>
               </font>
     </React.Fragment>
   );
@@ -592,7 +592,7 @@ function FormRow4(props) {
                 <br></br>
                 <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
                 <br></br>
-                <a href="https://twitter.com/francoislegault" target="_blank">François Legault - Twitter</a>
+                <a href="https://twitter.com/francoislegault" target="_blank">Point de presse quotidien du gouvernement du Québec</a>
               </font>
       </React.Fragment>
     );
@@ -679,10 +679,7 @@ function FormRow6(props) {
           </Paper>
       </Grid>
       <font size="4" color="#334B63" margin-bottom="100">
-                Sources:<br></br> 
-                <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
-                <br></br>
-                <a href="https://en.wikipedia.org/wiki/COVID-19_testing" target="_blank">https://en.wikipedia.org/wiki/COVID-19_testing/</a>
+                Source: <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
               </font>
     </React.Fragment>
   );
@@ -711,10 +708,7 @@ function FormRow6(props) {
             </Paper>
         </Grid>
         <font size="4" color="#334B63" margin-bottom="100">
-                Sources:<br></br> 
-                <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
-                <br></br>
-                <a href="https://en.wikipedia.org/wiki/COVID-19_testing" target="_blank">https://en.wikipedia.org/wiki/COVID-19_testing/</a>
+                Source: <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
               </font>
       </React.Fragment>
        );
