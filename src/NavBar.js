@@ -56,10 +56,17 @@ const useStyles = theme => ({
       marginTop: '3%',
       marginLeft: '12%'
     },
+    first: {
+        fontSize: '1rem',
+        marginLeft: '16%',
+        color: '#334B63',
+        fontWeight: 'bold'
+    },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
-        fontWeight: 'bold'
+        fontWeight: 'normal',
+        marginTop: '0%'
       },
 });
 
@@ -85,7 +92,7 @@ class NavBar extends Component {
              <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                               MONTREAL
                          </List>
                          <List>
@@ -97,7 +104,7 @@ class NavBar extends Component {
                          </List>
                      <Divider />
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                               PROVINCE
                          </List>
                          <List>
@@ -164,7 +171,7 @@ class NavBar extends Component {
                 <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                             MONTRÉAL
                          </List>
                          <List>
@@ -176,7 +183,7 @@ class NavBar extends Component {
                          </List>
                      <Divider />
                      <Divider />
-                        <List class = '#first'>
+                        <List className = {classes.first} >
                              PROVINCE
                          </List>
                          <List>
