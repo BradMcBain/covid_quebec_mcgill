@@ -69,13 +69,13 @@ const useStyles = theme => ({
         marginLeft: '16%',
         color: '#334B63',
         fontWeight: 'bold',
-        fontFamily:'avenir'
+        fontFamily:'helvetica'
     },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
         fontWeight: 'normal',
-        fontFamily:'avenir'
+        fontFamily:'helvetica'
       },
 });
 

@@ -7,11 +7,12 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: 900,
+    maxWidth: 400,
    // backgroundColor: theme.palette.background.paper,
   },
   media: {
-      height: 300,
+      height: 2,
+      paddingTop: '15%', // 16:9
     }
 
 }));
@@ -22,18 +23,16 @@ function FormRowSponsor(){
     return (
       <React.Fragment>
         <Grid item xs={12} container
-  spacing={0}
-  direction="column"
-  alignItems="center"
-  justify="center">
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justify="center">
             <Card className={classes.root}>
                 <CardActionArea href="https://www.mcgill.ca/desautels/programs/mma" target="_blank">
                     <CardMedia
-                    component="img"
-                    alt=""
-                    height="150"
+                    className={classes.media}
                     image="./mma_logo_en.jpg"
-                    title="Sponsor"
+                    title="MMA logo"
                     />
                 </CardActionArea>
 
