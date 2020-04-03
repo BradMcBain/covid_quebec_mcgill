@@ -8,6 +8,7 @@ body {
 }
 .my_container h1{
   color:#334B63; /* or hexidecimal */
+  font-family: 'avenir';
 }
 
 code {

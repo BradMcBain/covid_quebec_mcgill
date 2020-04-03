@@ -8,6 +8,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Exercises from './Exercises';
 import Sponsors from './Sponsors';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+// import VisibleItemList from '../containers/VisibleItemList'
 
 
 
@@ -45,6 +49,10 @@ const useStyles = theme => ({
         display: 'none',
       },
     },
+    closeMenuButton: {
+      marginRight: 'auto',
+      marginLeft: 0,
+    },
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
@@ -56,10 +64,18 @@ const useStyles = theme => ({
       marginTop: '3%',
       marginLeft: '12%'
     },
+    first: {
+        fontSize: '1rem',
+        marginLeft: '16%',
+        color: '#334B63',
+        fontWeight: 'bold',
+        fontFamily:'avenir'
+    },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
-        fontWeight: 'bold'
+        fontWeight: 'normal',
+        fontFamily:'avenir'
       },
 });
 
@@ -77,6 +93,10 @@ class NavBar extends Component {
             this.setState({rowToShow: id});
     }
 
+    handleDrawerToggle = () => {
+        this.setState({mobileOpen: !this.state.mobileOpen});
+    }
+
     render() {
         const {classes} = this.props;
         var drawer;
@@ -85,7 +105,7 @@ class NavBar extends Component {
              <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                               MONTREAL
                          </List>
                          <List>
@@ -97,7 +117,7 @@ class NavBar extends Component {
                          </List>
                      <Divider />
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                               PROVINCE
                          </List>
                          <List>
@@ -110,6 +130,7 @@ class NavBar extends Component {
                      <Divider />
              </div>);
             return (
+
                 <div>
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -127,9 +148,10 @@ class NavBar extends Component {
                         keepMounted: true, // Better open performance on mobile.
                         }}
                     >
-                        {drawer}
-                    </Drawer>
-                    </Hidden>
+                            {drawer}
+                            </Drawer>
+                            </Hidden>
+
                     <Hidden xsDown implementation="css">
                     <Drawer
                         classes={{
@@ -142,29 +164,31 @@ class NavBar extends Component {
                     </Drawer>
                     </Hidden>
                 </nav>
-                <main className={classes.content}>
-                <div className={classes.appBar} />
-                <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className="my_container">
-                        <h1 align="center">Our Sponsors</h1>
-                </div>
-                <Sponsors/>
-                <br></br>
-                <br></br>
-                <br></br>
                 
-            </main>
-            </div>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="my_container">
+                            <h1 align="center">Our Sponsors</h1>
+                    </div>
+                    <Sponsors/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
+                </main>
+                </div>
+
             );
         } else {
             drawer = (<div>
                 <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
-                         <List class = '#first'>
+                         <List className = {classes.first} >
                             MONTRÉAL
                          </List>
                          <List>
@@ -176,7 +200,7 @@ class NavBar extends Component {
                          </List>
                      <Divider />
                      <Divider />
-                        <List class = '#first'>
+                        <List className = {classes.first} >
                              PROVINCE
                          </List>
                          <List>

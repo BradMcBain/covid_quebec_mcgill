@@ -4,7 +4,7 @@ import { Paper, Card, CardActionArea, CardMedia, CardContent, Typography, CardAc
 import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider'
 import { makeStyles } from '@material-ui/core/styles';
-import MMA from './MMA.jpeg';
+import MMA from './mma_logo_en.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
