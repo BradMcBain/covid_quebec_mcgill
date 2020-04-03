@@ -86,7 +86,7 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
+                    <Button variant="contained" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'avenir'}}
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
@@ -102,7 +102,7 @@ class ResponsiveDrawer extends Component {
                     </IconButton>
 
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'avenir'}}>
                             COVID-19 Quebec Dashboard
                         </Typography>
                     </div>
@@ -112,15 +112,17 @@ class ResponsiveDrawer extends Component {
 
                 <NavBar lang={this.state.lang}/>
 
+
                 
                 </div>
+
             );
         } else {
             return (
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                        <Button variant="contained" color="primary" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d'}}
+                        <Button variant="contained" color="primary" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'avenir'}}
                             onClick={() => this.getLang()}>
                             {this.state.displayTranslate}
                         </Button>
@@ -137,7 +139,7 @@ class ResponsiveDrawer extends Component {
                     </IconButton>
                    
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'avenir'}}>
                             Tableau de bord COVID-19 Québec
                         </Typography>
                     </div>

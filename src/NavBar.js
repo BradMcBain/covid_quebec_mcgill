@@ -68,12 +68,14 @@ const useStyles = theme => ({
         fontSize: '1rem',
         marginLeft: '16%',
         color: '#334B63',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily:'avenir'
     },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
-        fontWeight: 'normal'
+        fontWeight: 'normal',
+        fontFamily:'avenir'
       },
 });
 
@@ -146,9 +148,10 @@ class NavBar extends Component {
                         keepMounted: true, // Better open performance on mobile.
                         }}
                     >
-                        {drawer}
-                    </Drawer>
-                    </Hidden>
+                            {drawer}
+                            </Drawer>
+                            </Hidden>
+
                     <Hidden xsDown implementation="css">
                     <Drawer
                         classes={{
