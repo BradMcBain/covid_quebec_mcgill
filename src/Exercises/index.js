@@ -605,7 +605,13 @@ function FormRow6(props) {
         <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h3}>Number of deaths: Quebec vs. The world</h1>
               <font size="4" color="#334B63" margin-bottom="100">
-              This shows the trajectory in the number of cases in Quebec, relative to other countries. In the x-axis, we plot the number of days since the total number of deaths, in each region, reached five. In the y-axis, we plot the total number of deaths. The straight grey lines show trajectories for a doubling time of 2 days, 3 days, 5 days and 10 days. If a country’s line on the chart is higher than those lines, then its number of deaths is doubling faster than that.</font>
+              Left Table: This shows the trajectory in the number of cases in Quebec, relative to other countries. In the x-axis, we plot the number of days since the total number of deaths, in each region, reached five. In the y-axis, we plot the total number of deaths. The straight grey lines show trajectories for a doubling time of 2 days, 3 days, 5 days and 10 days. If a country’s line on the chart is higher than those lines, then its number of deaths is doubling faster than that.
+              <br></br>
+              <br></br>
+              Right Table: This scatterplot illustrates how Quebec compares to the rest of Canada (and other countries), in terms of testing rates and number of cases. In the y axis, we test rate (number of tests per 100k inhabitants). In the x axis, we plot the number of cases. 
+              <br></br><br></br>Ideally, we want regions to perform highly in terms of test rates, while having a low number of cases. That is, in an ideal scenario, regions should be in the upper-left region of the plot. You can click on the map to highlight a specific region.
+              <br></br>
+              </font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -624,9 +630,14 @@ function FormRow6(props) {
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             
         <Paper style={styles.Paper} elevation={5}>
-             <h1 style={styles.h3}>Nombre de décès: Québec vs. Monde</h1>
+             <h1 style={styles.h3}>Québec vs. Monde</h1>
               <font size="4" color="#334B63" margin-bottom="100">
-              Cela montre la trajectoire du nombre de cas au Québec, par rapport aux autres pays. Dans l'axe des abscisses (x), nous indiquons le nombre de jours depuis que le nombre total de décès a atteint cinq décès par région. Sur l'axe des ordonnées (y), nous indiquons le nombre total de décès. Les lignes droites grises indiquent les trajectoires pour un temps de doublement de 2 jours, 3 jours, 5 jours et 10 jours. Si la ligne d'un pays sur le graphique est plus haute que ces lignes, alors son nombre de décès double plus vite que cela.</font>
+              Tableau Gauche: Cela montre la trajectoire du nombre de cas au Québec, par rapport aux autres pays. Dans l'axe des abscisses (x), nous indiquons le nombre de jours depuis que le nombre total de décès a atteint cinq décès par région. Sur l'axe des ordonnées (y), nous indiquons le nombre total de décès. Les lignes droites grises indiquent les trajectoires pour un temps de doublement de 2 jours, 3 jours, 5 jours et 10 jours. Si la ligne d'un pays sur le graphique est plus haute que ces lignes, alors son nombre de décès double plus vite que cela.
+              <br></br>
+              <br></br>
+              Tableau Droite: Ce nuage de points illustre comment le Québec se compare au reste du Canada (et d’autres pays), en termes de taux de dépistage et de nombre de cas. Sur l’axe des ordonnées (y), nous testons le taux (nombre de tests pour 100 000 habitants). Sur l’axe des abscisses, nous traçons le nombre de cas. 
+              <br></br><br></br>Idéalement, nous souhaitons que les régions soient très performantes en termes de taux de test, tout en ayant un faible nombre de cas. Autrement dit, dans un scénario idéal, les régions devraient se trouver dans la région supérieure gauche du graphique. Vous pouvez cliquer sur la carte pour choisir une région spécifique.
+             </font>
             </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -790,7 +801,38 @@ class Exercises extends Component {
   render() {
     console.log(this.props.row);
     switch (this.props.row) {
+      // MONTREAL
+      // MTL nb
       case 0:
+        return (
+          <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3} id="3">
+                <FormRowTemp lang={this.props.lang}/>
+            </Grid>
+          </Grid>
+          );
+      // Cases per day MTL
+      case 1:
+        return (
+          <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3}>
+                <FormRowMontrealCases lang={this.props.lang}/>
+            </Grid>
+        </Grid>
+          );
+   
+      case 2:
+          return (
+              <Grid container style={styles.frags}>
+                <Grid container item xs={12} spacing={3}>
+                    <FormRowCIUSSSTrend lang={this.props.lang}/>
+                </Grid>
+            </Grid>
+              );      
+      
+      //PROVINCE
+      // Map of administrative regions
+      case 3:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0" >
@@ -799,18 +841,21 @@ class Exercises extends Component {
             <Grid container item xs={12} spacing={3} id="1">
                 <FormRow1 lang={this.props.lang}/>
             </Grid>
-           
           </Grid>
           );
-      case 1:
+      
+      // Cases per day - QC
+      case 4:
         return (
           <Grid container style={styles.frags}>
-            <Grid container item xs={12} spacing={3} id="2">
-                <FormRowTemp lang={this.props.lang}/>
+            <Grid container item xs={12} spacing={3}>
+                <FormRow3 lang={this.props.lang}/>
             </Grid>
-          </Grid>
+        </Grid>
           );
-      case 2:
+          
+      // Total cases per region
+      case 5:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -818,50 +863,26 @@ class Exercises extends Component {
             </Grid>
           </Grid>
           );
-         
-
-      case 3:
-          return (
-            <Grid container style={styles.frags}>
-              <Grid container item xs={12} spacing={3}>
-                  <FormRow3 lang={this.props.lang}/>
-              </Grid>
-          </Grid>
-            );
-      case 4:
-          return (
-            <Grid container style={styles.frags}>
-              <Grid container item xs={12} spacing={3}>
-                  <FormRowMontrealCases lang={this.props.lang}/>
-              </Grid>
-          </Grid>
-            );
-      case 5:
-          return (
-            <Grid container style={styles.frags}>
-              <Grid container item xs={12} spacing={3}>
-                  <FormRow4 lang={this.props.lang}/>
-              </Grid>
-          </Grid>
-            );
-
+      // Cases per type
       case 6:
-          return (
-              <Grid container style={styles.frags}>
-                <Grid container item xs={12} spacing={3}>
-                    <FormRow5 lang={this.props.lang}/>
-                </Grid>
+        return (
+          <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3} id="2">
+                <FormRow4 lang={this.props.lang}/>
             </Grid>
-              );
+          </Grid>
+          );
+      
+      // Testing rates
       case 7:
-          return (
-              <Grid container style={styles.frags}>
-                <Grid container item xs={12} spacing={3}>
-                    <FormRowCIUSSSTrend lang={this.props.lang}/>
-                </Grid>
+        return (
+          <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3}>
+                <FormRow5 lang={this.props.lang}/>
             </Grid>
-              );           
-
+        </Grid>
+          );
+      
       case 8:
           return (
               <Grid container style={styles.frags}>
@@ -870,7 +891,8 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
-    
+      
+    /*
       case 9:
           return (
               <Grid container style={styles.frags}>
@@ -879,8 +901,9 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
+      */
 
-      case 10:
+      case 9:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -888,17 +911,24 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 11:
+      case 10:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
                   <FormRow9 lang={this.props.lang}/>
               </Grid>
           </Grid>
-          );
+          );     
 
-          
         default:
+          return (
+            <Grid container style={styles.frags}>
+              <Grid container item xs={12} spacing={3} id="3">
+                  <FormRowTemp lang={this.props.lang}/>
+              </Grid>
+            </Grid>
+          );
+          /*
           return (
             <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0">
@@ -909,6 +939,7 @@ class Exercises extends Component {
             </Grid>
           </Grid>
           );
+          */
 
     }
   

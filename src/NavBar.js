@@ -85,9 +85,24 @@ class NavBar extends Component {
              <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
+                         <List class = '#first'>
+                              MONTREAL
+                         </List>
                          <List>
-                             {['Map of Quebec’s administrative regions', 'Montreal neighbourhoods', 'Total cases per region', 'Cases per day — Regions of Quebec', 'Cases per day — Montreal','Cases by type', 'Testing rates', 'Cases by CIUSSS','Number of deaths: Quebec vs. The world', 'Testing rates: Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
+                             {['Map', 'Cases per day', 'CIUSSS'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
+                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
+                             </ListItem>
+                             ))}
+                         </List>
+                     <Divider />
+                     <Divider />
+                         <List class = '#first'>
+                              PROVINCE
+                         </List>
+                         <List>
+                             {['Map', 'Cases per day', 'Total cases per region', 'Cases by type', 'Testing rates', 'Quebec vs. The world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
+                             <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
@@ -149,14 +164,30 @@ class NavBar extends Component {
                 <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
             'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
                      <Divider />
+                         <List class = '#first'>
+                            MONTRÉAL
+                         </List>
                          <List>
-                             {['Carte de la région administrative du Québec', 'Arrondissements de Montréal','Cas par région', 'Cas par jour — régions du Québec', 'Cas par jour — Montréal', 'Cas par type', 'Taux de tests', 'Cas par CIUSSS','Nombre de décès: Québec vs. Monde', 'Taux de tests: Québec vs. Monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler'].map((text, index) => (
+                             {['Carte', 'Cas par jour', 'CIUSSS'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
                          </List>
                      <Divider />
+                     <Divider />
+                        <List class = '#first'>
+                             PROVINCE
+                         </List>
+                         <List>
+                             {['Carte', 'Cas par jour', 'Cas par région', 'Cas par type', 'Taux de tests', 'Québec vs. Monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler'].map((text, index) => (
+                             <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
+                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
+                             </ListItem>
+                             ))}
+                         </List>
+                     <Divider />
+                    
              </div>);
             return (
                 <div>

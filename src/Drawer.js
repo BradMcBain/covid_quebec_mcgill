@@ -45,8 +45,8 @@ class ResponsiveDrawer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lang: "fr",
-            displayTranslate: "English",
+            lang: "en",
+            displayTranslate: "French",
             mobileOpen: false,
         }
     }
