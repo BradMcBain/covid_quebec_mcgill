@@ -70,13 +70,13 @@ const useStyles = theme => ({
         marginTop: '8%',
         color: '#334B63',
         fontWeight: 'bold',
-        fontFamily:'Avenir Book'
+        fontFamily:'Nunito Sans'
     },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
         fontWeight: 'normal',
-        fontFamily:'Avenir Book'
+        fontFamily:'Nunito Sans'
       },
 });
 
