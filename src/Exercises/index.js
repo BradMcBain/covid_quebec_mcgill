@@ -107,6 +107,9 @@ function FormRow1(props) {
 
               </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
       </React.Fragment>
     );
   } else {
@@ -130,6 +133,9 @@ function FormRow1(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -212,6 +218,9 @@ function FormRowCIUSSSTrend(props) {
 
               </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   } else {
@@ -235,6 +244,9 @@ function FormRowCIUSSSTrend(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -322,6 +334,9 @@ function FormRowMontrealCases(props) {
 
               </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   } else {
@@ -345,6 +360,9 @@ function FormRowMontrealCases(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -377,6 +395,9 @@ function FormRowTemp(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   } else {
@@ -399,6 +420,9 @@ function FormRowTemp(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -427,6 +451,9 @@ function FormRow2(props) {
           </Paper>
 
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -449,6 +476,9 @@ function FormRow2(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -476,6 +506,9 @@ function FormRow3(props) {
           </Paper>
 
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -498,6 +531,9 @@ function FormRow3(props) {
             </Paper>
 
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -524,6 +560,12 @@ function FormRow4(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Sources: <br></br>
+                <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                <br></br>
+                <a href="https://twitter.com/francoislegault" target="_blank">François Legault - Twitter</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -545,6 +587,13 @@ function FormRow4(props) {
 
             </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Sources:
+                <br></br>
+                <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                <br></br>
+                <a href="https://twitter.com/francoislegault" target="_blank">François Legault - Twitter</a>
+              </font>
       </React.Fragment>
     );
   }
@@ -571,6 +620,9 @@ function FormRow5(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -592,6 +644,9 @@ function FormRow5(props) {
 
             </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
       </React.Fragment>
       );
   }
@@ -623,6 +678,12 @@ function FormRow6(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Sources:<br></br> 
+                <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
+                <br></br>
+                <a href="https://en.wikipedia.org/wiki/COVID-19_testing" target="_blank">https://en.wikipedia.org/wiki/COVID-19_testing/</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -649,6 +710,12 @@ function FormRow6(props) {
 
             </Paper>
         </Grid>
+        <font size="4" color="#334B63" margin-bottom="100">
+                Sources:<br></br> 
+                <a href="https://www.worldometers.info/coronavirus/" target="_blank">https://www.worldometers.info/coronavirus/</a>
+                <br></br>
+                <a href="https://en.wikipedia.org/wiki/COVID-19_testing" target="_blank">https://en.wikipedia.org/wiki/COVID-19_testing/</a>
+              </font>
       </React.Fragment>
        );
   }
@@ -723,6 +790,9 @@ function FormRow8(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -744,6 +814,9 @@ function FormRow8(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
     </React.Fragment>
     );
   }
@@ -770,6 +843,9 @@ function FormRow9(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
     </React.Fragment>
   );
   } else {
@@ -791,6 +867,9 @@ function FormRow9(props) {
 
           </Paper>
       </Grid>
+      <font size="4" color="#334B63" margin-bottom="100">
+                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+              </font>
     </React.Fragment>
     );
   }
