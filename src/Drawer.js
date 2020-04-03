@@ -86,7 +86,7 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                    <Button variant="contained" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'helvetica'}}
+                    <Button variant="contained" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'Avenir Book'}}
                         onClick={() => this.getLang()}>
                         {this.state.displayTranslate}
                     </Button>
@@ -102,7 +102,7 @@ class ResponsiveDrawer extends Component {
                     </IconButton>
 
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'helvetica'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'Avenir Book'}}>
                             COVID-19 Quebec Dashboard
                         </Typography>
                     </div>
@@ -122,7 +122,7 @@ class ResponsiveDrawer extends Component {
                 <div className={classes.root}>
                 <CssBaseline />
                 <AppBar position="fixed" className={classes.appBar} style={{'backgroundColor': '#334B63'}}>
-                        <Button variant="contained" color="primary" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'helvetica'}}
+                        <Button variant="contained" color="primary" style={{'marginLeft':'80%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'Avenir Book'}}
                             onClick={() => this.getLang()}>
                             {this.state.displayTranslate}
                         </Button>
@@ -139,7 +139,7 @@ class ResponsiveDrawer extends Component {
                     </IconButton>
                    
                     <div style={{'display': 'inherit'}}>
-                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'helvetica'}}>
+                        <Typography variant="h4" style={{'marginLeft':'25%', 'textAlign':'center', 'minWidth':'max-content', 'display': 'inline-block', 'fontFamily': 'Avenir Book'}}>
                             Tableau de bord COVID-19 Québec
                         </Typography>
                     </div>

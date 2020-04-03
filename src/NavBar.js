@@ -67,15 +67,16 @@ const useStyles = theme => ({
     first: {
         fontSize: '1rem',
         marginLeft: '16%',
+        marginTop: '8%',
         color: '#334B63',
         fontWeight: 'bold',
-        fontFamily:'helvetica'
+        fontFamily:'Avenir Book'
     },
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
         fontWeight: 'normal',
-        fontFamily:'helvetica'
+        fontFamily:'Avenir Book'
       },
 });
 

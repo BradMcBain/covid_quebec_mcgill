@@ -49,7 +49,7 @@ class App extends Component{
                 <br></br>
                    <img src="./mcgillfooter_transparent.png" alt="" align="center" style={{
                   'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '30%'}}/>
-                    <b><font textAlign="center" face="helvetica" color="white" size="2">
+                    <b><font textAlign="center" face="Avenir Book" color="white" size="2">
                       <br></br>
                          Developed by McGill University, Desautels Faculty of Management
                           students</font>
@@ -58,7 +58,7 @@ class App extends Component{
                 
 
                 <br></br>
-                <font textAlign="center" face="helvetica" color="white" size="2">
+                <font textAlign="center" face="Avenir Book" color="white" size="2">
                   This website and its contents herein, including all data, mapping,
                   and analysis is provided to the public strictly for educational
                   purposes. This data relies upon publicly available from Quebec's
@@ -73,13 +73,13 @@ class App extends Component{
                 </font>
                 <hr class="rounded"></hr>
                 <br />
-                <font face="helvetica" color="white" size="2">
+                <font face="Avenir Book" color="white" size="2">
                   <b>Faculty advisor: &nbsp;</b>
                 </font>
-                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa" className="link" style={{"color": "white", 'fontFamily': 'helvetica'}}>
+                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa" className="link" style={{"color": "white", 'fontFamily': 'Avenir Book'}}>
                   Juan Camilo Serpa
                 </a>{" "}
-                <font face="helvetica" color="white" size="2">
+                <font face="Avenir Book" color="white" size="2">
                   • <b>Website developed by:</b> Bradley McBain, Brendan Marks
                   (McGill Engineering Students), Janna Agustin, Bogdan Tanasie •
                   <b> Content designed by:</b> Ruben Alba, Venkatesh Chandra, 

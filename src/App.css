@@ -50,3 +50,17 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url('fonts/avenir_ff/Avenir-Book.eot');
+  src: url('fonts/avenir_ff/Avenir-Book.ttf') format('truetype'),
+  url('fonts/avenir_ff/Avenir-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Avenir Black";
+  src: url('fonts/avenir_ff/Avenir-Black.eot');
+  src: url('fonts/avenir_ff/Avenir-Black.ttf') format('truetype'),
+  url('fonts/avenir_ff/Avenir-Black.woff') format('woff');
+}
