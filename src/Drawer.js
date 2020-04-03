@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 
 const useStyles = theme => ({
         root: {
@@ -29,6 +32,10 @@ const useStyles = theme => ({
           [theme.breakpoints.up('sm')]: {
             display: 'none',
           },
+        },
+        closeMenuButton: {
+          marginRight: 'auto',
+          marginLeft: 0,
         },
         // necessary for content to be below app bar
         toolbar: theme.mixins.toolbar,
@@ -67,12 +74,13 @@ class ResponsiveDrawer extends Component {
     }  
     handleDrawerToggle = () => {
         this.setState({mobileOpen: !this.state.mobileOpen});
-    };
+    }
 
     
     render(){
         
         const {classes} = this.props;
+
         if (this.state.lang === "en") {
             return (
                 <div className={classes.root}>
@@ -100,7 +108,10 @@ class ResponsiveDrawer extends Component {
                     </div>
                     </Toolbar>
                 </AppBar>
+
+
                 <NavBar lang={this.state.lang}/>
+
                 
                 </div>
             );
@@ -141,5 +152,10 @@ class ResponsiveDrawer extends Component {
     }
 }
 
+ResponsiveDrawer.propTypes = {
+  // Injected by the documentation to work in an iframe.
+  // You won't need it on your project.
+  container: PropTypes.object,
+};
 
 export default withStyles(useStyles)(ResponsiveDrawer);

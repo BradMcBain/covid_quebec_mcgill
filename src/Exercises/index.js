@@ -46,8 +46,8 @@ const useStyles = makeStyles((theme) => ({
 const styles = {
         Paper: { padding: 30, marginTop: 20, marginBottom:30},
         Welcome: {padding: 20, paddingTop: 4, marginTop: 20, marginBottom:0, background:"#e3f3ff"},
-        h3:{ color:"#334B63", display:"block", textAlign:"center"},
-        source: { display:"inline", textAlign: "left", color: "#334B63", marginLeft: 12, marginBottom:100},
+        h3:{ color:"#334B63", display:"block", textAlign:"center", face: "avenir" },
+        source: { display:"inline", textAlign: "left", color: "#334B63", marginLeft: 12, marginBottom:100, face:"avenir" },
         frags: {
         }
 }
@@ -60,7 +60,7 @@ function FormRow0(props){
         <Grid item xs={12}>
              <Paper style={styles.Welcome}  elevation={10}>
              <h1 style={styles.h3}>Welcome</h1>
-             <font size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill University members decided to work together to design an infographic data dashboard that relies solely on official government figures.<br></br><br></br> 
+             <font font-family="Avenir Book" size="3" color="#334B63" margin-bottom="100">Quebecers are not only enduring the COVID-19 pandemic, but also experiencing an avalanche of misinformation. To disseminate accurate data, McGill University members decided to work together to design an infographic data dashboard that relies solely on official government figures.<br></br><br></br> 
 
               
               We are a group of professors, data science & software engineering students striving to raise awareness about the spread of the pandemic in our province. This information will be updated daily. If you wish to help, please contact us at <b>info@covidqc.com</b>. 

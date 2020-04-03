@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {useMediaQuery} from 'react-responsive'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";
@@ -26,6 +27,7 @@ const styles = {
 }
 };
 
+
 class App extends Component{
   render(){
       const {classes} = this.props;
@@ -45,7 +47,7 @@ class App extends Component{
                    <span style={{ display: "inline-block", textAlign: "Center" }}>
                    <br></br>
                 <br></br>
-                   <img src="./mcgillfooter.jpeg" alt="" align="center" style={{
+                   <img src="./mcgillfooter_transparent.png" alt="" align="center" style={{
                   'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '30%'}}/>
                     <b><font textAlign="center" face="avenir" color="white" size="2">
                       <br></br>

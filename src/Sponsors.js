@@ -7,11 +7,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    maxWidth: 360,
+    maxWidth: 900,
    // backgroundColor: theme.palette.background.paper,
   },
   media: {
-      height: 340,
+      height: 300,
     }
 
 }));
@@ -31,8 +31,8 @@ function FormRowSponsor(){
                     <CardMedia
                     component="img"
                     alt=""
-                    height="130"
-                    image="./MMA.jpeg"
+                    height="150"
+                    image="./mma_logo_en.jpg"
                     title="Sponsor"
                     />
                 </CardActionArea>

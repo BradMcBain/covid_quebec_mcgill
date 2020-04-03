@@ -8,6 +8,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Exercises from './Exercises';
 import Sponsors from './Sponsors';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+// import VisibleItemList from '../containers/VisibleItemList'
 
 
 
@@ -45,6 +49,10 @@ const useStyles = theme => ({
         display: 'none',
       },
     },
+    closeMenuButton: {
+      marginRight: 'auto',
+      marginLeft: 0,
+    },
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
@@ -65,8 +73,7 @@ const useStyles = theme => ({
     li: {
         fontSize: '0.9rem',
         color: '#334B63',
-        fontWeight: 'normal',
-        marginTop: '0%'
+        fontWeight: 'normal'
       },
 });
 
@@ -82,6 +89,10 @@ class NavBar extends Component {
     }
     jumpTo = (id) => {
             this.setState({rowToShow: id});
+    }
+
+    handleDrawerToggle = () => {
+        this.setState({mobileOpen: !this.state.mobileOpen});
     }
 
     render() {
@@ -117,6 +128,7 @@ class NavBar extends Component {
                      <Divider />
              </div>);
             return (
+
                 <div>
                 <nav className={classes.drawer} aria-label="mailbox folders">
                     {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -149,22 +161,24 @@ class NavBar extends Component {
                     </Drawer>
                     </Hidden>
                 </nav>
-                <main className={classes.content}>
-                <div className={classes.appBar} />
-                <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className="my_container">
-                        <h1 align="center">Our Sponsors</h1>
-                </div>
-                <Sponsors/>
-                <br></br>
-                <br></br>
-                <br></br>
                 
-            </main>
-            </div>
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Exercises lang={this.props.lang} row={this.state.rowToShow}/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="my_container">
+                            <h1 align="center">Our Sponsors</h1>
+                    </div>
+                    <Sponsors/>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
+                </main>
+                </div>
+
             );
         } else {
             drawer = (<div>
