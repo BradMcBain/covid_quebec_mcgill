@@ -878,10 +878,15 @@ class Exercises extends Component {
       // MTL nb
       case 0:
         return (
+         <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3} id="0" >
+                <FormRow0 lang={this.props.lang}/>
+          </Grid>
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="3">
                 <FormRowTemp lang={this.props.lang}/>
             </Grid>
+          </Grid>
           </Grid>
           );
       // Cases per day MTL
@@ -907,14 +912,15 @@ class Exercises extends Component {
       // Map of administrative regions
       case 3:
         return (
+          /*
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0" >
                 <FormRow0 lang={this.props.lang}/>
             </Grid>
+            */
             <Grid container item xs={12} spacing={3} id="1">
                 <FormRow1 lang={this.props.lang}/>
             </Grid>
-          </Grid>
           );
       
       // Cases per day - QC
@@ -996,9 +1002,14 @@ class Exercises extends Component {
         default:
           return (
             <Grid container style={styles.frags}>
+            <Grid container item xs={12} spacing={3} id="0" >
+                <FormRow0 lang={this.props.lang}/>
+            </Grid>
+            <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRowTemp lang={this.props.lang}/>
               </Grid>
+            </Grid>
             </Grid>
           );
           /*
