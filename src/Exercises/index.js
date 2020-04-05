@@ -95,8 +95,8 @@ function FormRow1(props) {
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
-                 <h1 style={styles.h2}>Map of Quebec’s administrative regions</h1>
-                 <font style={styles.description}>These two color-coded maps illustrate the number of confirmed cases in each of Quebec’s administrative regions. A darker shade of blue represents a higher number of cases. The left-most graphs depicts a map of Quebec. The right-most graph zooms in to the southern regions of Quebec. You can see the exact number of cases, in each region, by clicking on the maps. 
+                 <h1 style={styles.h2}>Québec Health Regions</h1>
+                 <font style={styles.description}>This dashboard displays information about the number of cases and the evolution over time of confirmed cases in each Quebec health regions. 
                 </font>
             </Paper>
         </Grid>
@@ -119,9 +119,9 @@ function FormRow1(props) {
     return (
       <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
-              <h1 style={styles.h2}>Carte de la région administrative du Québec</h1>
+              <h1 style={styles.h2}>Régions sociosanitaires du Québec</h1>
               <font style={styles.description}>
-                Ces deux cartes à code couleur illustrent le nombre de cas confirmés dans chacune des régions administratives du Québec. Une teinte de bleu foncée représente un nombre plus élevé de cas. Les graphiques de gauche représentent une carte du Québec. Le graphique à l'extrème droite fait un zoom sur les régions du sud du Québec. Vous pouvez voir le nombre exact de cas, par région, en cliquant sur les cartes. 
+              Ce tableau de bord affiche de l'information sur le nombre de cas au coronavirus dans chaque région sociosanitaire du Québec et sur leur évolution au fil du temps. 
               </font>
             </Paper>
         </Grid>
