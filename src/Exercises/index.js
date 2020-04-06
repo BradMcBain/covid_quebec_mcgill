@@ -4,6 +4,7 @@ import { Grid } from "@material-ui/core"
 import { Paper } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+import TableauCityMobility from '../Tableau/TableauCityMobility';
 
 const Tableau1 = React.lazy(()=> import('../Tableau/Tableau1'))
 const Tableau2 = React.lazy(()=> import('../Tableau/Tableau2'))
@@ -142,7 +143,6 @@ function FormRow1(props) {
       </React.Fragment>
     );
   }
-  
 }
 
 
@@ -195,7 +195,6 @@ function FormRowCIUSSS(props) {
       </React.Fragment>
     );
   }
-  
 }
 
 function FormRowCIUSSSTrend(props) {
@@ -256,6 +255,62 @@ function FormRowCIUSSSTrend(props) {
   
 }
 
+function FormRowCityMobility(props) {
+  
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h2}>City Mobility Index — Citymapper</h1>
+                 <font style={styles.description}>This exhibit shows the number of planned trips in the citymapper mobile app, relative to a typical usage period (i.e., 4 weeks between January 6 and February 2, 2020). The citymapper Mobility Index is used for public transport users, and for walking, cycling, and micromobility and cabs. It does not track driving in private vehicles.
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <TableauCityMobility/>
+                  </React.Suspense>
+
+              </Paper>
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://citymapper.com/cmi/" target="_blank">https://citymapper.com/cmi/</a> (Permission Granted by Citymapper)
+              </font>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h2}>Indice de mobilité urbaine - Citymapper</h1>
+              <font style={styles.description}>
+              Cette exposition montre le nombre de voyages prévus dans l'application mobile citymapper, par rapport à une période d'utilisation typique (c-à-d. 4 semaines entre le 6 janvier et le 2 février 2020). L'indice de mobilité citymapper est utilisé pour les utilisateurs des transports publics, ainsi que pour la marche, le vélo, la micro-mobilité et les taxis. L'indice ne considère pas la conduite dans les véhicules privés.
+              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+             <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+                <TableauCityMobility/>
+                </React.Suspense>
+
+            </Paper>
+
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://citymapper.com/cmi/" target="_blank">https://citymapper.com/cmi/</a> (Permission accordée par Citymapper)
+              </font>
+      </React.Fragment>
+    );
+  }
+}
+
 function FormRowAgePie(props) {
   
   if (props.lang === "en"){
@@ -306,11 +361,6 @@ function FormRowAgePie(props) {
   }
   
 }
-
-
-
-
-
 
 
 
@@ -911,11 +961,20 @@ class Exercises extends Component {
                     <FormRowCIUSSSTrend lang={this.props.lang}/>
                 </Grid>
             </Grid>
-              );      
-      
+              );
+
+      case 3:
+          return (
+              <Grid container style={styles.frags}>
+                <Grid container item xs={12} spacing={3}>
+                    <FormRowCityMobility lang={this.props.lang}/>
+                </Grid>
+            </Grid>
+              );
+            
       //PROVINCE
       // Map of administrative regions
-      case 3:
+      case 4:
         return (
           /*
           <Grid container style={styles.frags}>
@@ -929,7 +988,7 @@ class Exercises extends Component {
           );
       
       // Cases per day - QC
-      case 4:
+      case 5:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -939,7 +998,7 @@ class Exercises extends Component {
           );
           
       // Total cases per region
-      case 5:
+      case 6:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -948,7 +1007,7 @@ class Exercises extends Component {
           </Grid>
           );
       // Cases per type
-      case 6:
+      case 7:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="2">
@@ -958,7 +1017,7 @@ class Exercises extends Component {
           );
       
       // Testing rates
-      case 7:
+      case 8:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -967,7 +1026,7 @@ class Exercises extends Component {
         </Grid>
           );
       
-      case 8:
+      case 9:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -987,7 +1046,7 @@ class Exercises extends Component {
               );
       */
 
-      case 9:
+      case 10:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -995,7 +1054,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 10:
+      case 11:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
