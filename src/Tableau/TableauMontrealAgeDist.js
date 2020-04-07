@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import tableau from 'tableau-api';  
   
 var viz;  
-class TableauMontreal extends Component { 
+class TableauMontrealAgeDist extends Component { 
   shouldComponentUpdate(){
     return viz === null;
   } 
@@ -31,4 +31,5 @@ class TableauMontreal extends Component {
   
 }  
 
-export default TableauMontreal; 
+export default TableauMontrealAgeDist 
+

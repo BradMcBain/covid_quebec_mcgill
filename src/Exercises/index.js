@@ -4,7 +4,10 @@ import { Grid } from "@material-ui/core"
 import { Paper } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
+
 import TableauCityMobility from '../Tableau/TableauCityMobility';
+//import TableauProvinceAgeDist from '../Tableau/TableauProvinceAgeDist';
+//import TableauMontrealAgeDist from '../Tableau/TableauMontrealAgeDist';
 
 const Tableau1 = React.lazy(()=> import('../Tableau/Tableau1'))
 const Tableau2 = React.lazy(()=> import('../Tableau/Tableau2'))
@@ -19,6 +22,8 @@ const Tableau10 = React.lazy(()=> import('../Tableau/Tableau10'))
 const Tableau11 = React.lazy(()=> import('../Tableau/Tableau11'))
 const TableauAgePie = React.lazy(()=> import('../Tableau/TableauAgePie'))
 const TableauCIUSSSTrend = React.lazy(()=> import('../Tableau/TableauCIUSSSTrend'))
+const TableauProvinceAgeDist = React.lazy(()=> import('../Tableau/TableauProvinceAgeDist'))
+const TableauMontrealAgeDist = React.lazy(()=> import('../Tableau/TableauMontrealAgeDist'))
 const TableauMontreal_updated = React.lazy(()=> import ('../Tableau/TableauMontreal_updated'))
 
 const useStyles = makeStyles((theme) => ({
@@ -305,6 +310,118 @@ function FormRowCityMobility(props) {
         </Grid>
         <font style={styles.source}>
                 Source: <a href="https://citymapper.com/cmi/" target="_blank">https://citymapper.com/cmi/</a> (Permission accordée par Citymapper)
+              </font>
+      </React.Fragment>
+    );
+  }
+}
+
+function FormRowProvinceAgeDist(props) {
+  
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h2}>Province — Age distribution</h1>
+                 <font style={styles.description}>This exhibit shows how the percentage of infected cases evolves across each age group in the province of Quebec
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <TableauProvinceAgeDist/>
+                  </React.Suspense>
+
+              </Paper>
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a> 
+              </font>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h2}>Québec - Répartition par âge</h1>
+              <font style={styles.description}>
+               Cette exposition montre comment le pourcentage de cas infectés évolue dans chaque groupe d'âge dans la province.
+              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+             <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+                <TableauProvinceAgeDist/>
+                </React.Suspense>
+
+            </Paper>
+
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+              </font>
+      </React.Fragment>
+    );
+  }
+}
+
+function FormRowMontrealAgeDist(props) {
+  
+  if (props.lang === "en"){
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
+             <Paper style={styles.Paper} elevation={5}>
+                 <h1 style={styles.h2}>Montreal — Age distribution</h1>
+                 <font style={styles.description}>This exhibit shows how the percentage of infected cases evolves across each age group in the province of Quebec
+                </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+              <Paper style={styles.Paper} elevation={5}>
+              <React.Suspense fallback={<div>loading ..</div>}>
+
+                  <TableauMontrealAgeDist/>
+                  </React.Suspense>
+
+              </Paper>
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a> 
+              </font>
+      </React.Fragment>
+    );
+  } else {
+    return (
+      <React.Fragment>
+        <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
+              <h1 style={styles.h2}>Montréal - Répartition par âge</h1>
+              <font style={styles.description}>
+               Cette exposition montre comment le pourcentage de cas infectés évolue dans chaque groupe d'âge dans la province.
+              </font>
+            </Paper>
+        </Grid>
+        <Grid item xs={12}>
+
+             <Paper style={styles.Paper} elevation={5}>
+             <React.Suspense fallback={<div>loading ..</div>}>
+
+                <TableauMontrealAgeDist/>
+                </React.Suspense>
+
+            </Paper>
+
+        </Grid>
+        <font style={styles.source}>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
       </React.Fragment>
     );
@@ -964,6 +1081,14 @@ class Exercises extends Component {
               );
 
       case 3:
+        return (
+            <Grid container style={styles.frags}>
+              <Grid container item xs={12} spacing={3}>
+                  <FormRowMontrealAgeDist lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+            );
+      case 4:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -974,7 +1099,7 @@ class Exercises extends Component {
             
       //PROVINCE
       // Map of administrative regions
-      case 4:
+      case 5:
         return (
           /*
           <Grid container style={styles.frags}>
@@ -988,7 +1113,7 @@ class Exercises extends Component {
           );
       
       // Cases per day - QC
-      case 5:
+      case 6:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -998,7 +1123,7 @@ class Exercises extends Component {
           );
           
       // Total cases per region
-      case 6:
+      case 7:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -1007,7 +1132,7 @@ class Exercises extends Component {
           </Grid>
           );
       // Cases per type
-      case 7:
+      case 8:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="2">
@@ -1016,8 +1141,17 @@ class Exercises extends Component {
           </Grid>
           );
       
+        case 9:
+        return (
+            <Grid container style={styles.frags}>
+              <Grid container item xs={12} spacing={3}>
+                  <FormRowProvinceAgeDist lang={this.props.lang}/>
+              </Grid>
+          </Grid>
+        );
+
       // Testing rates
-      case 8:
+      case 10:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -1026,7 +1160,7 @@ class Exercises extends Component {
         </Grid>
           );
       
-      case 9:
+      case 11:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -1046,7 +1180,7 @@ class Exercises extends Component {
               );
       */
 
-      case 10:
+      case 12:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -1054,7 +1188,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 11:
+      case 13:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>

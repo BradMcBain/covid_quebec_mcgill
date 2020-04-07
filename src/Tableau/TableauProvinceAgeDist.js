@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import tableau from 'tableau-api';  
   
 var viz;  
-class TableauMontreal extends Component { 
+class TableauProvinceAgeDist extends Component { 
   shouldComponentUpdate(){
     return viz === null;
   } 
@@ -12,7 +12,7 @@ class TableauMontreal extends Component {
   
   
   initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Mtlagegroup?:display_count=y&publish=yes&:origin=viz_share_link';  
+    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/QCAgegroup?:display_count=y&publish=yes&:origin=viz_share_link';  
     const vizContainer = this.vizContainer;
     const options = {
         hideTabs: true,
@@ -31,4 +31,4 @@ class TableauMontreal extends Component {
   
 }  
 
-export default TableauMontreal; 
+export default TableauProvinceAgeDist 
