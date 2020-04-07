@@ -88,6 +88,9 @@ class App extends Component{
                   Demi Wei & Katianicia Nafissatou
                   <br></br>
                   <br></br>
+                  Special thanks to Design is Yummy for its advice on web page design.
+                  <br></br>
+                  <br></br>
                   <br></br>
                   <br></br>
         

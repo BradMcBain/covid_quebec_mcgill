@@ -5,7 +5,7 @@ import { Paper } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 
-import TableauCityMobility from '../Tableau/TableauCityMobility';
+//import TableauCityMobility from '../Tableau/TableauCityMobility';
 //import TableauProvinceAgeDist from '../Tableau/TableauProvinceAgeDist';
 //import TableauMontrealAgeDist from '../Tableau/TableauMontrealAgeDist';
 
@@ -24,6 +24,7 @@ const TableauAgePie = React.lazy(()=> import('../Tableau/TableauAgePie'))
 const TableauCIUSSSTrend = React.lazy(()=> import('../Tableau/TableauCIUSSSTrend'))
 const TableauProvinceAgeDist = React.lazy(()=> import('../Tableau/TableauProvinceAgeDist'))
 const TableauMontrealAgeDist = React.lazy(()=> import('../Tableau/TableauMontrealAgeDist'))
+const TableauCityMobility = React.lazy(()=> import('../Tableau/TableauCityMobility'))
 const TableauMontreal_updated = React.lazy(()=> import ('../Tableau/TableauMontreal_updated'))
 
 const useStyles = makeStyles((theme) => ({
