@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {useMediaQuery} from 'react-responsive'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";

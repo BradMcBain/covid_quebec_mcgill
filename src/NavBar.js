@@ -8,9 +8,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Exercises from './Exercises';
 import Sponsors from './Sponsors';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
 // import VisibleItemList from '../containers/VisibleItemList'
 
 
