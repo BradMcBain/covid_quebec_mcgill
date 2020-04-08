@@ -721,7 +721,8 @@ function FormRow4(props) {
         <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h2}>Cases by Type</h1>
               <font style={styles.description}>
-              This exhibit plots four trends: total cases, hospitalized cases, cases under intensive care, and deaths.</font>
+              This stacked bar chart depicts the cumulative number of total cases by type deaths, recovered, active (but non-hospitalized), active and hospitalized, and those in intensive care. The trend line represents the number of active cases, where active cases = (non hospitalized )+ (hospitalized)+ (intensive care)
+              </font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -734,10 +735,7 @@ function FormRow4(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Sources: <br></br>
-                <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
-                <br></br>
-                <a href="https://twitter.com/francoislegault" target="_blank">Govt of Quebec’s daily press briefing</a>
+                Sources: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
   );
@@ -748,7 +746,8 @@ function FormRow4(props) {
         <Paper style={styles.Paper} elevation={5}>
              <h1 style={styles.h2}>Cas par type</h1>
               <font style={styles.description}>
-              Cette exposition trace quatres tendances: nombre total de cas, cas hospitalisés, cas sous soins intensifs et décès.</font>
+              Ce graphique à barres empilées illustre le nombre cumulatif de cas par type décès, récupérés, actifs (mais non hospitalisés), actifs et hospitalisés, et ceux en soins intensifs. La ligne de tendance représente le nombre de cas actifs. Note: cas actifs = (non hospitalisés) + (hospitalisés) + (soins intensifs)
+             </font>
             </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -761,11 +760,7 @@ function FormRow4(props) {
             </Paper>
         </Grid>
         <font style={styles.source}>
-                Sources:
-                <br></br>
-                <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
-                <br></br>
-                <a href="https://twitter.com/francoislegault" target="_blank">Point de presse quotidien du gouvernement du Québec</a>
+              Sources: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
       </React.Fragment>
     );

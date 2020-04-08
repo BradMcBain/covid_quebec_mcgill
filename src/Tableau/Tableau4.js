@@ -13,7 +13,7 @@ class Tableau4 extends Component {
   
   
   initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Trends1';  
+    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Trends3?:display_count=y&:origin=viz_share_link';  
     const vizContainer = this.vizContainer;
     const options = {
         hideTabs: true,
