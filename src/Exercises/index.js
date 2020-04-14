@@ -719,7 +719,7 @@ function FormRow4(props) {
     <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">           
         <Paper style={styles.Paper} elevation={5}>
-           <h1 style={styles.h2}>Cases by Type</h1>
+           <h1 style={styles.h2}>Cases per Type</h1>
               <font style={styles.description}>
               This stacked bar chart depicts the cumulative number of total cases by type deaths, recovered, active (but non-hospitalized), active and hospitalized, and those in intensive care. The trend line represents the number of active cases, where active cases = (non hospitalized )+ (hospitalized)+ (intensive care)
               </font>
@@ -1046,16 +1046,18 @@ class Exercises extends Component {
       // MTL nb
       case 0:
         return (
+        /*
          <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0" >
                 <FormRow0 lang={this.props.lang}/>
           </Grid>
+          */
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="3">
                 <FormRowTemp lang={this.props.lang}/>
             </Grid>
           </Grid>
-          </Grid>
+          //</Grid>
           );
       // Cases per day MTL
       case 1:
@@ -1195,16 +1197,18 @@ class Exercises extends Component {
 
         default:
           return (
+            /*
             <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="0" >
                 <FormRow0 lang={this.props.lang}/>
             </Grid>
+            */
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="3">
                   <FormRowTemp lang={this.props.lang}/>
               </Grid>
             </Grid>
-            </Grid>
+            //</Grid>
           );
           /*
           return (
