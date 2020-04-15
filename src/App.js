@@ -70,12 +70,12 @@ class App extends Component{
                   <br></br>
 
                 </font>
-                <hr class="rounded"></hr>
+                <hr className="rounded"></hr>
                 <br />
                 <font face="Nunito Sans" color="white" size="2">
                   <b>Faculty advisor: &nbsp;</b>
                 </font>
-                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
+                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa"   target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
                   Juan Camilo Serpa
                 </a>{" "}
                 <font face="Nunito Sans" color="white" size="2">
@@ -90,10 +90,25 @@ class App extends Component{
                   Special thanks to Design is Yummy for its advice on web page design.
                   <br></br>
                   <br></br>
-                  <br></br>
+                  </font>
+                  <font face="Nunito Sans" size='2'>Other links from McGill University:</font>
+                  <section>
+                  <ol className='center' face="Nunito Sans" color="black" style={{'font-size': '13px'}}>
+                    <li><a href="http://moitessier-group.mcgill.ca/covid19/covid.php" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                    Moitessier Research Group
+                    </a> </li>
+                    <li><a href="https://gic.geog.mcgill.ca/covid-19/" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                    McGill's GIC
+                     </a> </li>
+                     <li><a href="https://platial.science" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                    Platial Analysis Lab 
+                     </a> </li>
+                </ol> 
+                </section>
+                    
                   <br></br>
         
-                </font>
+                
               </span>
             </div>
           </footer>
