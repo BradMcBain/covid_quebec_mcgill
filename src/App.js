@@ -91,21 +91,18 @@ class App extends Component{
                   <br></br>
                   <br></br>
                   </font>
-                  <font face="Nunito Sans" size='2'>Other links from McGill University:</font>
-                  <section>
-                  <ol className='center' face="Nunito Sans" color="black" style={{'font-size': '13px'}}>
-                    <li><a href="http://moitessier-group.mcgill.ca/covid19/covid.php" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                  <font face="Nunito Sans" size='2'>Other links from McGill University:&emsp;</font>
+                    <a href="http://moitessier-group.mcgill.ca/covid19/covid.php" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
                     Moitessier Research Group
-                    </a> </li>
-                    <li><a href="https://gic.geog.mcgill.ca/covid-19/" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                    </a>&emsp;&emsp;&emsp;
+                    <a href="https://gic.geog.mcgill.ca/covid-19/" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
                     McGill's GIC
-                     </a> </li>
-                     <li><a href="https://platial.science" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
+                     </a>&emsp;&emsp;&emsp;
+                    <a href="https://platial.science" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
                     Platial Analysis Lab 
-                     </a> </li>
-                </ol> 
-                </section>
+                     </a>  
                     
+                  <br></br>
                   <br></br>
         
                 
