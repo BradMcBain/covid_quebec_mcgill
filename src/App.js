@@ -91,7 +91,7 @@ class App extends Component{
                   <br></br>
                   <br></br>
                   </font>
-                  <font face="Nunito Sans" size='2'>Other links from McGill University:&emsp;</font>
+                  {/*<font face="Nunito Sans" size='2'>Other links from McGill University:&emsp;</font>
                     <a href="http://moitessier-group.mcgill.ca/covid19/covid.php" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
                     Moitessier Research Group
                     </a>&emsp;&emsp;&emsp;
@@ -100,9 +100,7 @@ class App extends Component{
                      </a>&emsp;&emsp;&emsp;
                     <a href="https://platial.science" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans', 'font-size': '13px'}}>
                     Platial Analysis Lab 
-                     </a>  
-                    
-                  <br></br>
+                  </a>  */}
                   <br></br>
         
                 
