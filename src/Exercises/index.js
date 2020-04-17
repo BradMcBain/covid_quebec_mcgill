@@ -789,7 +789,7 @@ function FormRow5(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
   );
@@ -813,7 +813,7 @@ function FormRow5(props) {
             </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
       </React.Fragment>
       );
@@ -953,7 +953,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
   );
@@ -977,7 +977,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
     );
@@ -1006,7 +1006,7 @@ function FormRow9(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
   );
@@ -1030,7 +1030,7 @@ function FormRow9(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://twitter.com/sante_qc?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1239223631793848326&ref_url=https%3A%2F%2Fmontrealgazette.com%2Fnews%2Flocal-news%2Fcovid-19-quebec-orders-bars-and-theatres-to-close-restaurants-to-limit-customers" target="_blank">Santé Québec - Twitter</a>
+                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
               </font>
     </React.Fragment>
     );
