@@ -74,7 +74,7 @@ class App extends Component{
                 <font face="Nunito Sans" color="white" size="2">
                   <b>Faculty advisor: &nbsp;</b>
                 </font>
-                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa"   target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
+                <a href="https://www.mcgill.ca/desautels/juan-camilo-serpa"   target="_blank" rel="noopener noreferrer" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
                   Juan Camilo Serpa
                 </a>{" "}
                 <font face="Nunito Sans" color="white" size="2">
@@ -86,7 +86,7 @@ class App extends Component{
                   Demi Wei & Katianicia Nafissatou
                   <br></br>
                   <br></br>
-                  Hosted with <a href="https://zeit.co" target="_blank" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
+                  Hosted with <a href="https://zeit.co" target="_blank" rel="noopener noreferrer" className="link" style={{"color": "white", 'fontFamily': 'Nunito Sans'}}>
                   Zeit Now
                 </a>. Special thanks to Design is Yummy for its advice on web page design.
                   <br></br>
