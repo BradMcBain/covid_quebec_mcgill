@@ -29,7 +29,6 @@ const styles = {
 
 class App extends Component{
   render(){
-      const {classes} = this.props;
       return (
         <div className="page-container">
           <div className="content-wrap">
