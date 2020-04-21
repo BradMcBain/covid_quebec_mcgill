@@ -1,1 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [COVID QC](https://covidqc.com)
+
+Hosted with [Zeit Now](https://zeit.co).
