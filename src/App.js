@@ -79,7 +79,8 @@ class App extends Component{
                 </a>{" "}
                 <font face="Nunito Sans" color="white" size="2">
                   • <b>Website developed by:</b> Bradley McBain, Brendan Marks
-                  (McGill Engineering Students), Janna Agustin, Bogdan Tanasie •
+                  (McGill Engineering Students), Janna Agustin, Bogdan Tanasie, Loreina Chew
+                  <br></br>
                   <b> Content designed by:</b> Ruben Alba, Venkatesh Chandra, 
                   Jonathan Guzzo, Ramy Hammam, Jessica Zhang, Jasmine Jiang, 
                   Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, 
