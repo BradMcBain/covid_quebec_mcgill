@@ -4,7 +4,7 @@ import tableau from 'tableau-api';
 
 var viz;
 
-class TableauMontreal_updated extends Component {
+class TableauMontrealUpdated extends Component {
     
     shouldComponentUpdate(){
         return viz==null;
@@ -34,4 +34,4 @@ class TableauMontreal_updated extends Component {
       }
     }
 
-    export default TableauMontreal_updated;
+    export default TableauMontrealUpdated;
