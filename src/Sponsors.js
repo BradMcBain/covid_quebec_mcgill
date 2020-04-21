@@ -1,6 +1,6 @@
 import React, { Component }  from 'react'
 import { Grid } from "@material-ui/core"
-import { Card, CardActionArea, CardMedia, CardActions, Button} from "@material-ui/core"
+import { Card, CardActionArea, CardMedia } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 function FormRowSponsor(){
   const classes = useStyles();
-  {
     return (
       <React.Fragment>
         <Grid item xs={12} container
@@ -40,7 +39,6 @@ function FormRowSponsor(){
         </Grid>
       </React.Fragment>
     );
-  }
 }
 
 
