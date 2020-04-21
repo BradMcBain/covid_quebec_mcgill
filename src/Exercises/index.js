@@ -1120,17 +1120,8 @@ class Exercises extends Component {
         </Grid>
           );
           
-      // Total cases per region
-      case 7:
-        return (
-          <Grid container style={styles.frags}>
-            <Grid container item xs={12} spacing={3}>
-                <FormRow2 lang={this.props.lang}/>
-            </Grid>
-          </Grid>
-          );
       // Cases per type
-      case 8:
+      case 7:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="2">
@@ -1139,7 +1130,7 @@ class Exercises extends Component {
           </Grid>
           );
       
-        case 9:
+        case 8:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -1149,7 +1140,7 @@ class Exercises extends Component {
         );
 
       // Testing rates
-      case 10:
+      case 9:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -1158,7 +1149,7 @@ class Exercises extends Component {
         </Grid>
           );
       
-      case 11:
+      case 10:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -1178,7 +1169,7 @@ class Exercises extends Component {
               );
       */
 
-      case 12:
+      case 11:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
@@ -1186,7 +1177,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
-      case 13:
+      case 12:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
