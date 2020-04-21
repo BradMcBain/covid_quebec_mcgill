@@ -1,4 +1,5 @@
-import React, { Component } from 'react';  
+import React, { Component } from 'react'; 
+// eslint-disable-next-line no-unused-vars 
 import tableau from 'tableau-api';  
   
 var viz = null;  
