@@ -52,15 +52,49 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const styles = {
-        Paper: {padding: 30, marginTop: 20, marginBottom:30, width: '100%' },
-        Welcome: {padding: 20, paddingTop: 4, marginTop: 20, marginBottom:0, background:"#e3f3ff"},
-        h3:{ color:"#334B63", display:"block", textAlign:"center", fontFamily: "Nunito Sans", fontSize: "28px" },
-        h2:{ color:"#334B63", display:"block", textAlign:"center", fontFamily: "Nunito Sans", fontSize: "24px" },
-        description: {fontSize: '18px', color:'334B63', marginBottom:'100', fontFamily: "Nunito Sans"},
-        source: { display:"inline", textAlign: "left", color: "#334B63", marginLeft: 12, marginBottom:100, fontFamily:"Nunito Sans" },
-        frags: {
-        }
-}
+  Paper: { 
+    padding: 30, 
+    marginTop: 20, 
+    marginBottom: 30, 
+    width: "100%"
+  },
+  Welcome: {
+    padding: 20,
+    paddingTop: 4,
+    marginTop: 20,
+    marginBottom: 0,
+    background: "#e3f3ff",
+  },
+  h3: {
+    color: "#334B63",
+    display: "block",
+    textAlign: "center",
+    fontFamily: "Nunito Sans",
+    fontSize: "28px",
+  },
+  h2: {
+    color: "#334B63",
+    display: "block",
+    textAlign: "center",
+    fontFamily: "Nunito Sans",
+    fontSize: "24px",
+  },
+  description: {
+    fontSize: "18px",
+    color: "334B63",
+    marginBottom: "100",
+    fontFamily: "Nunito Sans",
+  },
+  source: {
+    display: "inline",
+    textAlign: "left",
+    color: "#334B63",
+    marginLeft: 12,
+    marginBottom: 100,
+    fontFamily: "Nunito Sans",
+  },
+  frags: {},
+};
 
 
 function FormRow0(props){
