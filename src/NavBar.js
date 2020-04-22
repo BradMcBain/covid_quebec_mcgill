@@ -12,6 +12,7 @@ import Sponsors from './Sponsors';
 
 
 
+// eslint-disable-next-line no-unused-vars
 function scrollToTargetAdjusted(el){
     var element = document.getElementById(el);
     var headerOffset = 70;
