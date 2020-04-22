@@ -542,7 +542,10 @@ function FormRowMontrealCases(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                <br></br>
+                <br></br>
+                Note: The City of Montreal reported borough-level cases for April 20 and April 21 jointly. We interpolated these cases proportionally across these two days in each borough, using an arithmetic approximation, but we don't have the exact figures.
               </font>
       </React.Fragment>
     );
@@ -568,7 +571,10 @@ function FormRowMontrealCases(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+               Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+              <br></br>
+              <br></br>
+              Remarque: La Ville de Montréal a déclaré conjointement les cas par arrondissement pour le 20 et 21 avril. Nous avons interpolé ces cas proportionnellement sur ces deux jours dans chaque arrondissement, en utilisant une approximation arithmétique, mais nous n'avons pas les chiffres exacts.
               </font>
       </React.Fragment>
     );
