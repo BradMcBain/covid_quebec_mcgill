@@ -1179,7 +1179,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
         );
-
+      
       // Testing rates
       case 9:
         return (
@@ -1209,7 +1209,7 @@ class Exercises extends Component {
             </Grid>
               );
       */
-
+      /*
       case 11:
         return (
             <Grid container style={styles.frags}>
@@ -1226,7 +1226,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
           );     
-
+        */
         default:
           return (
             /*
