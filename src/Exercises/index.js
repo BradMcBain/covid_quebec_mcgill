@@ -754,6 +754,7 @@ function FormRowMontrealCases(props) {
           <a
             href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://santemontreal.qc.ca/population/coronavirus-covid-19/
           </a>
@@ -802,6 +803,7 @@ function FormRowMontrealCases(props) {
           <a
             href="https://santemontreal.qc.ca/population/coronavirus-covid-19/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             https://santemontreal.qc.ca/population/coronavirus-covid-19/
           </a>
