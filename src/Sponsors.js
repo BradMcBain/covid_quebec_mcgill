@@ -27,7 +27,7 @@ function FormRowSponsor(){
         alignItems="center"
         justify="center">
             <Card className={classes.root}>
-                <CardActionArea href="https://www.mcgill.ca/desautels/programs/mma" target="_blank">
+                <CardActionArea href="https://www.mcgill.ca/desautels/programs/mma" target="_blank" rel="noopener noreferrer">
                     <CardMedia
                     className={classes.media}
                     image="./mma_logo_en.jpg"
