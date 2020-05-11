@@ -1,35 +1,37 @@
-import React, { Component } from 'react';  
+import React, { Component } from 'react';
 // eslint-disable-next-line no-unused-vars
-import tableau from 'tableau-api';  
-  
-var viz = null;  
-class Tableau2 extends Component { 
-  shouldComponentUpdate(){
+import tableau from 'tableau-api';
+
+var viz = null;
+class Tableau2 extends Component {
+  shouldComponentUpdate() {
     return viz === null;
-  } 
-  componentDidMount() {  
-    this.initViz()  
-  }  
-  
-  
-  initViz() {  
-    const vizUrl = 'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Cumulativecasesperday';  
+  }
+  componentDidMount() {
+    this.initViz();
+  }
+
+  initViz() {
+    const vizUrl =
+      'https://public.tableau.com/views/COVID-19QUEBECDASHBOARD_Automatic/Cumulativecasesperday';
     const vizContainer = this.vizContainer;
     const options = {
-        hideTabs: true,
-        device: localStorage.getItem("device"),
-        toolbarPosition: "ApiToolbarPosition.Top",
+      hideTabs: true,
+      device: localStorage.getItem('device'),
+      toolbarPosition: 'ApiToolbarPosition.Top',
     };
-    viz = new window.tableau.Viz(vizContainer, vizUrl, options)  
-  }  
-  
-  render() {  
-    return (  
-      <div ref={(div) => { this.vizContainer = div }}>  
-      </div>  
-    )  
-  }  
-  
-}  
+    viz = new window.tableau.Viz(vizContainer, vizUrl, options);
+  }
 
-export default Tableau2; 
+  render() {
+    return (
+      <div
+        ref={(div) => {
+          this.vizContainer = div;
+        }}
+      ></div>
+    );
+  }
+}
+
+export default Tableau2;
