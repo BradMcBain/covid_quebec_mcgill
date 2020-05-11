@@ -979,9 +979,9 @@ function FormRow8(props) {
     <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">           
         <Paper style={styles.Paper} elevation={5}>
-              <h1 style={styles.h2}>Daily rate changes</h1>
+              <h1 style={styles.h2}>Rate of change</h1>
               <font style={styles.description}>
-              This exhibit illustrates the daily percentage increase in cases, deaths, and hospitalizations.</font>
+              This graph depicts the 7-day moving average rate of change for total cases, recoveries, hospitalization, intensive care and deaths. The usage of the 7-day moving average allows to eliminate noise in the graphs and discern patterns.</font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -1005,7 +1005,7 @@ function FormRow8(props) {
         <Paper style={styles.Paper} elevation={5}>
            <h1 style={styles.h2}>Changements quotidiens des taux</h1>
               <font style={styles.description}>
-              Cette pièce illustre l'augmentation quotidienne en pourcentage des cas, des décès et des hospitalisations.</font>
+              Ce graphique illustre le taux de variation moyen mobile sur 7 jours pour le nombre total de cas, de récupérations, d’hospitalisations, de personnes soins intensifs et de décès. L’utilisation de la moyenne mobile sur 7 jours permet d'éliminer le bruit dans les graphiques et de discerner les tendances.</font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -1031,10 +1031,10 @@ function FormRow9(props) {
     <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">           
         <Paper style={styles.Paper} elevation={5}>
-           <h1 style={styles.h2}>Death rate and  days to double</h1>
+           <h1 style={styles.h2}>Days to double</h1>
               <font style={styles.description}>
-              This exhibit shows three statistics. In the left-most column depicts the death rate (deaths/ confirmed cases) in Quebec. The middle and right-most columns depict how long it has taken for the number of case to double, as a function of time. The higher these figures are, the slower the disease is spreading.
-              <br></br><br></br>Note: To calculate “days to double.” we use the following formula: ln(2)/ln(1+r), where r is the 3-day increase rate  smoothed average.</font>
+              This graph depicts the 7-day moving average of the number of days to double for total cases and deaths. A higher number of days to double signals a decline of the exponential growth of cases. 
+              </font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -1056,9 +1056,9 @@ function FormRow9(props) {
     <React.Fragment>
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">           
         <Paper style={styles.Paper} elevation={5}>
-           <h1 style={styles.h2}>Taux de mortalité et jours pour doubler</h1>
+           <h1 style={styles.h2}>Jours pour doubler</h1>
               <font style={styles.description}>
-              Cette exposition présente trois statistiques. La colonne de gauche représente le taux de mortalité (décès / cas confirmés) au Québec. Les colonnes du milieu et de la droite indiquent le temps qu'il a fallu pour que le nombre de cas double, en fonction du temps. Plus ces chiffres sont élevés, plus la maladie se propage lentement.</font>
+              Ce graphique illustre la moyenne mobile sur 7 jours du nombre de jours à doubler pour le nombre total de cas et de décès. Un nombre de jours pour doubler plus élevé signale une baisse de la croissance exponentielle des cas.</font>
           </Paper>
       </Grid>
       <Grid item xs={12}>
@@ -1209,7 +1209,6 @@ class Exercises extends Component {
             </Grid>
               );
       */
-      /*
       case 11:
         return (
             <Grid container style={styles.frags}>
@@ -1226,7 +1225,6 @@ class Exercises extends Component {
               </Grid>
           </Grid>
           );     
-        */
         default:
           return (
             /*
