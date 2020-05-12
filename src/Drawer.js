@@ -56,6 +56,12 @@ class ResponsiveDrawer extends Component {
     };
   }
 
+  static get propTypes() {
+    return {
+      classes: PropTypes.any,
+    };
+  }
+
   shouldComponentUpdate(newProps, newState) {
     // only render if the state has changed
     return this.state.lang !== newState.lang;

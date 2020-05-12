@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import { withStyles } from '@material-ui/core/styles';
@@ -83,6 +84,14 @@ class NavBar extends Component {
       rowToShow: 0,
     };
   }
+
+  static get propTypes() {
+    return {
+      classes: PropTypes.any,
+      lang: PropTypes.any,
+    };
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.lang !== this.props.lang || nextState !== this.state.rowToShow

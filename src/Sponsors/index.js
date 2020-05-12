@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
 import { Grid } from '@material-ui/core';
-import {
-  Paper,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  Button,
-} from '@material-ui/core';
+import { Card, CardActionArea, CardMedia } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
 import MMA from './mma_logo_en.jpg';
 
@@ -26,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// eslint-disable-next-line no-unused-vars
 const styles = {
   Paper: { padding: 30, marginTop: 20, marginBottom: 30 },
   Welcome: {
