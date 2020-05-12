@@ -154,7 +154,7 @@ function FormRow1(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -180,7 +180,7 @@ function FormRow1(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -263,7 +263,7 @@ function FormRowCIUSSSTrend(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
               </font>
       </React.Fragment>
     );
@@ -289,7 +289,7 @@ function FormRowCIUSSSTrend(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
               </font>
       </React.Fragment>
     );
@@ -320,7 +320,7 @@ function FormRowCityMobility(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://citymapper.com/cmi/" target="_blank" rel="noopener noreferrer">https://citymapper.com/cmi/</a> (Permission Granted by Citymapper)
+                Source: <a href="https://citymapper.com/cmi" target="_blank" rel="noopener noreferrer">https://citymapper.com/cmi</a> (Permission Granted by Citymapper)
               </font>
       </React.Fragment>
     );
@@ -346,7 +346,7 @@ function FormRowCityMobility(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://citymapper.com/cmi/" target="_blank" rel="noopener noreferrer">https://citymapper.com/cmi/</a> (Permission accordée par Citymapper)
+                Source: <a href="https://citymapper.com/cmi" target="_blank" rel="noopener noreferrer">https://citymapper.com/cmi</a> (Permission accordée par Citymapper)
               </font>
       </React.Fragment>
     );
@@ -376,7 +376,7 @@ function FormRowProvinceAgeDist(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a> 
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a> 
               </font>
       </React.Fragment>
     );
@@ -402,7 +402,7 @@ function FormRowProvinceAgeDist(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -432,7 +432,7 @@ function FormRowMontrealAgeDist(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a> 
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a> 
               </font>
       </React.Fragment>
     );
@@ -458,7 +458,7 @@ function FormRowMontrealAgeDist(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -496,7 +496,7 @@ function FormRowAgePie(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h2}>Cas par groupe d’âge</h1>
               <font style={styles.description}>
-              Ce diagramme circulaire illustre la répartition des cas confirmés par groupe d’âge.              </font>
+              Ce diagramme circulaire illustre la répartition des cas confirmés par groupe d’âge.</font>
             </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -542,7 +542,7 @@ function FormRowMontrealCases(props) {
               </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
                 <br></br>
                 <br></br>
                 Note: The City of Montreal reported borough-level cases for April 20 and April 21 jointly. We interpolated these cases proportionally across these two days in each borough, using an arithmetic approximation, but we don't have the exact figures.
@@ -571,7 +571,7 @@ function FormRowMontrealCases(props) {
 
         </Grid>
         <font style={styles.source}>
-               Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+               Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19" target="_blank">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
               <br></br>
               <br></br>
               Remarque: La Ville de Montréal a déclaré conjointement les cas par arrondissement pour le 20 et 21 avril. Nous avons interpolé ces cas proportionnellement sur ces deux jours dans chaque arrondissement, en utilisant une approximation arithmétique, mais nous n'avons pas les chiffres exacts.
@@ -608,7 +608,7 @@ function FormRowTemp(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/#c36391" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
               </font>
       </React.Fragment>
     );
@@ -633,7 +633,7 @@ function FormRowTemp(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19/" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19/</a>
+                Source: <a href="https://santemontreal.qc.ca/population/coronavirus-covid-19" target="_blank" rel="noopener noreferrer">https://santemontreal.qc.ca/population/coronavirus-covid-19</a>
               </font>
       </React.Fragment>
     );
@@ -665,7 +665,7 @@ function FormRow2(props) {
 
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -690,7 +690,7 @@ function FormRow2(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -721,7 +721,7 @@ function FormRow3(props) {
 
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/situation-coronavirus-in-quebec/" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -746,7 +746,7 @@ function FormRow3(props) {
 
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/#c47900" target="_blank" rel="noopener noreferrer">https://www.quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/situation-coronavirus-quebec/</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -776,7 +776,7 @@ function FormRow4(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Sources: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Sources: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -801,7 +801,7 @@ function FormRow4(props) {
             </Paper>
         </Grid>
         <font style={styles.source}>
-              Sources: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+              Sources: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
     );
@@ -830,7 +830,7 @@ function FormRow5(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -854,7 +854,7 @@ function FormRow5(props) {
             </Paper>
         </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
       </React.Fragment>
       );
@@ -994,7 +994,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -1018,7 +1018,7 @@ function FormRow8(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
     );
@@ -1047,7 +1047,7 @@ function FormRow9(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
   );
@@ -1071,7 +1071,7 @@ function FormRow9(props) {
           </Paper>
       </Grid>
         <font style={styles.source}>
-                Source: <a href="https://santequebec.ca/coronavirus-covid-19/statistiques" target="_blank" rel="noopener noreferrer">https://santequebec.ca/coronavirus-covid-19/statistiques</a>
+                Source: <a href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
     </React.Fragment>
     );
