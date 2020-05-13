@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import Drawer from './Drawer';
+import SEO from './components/SEO';
 
 if (isMobile) {
   localStorage.setItem('device', 'mobile');
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div className="page-container">
         <div className="content-wrap">
+          <SEO />
           <Router basename={process.env.PUBLIC_URL}>
             <Route component={App} path="/">
               <Redirect from="*" to="/" />
