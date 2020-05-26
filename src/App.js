@@ -5,6 +5,8 @@ import { isMobile } from "react-device-detect";
 import "rc-footer/assets/index.css"; // import 'rc-footer/asssets/index.less';
 import Drawer from "./Drawer";
 import SEO from "./components/SEO";
+import NavBarMobile from './NavBarMobile';
+import DrawerMobile from './DrawerMobile';
 
 if (isMobile) {
   localStorage.setItem("device", "mobile");
@@ -19,26 +21,43 @@ const styles = {
     position: "absolute",
   },
   footer: {
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "#334B63",
-    color: "#fff",
-    position: "relative",
-  },
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#334B63',
+    color: '#fff',
+    position: 'relative',
+}
+  
 };
 
-class App extends Component {
-  render() {
-    return (
-      <div className="page-container">
-        <div className="content-wrap">
-          <SEO />
-          <Router basename={process.env.PUBLIC_URL}>
-            <Route component={App} path="/">
-              <Redirect from="*" to="/" />
-            </Route>
-          </Router>
-          <Drawer></Drawer>
+
+class App extends Component{
+  constructor(props){
+    super(props);
+  }
+
+
+  render(){
+
+    const renderDrawer = () => {
+            if (isMobile) {
+              return  <DrawerMobile/>;
+            } else {
+              return <Drawer/>;
+            }
+    }
+      
+    
+      return (
+        <div className="page-container">
+          <div className="content-wrap">
+            
+            <Router basename={process.env.PUBLIC_URL}>
+              <Route component={App} path="/">
+                <Redirect from="*" to="/" />
+              </Route>
+            </Router>
+          {renderDrawer()}
           <footer style={styles.footer}>
             <div className="footer_">
               <span style={{ display: "inline-block", textAlign: "Center" }}>
