@@ -175,7 +175,7 @@ class NavBarMobile extends React.Component {
           </MenuItem>)
       });
 
-      const menuFr = ['MONTRÉAL','Carte', 'CIUSSS', 'PROVINCE', 'Carte', 'Cas par type', 'Tests', 'Québec vs. monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler']
+      const menuFr = ['MONTRÉAL','Carte', 'CIUSSS', 'PROVINCE', 'Carte', 'Cas par type', 'Tests', 'Québec vs. monde', 'Taux de variation', 'Jours pour doubler']
       const menuItemsFr = menuFr.map((val,index)=>{
         return (
           <MenuItem 
