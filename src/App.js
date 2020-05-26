@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import {isMobile} from "react-device-detect";
 import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import Drawer from './Drawer'
+import NavBarMobile from './NavBarMobile'
+import DrawerMobile from './DrawerMobile'
 
 if (isMobile) {
   localStorage.setItem("device","mobile");
@@ -24,11 +26,27 @@ const styles = {
     color: '#fff',
     position: 'relative',
 }
+  
 };
 
 
 class App extends Component{
+  constructor(props){
+    super(props);
+  }
+
+
   render(){
+
+    const renderDrawer = () => {
+            if (isMobile) {
+              return  <DrawerMobile/>;
+            } else {
+              return <Drawer/>;
+            }
+    }
+      
+    
       return (
         <div className="page-container">
           <div className="content-wrap">
@@ -38,8 +56,7 @@ class App extends Component{
                 <Redirect from="*" to="/" />
               </Route>
             </Router>
-          <Drawer>
-          </Drawer>
+          {renderDrawer()}
           <footer style={styles.footer}>
                 <div className="footer_">
                    <span style={{ display: "inline-block", textAlign: "Center" }}>
