@@ -59,7 +59,7 @@ class App extends Component{
             </Router>
           {renderDrawer()}
           <footer style={styles.footer}>
-            <div className="footer_">
+            <div className={isMobile ? "mobileFooter_" : "footer_" }>
               <span style={{ display: "inline-block", textAlign: "Center" }}>
                 <br></br>
                 <br></br>
