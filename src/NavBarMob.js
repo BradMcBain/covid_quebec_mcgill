@@ -111,34 +111,7 @@ class NavBarMob extends Component {
         const {classes} = this.props;
         var drawer;
         if (this.props.lang === "en") {
-            drawer = (<div>
-             <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
-                     <Divider />
-                         <List className = {classes.first} >
-                              MONTREAL
-                         </List>
-                         <List>
-                             {['Map', 'CIUSSS', 'Age distribution', 'City mobility index'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index)}>
-                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
-                             </ListItem>
-                             ))}
-                         </List>
-                     <Divider />
-                     <Divider />
-                         <List className = {classes.first} >
-                              PROVINCE
-                         </List>
-                         <List>
-                             {['Map', 'Cases per day', 'Cases per type', 'Age distribution', 'Tests', 'Quebec vs. the world', 'Daily rate changes', 'Death rate and days to double'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index + 5)}>
-                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
-                             </ListItem>
-                             ))}
-                         </List>
-                     <Divider />
-             </div>);
+         
             return (
 
                 <div>
@@ -164,35 +137,7 @@ class NavBarMob extends Component {
 
             );
         } else {
-            drawer = (<div>
-                <img src="./covidlogo.ico" alt="" align="center" style={{ 'marginTop':'18%', 
-            'display': 'block', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '90%', 'marginBottom':'18%'}}/>
-                     <Divider />
-                         <List className = {classes.first} >
-                            MONTRÉAL
-                         </List>
-                         <List>
-                             {['Carte', 'CIUSSS', 'Répartition par âge', 'Indice de mobilité urbaine'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index)}>
-                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
-                             </ListItem>
-                             ))}
-                         </List>
-                     <Divider />
-                     <Divider />
-                        <List className = {classes.first} >
-                             PROVINCE
-                         </List>
-                         <List>
-                             {['Carte', 'Cas par jour', 'Cas par type', 'Répartition par âge', 'Tests', 'Québec vs. monde', 'Changements quotidiens des taux', 'Taux de mortalité et jours pour doubler'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index + 5)}>
-                                 <ListItemText primary={text} classes={{primary: classes.li}}/>
-                             </ListItem>
-                             ))}
-                         </List>
-                     <Divider />
-                    
-             </div>);
+
             return (
                 <div>
                

@@ -31,7 +31,7 @@ class NavBarMobile extends React.Component {
       super(props);
       this.state={
         menuOpen:false,
-        displayTranslate: "Francais"
+        displayTranslate: "Français"
       }
     }
 
@@ -42,7 +42,7 @@ class NavBarMobile extends React.Component {
       this.targetElement = document.querySelector('#div2');
     }
     getLang() {
-      if (this.state.displayTranslate === "Francais"){
+      if (this.state.displayTranslate === "Français"){
           //this.setState({lang: "fr"});
           //this.setState({displayTranslate: "English"});
         this.props.langCallback('fr')
@@ -51,7 +51,7 @@ class NavBarMobile extends React.Component {
         //  this.setState({lang: "en"});
         //  this.setState({displayTranslate: "Français"});
         this.props.langCallback('en')
-        this.setState({displayTranslate: "Francais"})
+        this.setState({displayTranslate: "Français"})
       }
   }  
 
@@ -102,7 +102,6 @@ class NavBarMobile extends React.Component {
             textAlign: "center",
             fontFamily: "Nunito Sans",
             fontSize: "15px",
-
           },
           body: {
             display: 'flex',
@@ -236,14 +235,14 @@ class NavBarMobile extends React.Component {
 
 
 
-      if(this.state.displayTranslate === 'Francais') {
+      if(this.state.displayTranslate === 'Français') {
       return(
         
         <div>
           <div style={styles.container}>
             <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
             <div style={styles.logo}>
-            COVID-19 Quebec Dashboard
+            <b>COVID-19 Quebec Dashboard</b>
             </div>
             <Button variant="contained" style={{'marginRight':'0%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'Nunito Sans',  'top ': '0','right' : '0','position': 'fixed'}}
                         onClick={() => this.getLang()}>
@@ -265,7 +264,9 @@ class NavBarMobile extends React.Component {
       <div style={styles.container}>
         <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
         <div style={styles.logo}>
-                            Tableau de bord COVID-19 Québec                         
+        <b>
+                            Tableau de bord COVID-19 Québec  
+        </b>                       
         </div>
         <Button variant="contained" style={{'marginRight':'0%', 'backgroundColor': '#A8CBE5', 'color': '#293b4d', 'fontFamily': 'Nunito Sans', 'top ': '0','right' : '0','position': 'fixed'}}
                     onClick={() => this.getLang()}>
