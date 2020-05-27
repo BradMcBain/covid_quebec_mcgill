@@ -85,6 +85,18 @@ const styles = {
     marginBottom: "100",
     fontFamily: "Nunito Sans",
   },
+  description2: {
+    fontSize: "17.99px",
+    color: "334B63",
+    marginBottom: "100",
+    fontFamily: "Nunito Sans",
+  },
+  description3: {
+    fontSize: "17.98px",
+    color: "334B63",
+    marginBottom: "100",
+    fontFamily: "Nunito Sans",
+  },
   source: {
     display: "flex",
     textAlign: "left",
@@ -257,9 +269,12 @@ function FormRowCIUSSSTrend(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">
              <Paper style={styles.Paper} elevation={5}>
                  <h1 style={styles.h2}>Cases by CIUSSS</h1>
-                <font style={styles.description}>This graph depicts the trend in the daily number of confirmed cases by Integrated University Health and Social Services Centre (CIUSSS).  <br></br><br></br>The second exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSS).
-
+                <font style={styles.description}>This graph depicts the trend in the daily number of confirmed cases by Integrated University Health and Social Services Centre (CIUSSS).  <br></br><br></br>
                 </font>
+                <font style={styles.description2}>
+                The second exhibit shows the number of cases in each Integrated University Health and Social Services Centre (CIUSSS).
+                </font>
+                
             </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -283,7 +298,10 @@ function FormRowCIUSSSTrend(props) {
         <Grid item xs={12} container spacing={0} direction="column" alignItems="center" justify="center">             <Paper style={styles.Paper} elevation={5}>
               <h1 style={styles.h2}>Cas par CIUSSS</h1>
               <font style={styles.description}>
-              Ce graphique illustre la tendance du nombre quotidien de cas confirmés par Centre intégré universitaire de santé et de services sociaux (CIUSSS).<br></br><br></br>              La deuxième exposition montre le nombre total de cas, dans chaque Centre intégré universitaire de santé et de services sociaux (CIUSSS).
+              Ce graphique illustre la tendance du nombre quotidien de cas confirmés par Centre intégré universitaire de santé et de services sociaux (CIUSSS).<br></br><br></br> 
+                </font>
+                <font style={styles.description2}>
+                La deuxième exposition montre le nombre total de cas, dans chaque Centre intégré universitaire de santé et de services sociaux (CIUSSS).
               </font>
             </Paper>
         </Grid>
@@ -885,7 +903,11 @@ function FormRow6(props) {
               Left Table: This shows the trajectory in the number of cases in Quebec, relative to other countries. In the x-axis, we plot the number of days since the total number of deaths, in each region, reached five. In the y-axis, we plot the total number of deaths. The straight grey lines show trajectories for a doubling time of 2 days, 3 days, 5 days and 10 days. If a country’s line on the chart is higher than those lines, then its number of deaths is doubling faster than that.
               <br></br>
               <br></br>
+              </font>
+              <font style={styles.description2}>
               Right Table: This scatterplot illustrates how Quebec compares to the rest of Canada (and other countries), in terms of testing rates and number of cases. In the y axis, we test rate (number of tests per 100k inhabitants). In the x axis, we plot the number of cases. 
+             </font>
+             <font style={styles.description3}>
               <br></br><br></br>Ideally, we want regions to perform highly in terms of test rates, while having a low number of cases. That is, in an ideal scenario, regions should be in the upper-left region of the plot. You can click on the map to highlight a specific region.
               <br></br>
               </font>
@@ -915,8 +937,13 @@ function FormRow6(props) {
               Tableau Gauche: Cela montre la trajectoire du nombre de cas au Québec, par rapport aux autres pays. Dans l'axe des abscisses (x), nous indiquons le nombre de jours depuis que le nombre total de décès a atteint cinq décès par région. Sur l'axe des ordonnées (y), nous indiquons le nombre total de décès. Les lignes droites grises indiquent les trajectoires pour un temps de doublement de 2 jours, 3 jours, 5 jours et 10 jours. Si la ligne d'un pays sur le graphique est plus haute que ces lignes, alors son nombre de décès double plus vite que cela.
               <br></br>
               <br></br>
+              </font>
+              <font style={styles.description2}>
               Tableau Droite: Ce nuage de points illustre comment le Québec se compare au reste du Canada (et d’autres pays), en termes de taux de dépistage et de nombre de cas. Sur l’axe des ordonnées (y), nous testons le taux (nombre de tests pour 100 000 habitants). Sur l’axe des abscisses, nous traçons le nombre de cas. 
-              <br></br><br></br>Idéalement, nous souhaitons que les régions soient très performantes en termes de taux de test, tout en ayant un faible nombre de cas. Autrement dit, dans un scénario idéal, les régions devraient se trouver dans la région supérieure gauche du graphique. Vous pouvez cliquer sur la carte pour choisir une région spécifique.
+              <br></br><br></br>
+              </font>
+              <font style={styles.description2}>
+              Idéalement, nous souhaitons que les régions soient très performantes en termes de taux de test, tout en ayant un faible nombre de cas. Autrement dit, dans un scénario idéal, les régions devraient se trouver dans la région supérieure gauche du graphique. Vous pouvez cliquer sur la carte pour choisir une région spécifique.
              </font>
             </Paper>
         </Grid>
