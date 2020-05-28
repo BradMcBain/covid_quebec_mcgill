@@ -92,7 +92,7 @@ const styles = {
     fontFamily: "Nunito Sans",
   },
   description3: {
-    fontSize: "17.98px",
+    fontSize: "17.9px",
     color: "334B63",
     marginBottom: "100",
     fontFamily: "Nunito Sans",
