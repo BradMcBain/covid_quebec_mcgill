@@ -22,7 +22,6 @@ class TableauMontrealUpdated extends Component {
             device: localStorage.getItem('device'),
             toolbarPosition: "ApiToolbarPosition.Top",
         };
-
         viz = new window.tableau.Viz(vizContainer, vizURL, options)
     }
 

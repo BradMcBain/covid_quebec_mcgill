@@ -56,7 +56,7 @@ const styles = {
     padding: 10, 
     marginTop: 20, 
     marginBottom: 30, 
-    width: "100%"
+    width: "98.3%"
   },
   Welcome: {
     padding: 20,
