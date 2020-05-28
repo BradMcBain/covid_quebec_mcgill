@@ -114,7 +114,7 @@ class NavBarMobile extends React.Component {
             transition: 'filter 0.5s ease',
           },
         }
-      const menuEn = ['MONTREAL','Map','CIUSSS', 'PROVINCE', 'Map', 'Cases per type', 'Tests', 'Quebec vs. the world', 'Rate of change', 'Days to double']
+      const menuEn = ['MONTREAL','Map','CIUSSS', 'PROVINCE', 'Map', 'Cases per day', 'Cases per type', 'Tests', 'Quebec vs. the world', 'Rate of change', 'Days to double']
       const menuItemsEn = menuEn.map((val,index)=>{
         return (
           <MenuItem 
@@ -143,27 +143,31 @@ class NavBarMobile extends React.Component {
                     break;
                   case 5:
                     this.handleLinkClick(); 
-                    this.getContent(7)
+                    this.getContent(6)
                     break;
                   case 6:
                     this.handleLinkClick(); 
-                    this.getContent(9)
+                    this.getContent(7)
                     break;
                   case 7:
                     this.handleLinkClick(); 
-                    this.getContent(10)
+                    this.getContent(9)
                     break;
                   case 8:
                     this.handleLinkClick(); 
-                    this.getContent(11)
+                    this.getContent(10)
                     break;
                   case 9:
+                    this.handleLinkClick(); 
+                    this.getContent(11)
+                    break;
+                  case 10:
                     this.handleLinkClick(); 
                     this.getContent(12)
                     break;
                     
                 
-                    default:
+                   default:
                     // code block
                 }
               
@@ -174,7 +178,7 @@ class NavBarMobile extends React.Component {
           </MenuItem>)
       });
 
-      const menuFr = ['MONTRÉAL','Carte', 'CIUSSS', 'PROVINCE', 'Carte', 'Cas par type', 'Tests', 'Québec vs. monde', 'Taux de variation', 'Jours pour doubler']
+      const menuFr = ['MONTRÉAL','Carte', 'CIUSSS', 'PROVINCE', 'Carte', 'Cas par jour', 'Cas par type', 'Tests', 'Québec vs. monde', 'Taux de variation', 'Jours pour doubler']
       const menuItemsFr = menuFr.map((val,index)=>{
         return (
           <MenuItem 
@@ -184,45 +188,49 @@ class NavBarMobile extends React.Component {
             onClick={()=>{
               switch(index) {
                 case 0:
-                  break;
-                case 1:
-                  this.handleLinkClick(); 
-                  this.getContent(0)
-                  break;
-                case 2:
-                  this.handleLinkClick(); 
-                  this.getContent(2)
-                  break;
-                case 3:
-                  break;
-                case 4:
-                  this.handleLinkClick(); 
-                  this.getContent(5)
-                  break;
-                case 5:
-                  this.handleLinkClick(); 
-                  this.getContent(7)
-                  break;
-                case 6:
-                  this.handleLinkClick(); 
-                  this.getContent(9)
-                  break;
-                case 7:
-                  this.handleLinkClick(); 
-                  this.getContent(10)
-                  break;
-                case 8:
-                  this.handleLinkClick(); 
-                  this.getContent(11)
-                  break;
-                case 9:
-                  this.handleLinkClick(); 
-                  this.getContent(12)
-                  break;
-                  
-              
-                  default:
-                  // code block
+                break;
+              case 1:
+                this.handleLinkClick(); 
+                this.getContent(0)
+                break;
+              case 2:
+                this.handleLinkClick(); 
+                this.getContent(2)
+                break;
+              case 3:
+                break;
+              case 4:
+                this.handleLinkClick(); 
+                this.getContent(5)
+                break;
+              case 5:
+                this.handleLinkClick(); 
+                this.getContent(6)
+                break;
+              case 6:
+                this.handleLinkClick(); 
+                this.getContent(7)
+                break;
+              case 7:
+                this.handleLinkClick(); 
+                this.getContent(9)
+                break;
+              case 8:
+                this.handleLinkClick(); 
+                this.getContent(10)
+                break;
+              case 9:
+                this.handleLinkClick(); 
+                this.getContent(11)
+                break;
+              case 10:
+                this.handleLinkClick(); 
+                this.getContent(12)
+                break;
+                
+            
+               default:
+                // code block
               }
                
               
