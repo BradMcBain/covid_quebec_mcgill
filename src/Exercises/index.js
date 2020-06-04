@@ -754,6 +754,11 @@ function FormRow3(props) {
         <font style={styles.source}>
                 Source: <a style={styles.sourceLink} href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
+
+              <br></br>
+         <font style={styles.source}>
+              Note: We did not report cases on May 3 because this day includes a batch of 2209, most of which do not belong to this day. Therefore, May 3 doesn't accurately report the evolution of cases in the province.
+        </font>
     </React.Fragment>
   );
   } else {
@@ -779,6 +784,10 @@ function FormRow3(props) {
         <font style={styles.source}>
                 Source: <a style={styles.sourceLink} href="https://www.inspq.qc.ca/covid-19/donnees" target="_blank" rel="noopener noreferrer">https://www.inspq.qc.ca/covid-19/donnees</a>
               </font>
+              <br></br>
+         <font style={styles.source}>
+              Remarque: Nous n'avons pas reporté les cas du 3 mai, car cette journée comprend un lot de 2209 dû à un adjustement des cas du mois d’avril. Par conséquent, le 3 mai ne représente pas l'évolution des cas dans la province.
+        </font>
       </React.Fragment>
     );
   }
