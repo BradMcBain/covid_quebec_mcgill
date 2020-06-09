@@ -574,8 +574,18 @@ function FormRowMontrealCases(props) {
         </font>
                 <br></br>
         <font style={styles.source}>
-                Note: The City of Montreal reported borough-level cases for April 20 and April 21 jointly. We interpolated these cases proportionally across these two days in each borough, using an arithmetic approximation, but we don't have the exact figures.
-              </font>
+
+                <div>
+              Notes: 
+              <li> The City of Montreal reported borough-level cases for April 20 and April 21 jointly. We interpolated these cases proportionally across these two days in each borough, using an arithmetic approximation, but we don't have the exact figures.
+              </li>
+              <li>
+              There are some discrepancies between the daily reported cases by Santé Quebec and Santé Montreal, because  a number of cases that were previously unassigned to a borough, are progressively reassigned to a territory. In light of this, the daily augmentation in cases reported by Santé Montreal  (in a given neighbourhood) are not fully reflective of actual increases in a particular day, but also take into account territorial reassignments.
+              </li>
+          </div>
+        </font>
+
+              
       </React.Fragment>
     );
   } else {
@@ -604,7 +614,14 @@ function FormRowMontrealCases(props) {
         </font>
               <br></br>
          <font style={styles.source}>
-              Remarque: La Ville de Montréal a déclaré conjointement les cas par arrondissement pour le 20 et 21 avril. Nous avons interpolé ces cas proportionnellement sur ces deux jours dans chaque arrondissement, en utilisant une approximation arithmétique, mais nous n'avons pas les chiffres exacts.
+         <div>
+              Remarques: 
+              <li>La Ville de Montréal a déclaré conjointement les cas par arrondissement pour le 20 et 21 avril. Nous avons interpolé ces cas proportionnellement sur ces deux jours dans chaque arrondissement, en utilisant une approximation arithmétique, mais nous n'avons pas les chiffres exacts.
+              </li>
+              <li>
+              Il existe certaines divergences entre les cas rapportés quotidiennement par Santé Québec et Santé Montréal, car un certain nombre de cas qui n'étaient auparavant pas attribués à un arrondissement. Ceux-ci sont progressivement réaffectés à un territoire. En raison de cela, l'augmentation quotidienne dans les cas signalés par Santé Montréal (pour un quartier donné) ne reflète pas entièrement les augmentations réelles au cours d'une journée donnée, mais tient également compte des réaffectations territoriales.
+              </li>
+          </div>
         </font>
       </React.Fragment>
     );
