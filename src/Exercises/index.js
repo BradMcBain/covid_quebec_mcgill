@@ -1283,6 +1283,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
+            /*
       case 12:
         return (
             <Grid container style={styles.frags}>
@@ -1290,7 +1291,8 @@ class Exercises extends Component {
                   <FormRow9 lang={this.props.lang}/>
               </Grid>
           </Grid>
-          );     
+          );
+          */
         default:
           return (
             /*
