@@ -178,7 +178,7 @@ class NavBarMobile extends React.Component {
           </MenuItem>)
       });
 
-      const menuFr = ['MONTRÉAL','Carte', 'CIUSSS', 'PROVINCE', 'Carte', 'Cas par jour', 'Cas par type', 'Tests', 'Québec vs. monde', 'Taux de variation', 'Jours pour doubler']
+      const menuFr = ['MONTRÉAL','Carte', 'PROVINCE', 'Carte', 'Cas par jour', 'Cas par type', 'Tests', 'Québec vs. monde', 'Taux de variation']
       const menuItemsFr = menuFr.map((val,index)=>{
         return (
           <MenuItem 
@@ -223,11 +223,12 @@ class NavBarMobile extends React.Component {
                 this.handleLinkClick(); 
                 this.getContent(11)
                 break;
+              /*
               case 10:
                 this.handleLinkClick(); 
                 this.getContent(12)
                 break;
-                
+              */
             
                default:
                 // code block

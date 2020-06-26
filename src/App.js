@@ -127,8 +127,8 @@ class App extends Component{
                   <br></br>
                   <b> Content designed by:</b> Ruben Alba, Venkatesh Chandra,
                   Jonathan Guzzo, Ramy Hammam, Jessica Zhang, Jasmine Jiang,
-                  Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, Demi Wei &
-                  Katianicia Nafissatou
+                  Omar Lafif, Hana Galal, Guillaume Lapierre-Berger, Demi Wei,
+                  Katianicia Nafissatou & Jean Parenty
                   <br></br>
                   <br></br>
                   Hosted with{" "}

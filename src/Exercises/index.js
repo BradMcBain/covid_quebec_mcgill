@@ -1175,7 +1175,7 @@ class Exercises extends Component {
             </Grid>
         </Grid>
           );
-   
+      /*
       case 2:
           return (
               <Grid container style={styles.frags}>
@@ -1184,8 +1184,8 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
-
-      case 3:
+      */
+      case 2:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -1193,6 +1193,7 @@ class Exercises extends Component {
               </Grid>
           </Grid>
             );
+      /*
       case 4:
           return (
               <Grid container style={styles.frags}>
@@ -1201,10 +1202,10 @@ class Exercises extends Component {
                 </Grid>
             </Grid>
               );
-            
+      */
       //PROVINCE
       // Map of administrative regions
-      case 5:
+      case 3:
         return (
           /*
           <Grid container style={styles.frags}>
@@ -1218,7 +1219,7 @@ class Exercises extends Component {
           );
       
       // Cases per day - QC
-      case 6:
+      case 4:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -1228,7 +1229,7 @@ class Exercises extends Component {
           );
           
       // Cases per type
-      case 7:
+      case 5:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3} id="2">
@@ -1237,7 +1238,7 @@ class Exercises extends Component {
           </Grid>
           );
       
-        case 8:
+        case 6:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3}>
@@ -1247,7 +1248,7 @@ class Exercises extends Component {
         );
       
       // Testing rates
-      case 9:
+      case 7:
         return (
           <Grid container style={styles.frags}>
             <Grid container item xs={12} spacing={3}>
@@ -1256,7 +1257,7 @@ class Exercises extends Component {
         </Grid>
           );
       
-      case 10:
+      case 8:
           return (
               <Grid container style={styles.frags}>
                 <Grid container item xs={12} spacing={3}>
@@ -1275,7 +1276,7 @@ class Exercises extends Component {
             </Grid>
               );
       */
-      case 11:
+      case 9:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">

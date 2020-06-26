@@ -108,7 +108,7 @@ class NavBar extends Component {
                               MONTREAL
                          </List>
                          <List>
-                             {['Map', 'Cases per day', 'CIUSSS', 'Age distribution', 'City mobility index'].map((text, index) => (
+                             {['Map', 'Cases per day', 'Age distribution'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
@@ -121,7 +121,7 @@ class NavBar extends Component {
                          </List>
                          <List>
                              {['Map', 'Cases per day', 'Cases per type', 'Age distribution', 'Tests', 'Quebec vs. the world', 'Rate of change'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index + 5)}>
+                             <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
@@ -191,7 +191,7 @@ class NavBar extends Component {
                             MONTRÉAL
                          </List>
                          <List>
-                             {['Carte', 'Cas par jour', 'CIUSSS', 'Répartition par âge', 'Indice de mobilité urbaine'].map((text, index) => (
+                             {['Carte', 'Cas par jour', 'Répartition par âge'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
@@ -204,7 +204,7 @@ class NavBar extends Component {
                          </List>
                          <List>
                              {['Carte', 'Cas par jour', 'Cas par type', 'Répartition par âge', 'Tests', 'Québec vs. monde', 'Taux de variation'].map((text, index) => (
-                             <ListItem button key={text} onClick={() => this.jumpTo(index + 5)}>
+                             <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
                              ))}
