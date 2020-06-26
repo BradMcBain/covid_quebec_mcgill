@@ -131,10 +131,12 @@ class NavBarMobile extends React.Component {
                     this.handleLinkClick(); 
                     this.getContent(0)
                     break;
+                  /*
                   case 2:
                     this.handleLinkClick(); 
                     this.getContent(2)
                     break;
+                  */
                   case 3:
                     break;
                   case 4:
@@ -157,11 +159,11 @@ class NavBarMobile extends React.Component {
                     this.handleLinkClick(); 
                     this.getContent(10)
                     break;
+                  /*
                   case 9:
                     this.handleLinkClick(); 
                     this.getContent(11)
                     break;
-                  /*
                   case 10:
                     this.handleLinkClick(); 
                     this.getContent(12)
@@ -194,33 +196,35 @@ class NavBarMobile extends React.Component {
                 this.handleLinkClick(); 
                 this.getContent(0)
                 break;
+              /*
               case 2:
                 this.handleLinkClick(); 
                 this.getContent(2)
                 break;
-              case 3:
+              */
+              case 2:
                 break;
-              case 4:
+              case 3:
                 this.handleLinkClick(); 
                 this.getContent(5)
                 break;
-              case 5:
+              case 4:
                 this.handleLinkClick(); 
                 this.getContent(6)
                 break;
-              case 6:
+              case 5:
                 this.handleLinkClick(); 
                 this.getContent(7)
                 break;
-              case 7:
+              case 6:
                 this.handleLinkClick(); 
                 this.getContent(9)
                 break;
-              case 8:
+              case 7:
                 this.handleLinkClick(); 
                 this.getContent(10)
                 break;
-              case 9:
+              case 8:
                 this.handleLinkClick(); 
                 this.getContent(11)
                 break;
