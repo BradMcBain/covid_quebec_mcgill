@@ -120,7 +120,7 @@ class NavBar extends Component {
                               PROVINCE
                          </List>
                          <List>
-                             {['Map', 'Cases per day', 'Cases per type', 'Age distribution', 'Tests', 'Quebec vs. the world', 'Rate of change'].map((text, index) => (
+                             {['Map', 'Cases per day', 'Cases per type', 'Age distribution', 'Tests', 'Rate of change'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>
@@ -203,7 +203,7 @@ class NavBar extends Component {
                              PROVINCE
                          </List>
                          <List>
-                             {['Carte', 'Cas par jour', 'Cas par type', 'Répartition par âge', 'Tests', 'Québec vs. monde', 'Taux de variation'].map((text, index) => (
+                             {['Carte', 'Cas par jour', 'Cas par type', 'Répartition par âge', 'Tests', 'Taux de variation'].map((text, index) => (
                              <ListItem button key={text} onClick={() => this.jumpTo(index + 3)}>
                                  <ListItemText primary={text} classes={{primary: classes.li}}/>
                              </ListItem>

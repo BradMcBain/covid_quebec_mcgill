@@ -1256,7 +1256,7 @@ class Exercises extends Component {
             </Grid>
         </Grid>
           );
-      
+      /*
       case 8:
           return (
               <Grid container style={styles.frags}>
@@ -1266,7 +1266,7 @@ class Exercises extends Component {
             </Grid>
               );
       
-    /*
+
       case 9:
           return (
               <Grid container style={styles.frags}>
@@ -1276,7 +1276,7 @@ class Exercises extends Component {
             </Grid>
               );
       */
-      case 9:
+      case 8:
         return (
             <Grid container style={styles.frags}>
               <Grid container item xs={12} spacing={3} id="11">
